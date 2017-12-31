@@ -1,19 +1,9 @@
 {
-    "name": "bantenprov/tanara",
-    "description": "Tanana is a materialize base theme for bantenprov laravel application",
-    "type": "project",
-    "homepage": "https://github.com/bantenprov/tanara",
-    "authors": [{
-        "name": "bantenprov",
-        "email": "developer.bantenprov@gmail.com",
-        "role": "developer"
-    }],
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
     "license": "MIT",
-    "support": {
-      "source": "https://github.com/bantenprov/tanara,",
-      "issues": "https://github.com/bantenprov/tanara/issues",
-      "wiki": "https://github.com/bantenprov/tanara/wiki"
-    },
+    "type": "project",
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
