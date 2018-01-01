@@ -1,8 +1,9 @@
-# tanara
-Tanana is a materialize base theme for bantenprov laravel application
+# Tanara
 
-## install
+Tanana is a starter theme for bantenprov laravel application.
+
+## Install
+
 ```sh
 $ composer create-project bantenprov/tanara
 ```
-

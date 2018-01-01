@@ -11,15 +11,21 @@
   },
   "devDependencies": {
     "axios": "^0.16.2",
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "^4.0.0-beta.3",
     "cross-env": "^5.0.1",
-    "jquery": "^3.1.1",
+    "exports-loader": "^0.6.4",
+    "jquery": "^3.2.1",
     "laravel-mix": "^1.0",
     "lodash": "^4.17.4",
+<<<<<<< HEAD
     "vue": "^2.1.10",
     "vue-axios": "^2.0.2",
     "vue-loader": "^13.6.2",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.13"
+=======
+    "popper.js": "^1.12.9",
+    "webpack": "^3.10.0"
+>>>>>>> 0125725792db5551426e50d0995b6865c5997e0f
   }
 }

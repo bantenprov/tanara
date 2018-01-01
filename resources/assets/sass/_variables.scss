@@ -1,38 +1,70 @@
+//# Customize Bootstrap ===================================
 
-// Body
-$body-bg: #f5f8fa;
+// Do stuff
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
+//# Landing page variables ================================
 
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+// Do stuff
 
-// Typography
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+//# Admin page variables ==================================
 
-// Navbar
-$navbar-default-bg: #fff;
+// Do stuff
 
-// Buttons
-$btn-default-color: $text-color;
+//# Auth page variables ==================================
 
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
+//
+// Form auth
+//
 
-// Panels
-$panel-default-heading-bg: #fff;
+$form-auth-padding:         15px !default;
+$form-auth-bg-color:        #fff !default;
+$form-auth-border-width:    1px !default;
+$form-auth-border-color:    #ddd !default;
+$form-auth-box-shadow:      0 0 1px rgba(0,0,0,.45) !default;
+
+// Sizes
+
+$form-auth-sm-max-width:    330px !default;
+$form-auth-md-max-width:    450px !default;
+$form-auth-lg-max-width:    600px !default;
+
+//# Components variables ==================================
+
+//
+// Navmenu
+//
+
+$navmenu-padding-x:                 1.25rem !default;
+$navmenu-padding-y:                 1rem !default;
+$navmenu-border-width:              1px !default;
+$navmenu-border-color:              rgba(0,0,0,.05) !default;
+$navmenu-spacer-y:                  $navmenu-padding-y !default;
+
+$navmenu-brand-padding-x:           1.25rem !default;
+$navmenu-brand-padding-y:           .5rem !default;
+$navmenu-brand-font-size:           18px !default;
+
+$navmenu-header-margin-bottom:      .5rem !default;
+
+$navmenu-link-padding-x:            1.25rem !default;
+$navmenu-link-padding-y:            .5rem !default;
+$navmenu-link-sm-padding-x:         $navmenu-link-padding-x !default;
+$navmenu-link-sm-padding-y:         .25rem !default;
+
+$navmenu-light-color:                 rgba(0,0,0,.5) !default;
+$navmenu-light-hover-color:           rgba(0,0,0,.7) !default;
+$navmenu-light-active-color:          rgba(0,0,0,.9) !default;
+$navmenu-light-disabled-color:        rgba(0,0,0,.3) !default;
+$navmenu-light-header-color:          rgba(0,0,0,.4) !default;
+$navmenu-light-item-border-color:     rgba(0,0,0,.05) !default;
+$navmenu-light-item-hover-color:      $navmenu-light-item-border-color !default;
+$navmenu-light-divider-border-color:  rgba(0,0,0,.05) !default;
+
+$navmenu-dark-color:                  rgba(255,255,255,.5) !default;
+$navmenu-dark-hover-color:            rgba(255,255,255,.75) !default;
+$navmenu-dark-active-color:           rgba(255,255,255,1) !default;
+$navmenu-dark-disabled-color:         rgba(255,255,255,.25) !default;
+$navmenu-dark-header-color:           rgba(255,255,255,.4) !default;
+$navmenu-dark-item-border-color:      rgba(0,0,0,.15) !default;
+$navmenu-dark-item-hover-color:       $navmenu-dark-item-border-color !default;
+$navmenu-dark-divider-border-color:   rgba(0,0,0,.15) !default;
