@@ -4,6 +4,7 @@
         User
     </a>
     <div class="navmenu-nav">
+        <p class="navbar-brand">v0.1.0</p>
         <a class="nav-item nav-item-hover nav-link" href="#"><i class="fa fa-user mr-2" aria-hidden="true"></i> Profile</a>
         <a class="nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between" href="#">
             <span>
