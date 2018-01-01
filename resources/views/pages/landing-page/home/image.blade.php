@@ -2,11 +2,11 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-6 mb-3">
-                <img class="img-fluid w-100" src="http://drpattydental.com/wp-content/uploads/2017/05/placeholder.png" alt="">
+                <img class="img-fluid w-100" src="{{ asset('images/lukisan-syekh-nawawi-al-bantani-oleh-kang-alam.jpg') }}" alt="">
             </div><!-- /col -->
             <div class="col-sm-6 mb-3">
-                <h1 class="display-3">Image</h1>
-                <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <h1 class="display-3">Ulama</h1>
+                <p class="lead">Karena kemasyhurannya, Syekh Nawawi al-Bantani kemudian dijuluki Sayyid Ulama al-Hijaz (Pemimpin Ulama Hijaz), al-Imam al-Muhaqqiq wa al-Fahhamah al-Mudaqqiq (Imam yang Mumpuni ilmunya), A'yan Ulama al-Qarn al-Ram Asyar li al-Hijrah (Tokoh Ulama Abad 14 Hijriyah), hingga Imam Ulama al-Haramain, (Imam 'Ulama Dua Kota Suci).</p>
             </div><!-- /col -->
         </div><!-- /.row -->
     </div>
