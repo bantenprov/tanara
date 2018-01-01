@@ -26,7 +26,7 @@
 require('./bootstrap');
 window.axios = require('axios');
 import Vue from 'vue';
-import routes from './routes.js';
+import routes from './routes.js'; 
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
