@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // app.js
 
 import Vue from 'vue';
@@ -23,7 +22,7 @@ const routes = [
 
 const router = new VueRouter({ mode: 'history', routes: routes});
 new Vue(Vue.util.extend({ router }, App)).$mount('#app');
-=======
+
 import 'bootstrap';
 
 (function ($) {
@@ -42,4 +41,3 @@ import 'bootstrap';
   });
 
 }(jQuery));
->>>>>>> 0125725792db5551426e50d0995b6865c5997e0f
