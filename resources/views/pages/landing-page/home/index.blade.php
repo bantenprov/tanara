@@ -7,7 +7,10 @@
 {{-- Content --}}
 
 @section('content')
-    @include('pages.landing-page.home.about')
+  <transition>
+    <router-view></router-view>
+  </transition>
+    {{-- @include('pages.landing-page.home.about')
     @include('pages.landing-page.home.image')
-    @include('pages.landing-page.home.grid-card')
+    @include('pages.landing-page.home.grid-card') --}}
 @endsection
