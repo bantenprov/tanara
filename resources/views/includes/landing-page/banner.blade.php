@@ -28,9 +28,9 @@
     <div class="container shape-content-overflow">
         <div class="row mt-5">
             <div class="col-md-8">
-                <h1 class="banner-title">Dashboard</h1>
-                <p class="banner-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                <p><a class="btn btn-lg btn-success" href="#non">Pellentesque</a></p>
+                <h1 class="banner-title">Tanara</h1>
+                <p class="banner-description">Tanara adalah sebuah kecamatan di Kabupaten Serang, Provinsi Banten, Indonesia. Daerah ini sangat terkenal karena ulama besar, Syaikh Nawawi al-Bantani, guru bagi para ulama Indonesia dan guru besar di Mekkah, lahir di sini.</p>
+                <p><a class="btn btn-lg btn-success" href="#non">Selanjutnya</a></p>
             </div><!-- /col -->
             <div class="col-md-4">
                 <img class="banner-image" src="{{ asset('images/banner-img.png') }}" alt=""/>
