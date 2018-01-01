@@ -1,9 +1,19 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "name": "bantenprov/kanekes",
+    "description": "Kanekes Theme for Laravel",
     "type": "project",
+    "homepage": "https://github.com/bantenprov/kanekes",
+    "authors": [{
+        "name": "bantenprov",
+        "email": "developer.bantenprov@gmail.com",
+        "role": "developer"
+    }],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/kanekes,",
+      "issues": "https://github.com/bantenprov/kanekes/issues",
+      "wiki": "https://github.com/bantenprov/kanekes/wiki"
+    },
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
