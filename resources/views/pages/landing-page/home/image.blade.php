@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-6 mb-3">
-                <img class="img-fluid w-100" src="{{ asset('images/lukisan-syekh-nawawi-al-bantani-oleh-kang-alam.jpg') }}" alt="">
+                <img class="img-fluid w-100" src="{{ asset('images/lukisan-syekh-nawawi-al-bantani-oleh-kang-alam.jpg') }}" alt="Syekh Nawawi al-Bantani">
             </div><!-- /col -->
             <div class="col-sm-6 mb-3">
                 <h1 class="display-3">Ulama</h1>
