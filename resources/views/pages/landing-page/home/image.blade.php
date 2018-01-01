@@ -6,7 +6,7 @@
             </div><!-- /col -->
             <div class="col-sm-6 mb-3">
                 <h1 class="display-3">Ulama</h1>
-                <p class="lead">Karena kemasyhurannya, Syekh Nawawi al-Bantani kemudian dijuluki Sayyid Ulama al-Hijaz (Pemimpin Ulama Hijaz), al-Imam al-Muhaqqiq wa al-Fahhamah al-Mudaqqiq (Imam yang Mumpuni ilmunya), A'yan Ulama al-Qarn al-Ram Asyar li al-Hijrah (Tokoh Ulama Abad 14 Hijriyah), hingga Imam Ulama al-Haramain, (Imam 'Ulama Dua Kota Suci).</p>
+                <p class="lead">Karena kemasyhurannya, <strong>Syekh Nawawi al-Bantani</strong> kemudian dijuluki Sayyid Ulama al-Hijaz (Pemimpin Ulama Hijaz), al-Imam al-Muhaqqiq wa al-Fahhamah al-Mudaqqiq (Imam yang Mumpuni ilmunya), A'yan Ulama al-Qarn al-Ram Asyar li al-Hijrah (Tokoh Ulama Abad 14 Hijriyah), hingga Imam Ulama al-Haramain, (Imam 'Ulama Dua Kota Suci).</p>
             </div><!-- /col -->
         </div><!-- /.row -->
     </div>
