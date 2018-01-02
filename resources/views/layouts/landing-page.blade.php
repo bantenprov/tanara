@@ -13,12 +13,18 @@
         <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
     </head>
     <body class="landing-page">
+      <div id="app">
         @include('includes.landing-page.banner')
         <main class="landing-main">
             @yield('content')
         </main>
         @include('includes.landing-page.footer')
-
+      </div>
+     <script>
+       window.Laravel = <?php echo json_encode([
+           'csrfToken' => csrf_token(),
+                ]); ?>
+      </script>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
