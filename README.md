@@ -11,5 +11,5 @@ $ composer create-project bantenprov/tanara:0.1.0
 
 ### Development snapshot
 ```sh
-$ composer create-project bantenprov/tanara
+$ composer create-project bantenprov/tanara:dev-dev
 ```
