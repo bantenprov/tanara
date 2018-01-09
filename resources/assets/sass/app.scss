@@ -1,8 +1,15 @@
-// Variables
+// Custom variables
 @import "variables";
 
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // App
-@import "app";
+@import "banner";
+@import "admin";
+@import "auth";
+@import "card-media";
+@import "shape";
+@import "navmenu";
+@import "footer";
+@import "custom";

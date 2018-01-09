@@ -1,18 +1,25 @@
-import 'bootstrap';
+import './bootstrap';
+import VueRouter from 'vue-router';
+import routes from './routes';
+import './components';
 
-(function ($) {
-  'use strict';
+const router = new VueRouter({
+  routes,
+  linkActiveClass: "active"
+});
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  if (to.meta.bodyClass) {
+    document.body.className = to.meta.bodyClass;
+  } else {
+    document.body.className = "";
+  }
+  next();
+})
 
-  $(function () {
-
-    //== Initialize Bootstrap tooltip with `data-toggle="tooltip"`.
-
-    $('[data-toggle="tooltip"]').tooltip();
-
-    //== Initialize Bootstrap popover with `data-toggle="popover"`.
-
-    $('[data-toggle="popover"]').popover();
-
-  });
-
-}(jQuery));
+const app = new Vue({
+  el: '#app',
+  router
+});
