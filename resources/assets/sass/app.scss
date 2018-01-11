@@ -13,3 +13,11 @@
 @import "navmenu";
 @import "footer";
 @import "custom";
+
+// Vue transition
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}

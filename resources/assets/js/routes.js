@@ -10,7 +10,8 @@ let routes = [
   	path: '/admin',
   	component: resolve => require(['./components/views/AdminHome.vue'], resolve),
   	meta: {
-  	  title: "Admin"
+  	  title: "Admin",
+      bodyClass: "admin-page"
   	}
   },
   {

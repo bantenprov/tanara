@@ -83,20 +83,20 @@
               {{ item.name }}
             </router-link>
             <template v-if="item.child">
-              <template v-for="child in item.child">
-                <a class="nav-item nav-item-hover nav-link nav-link-collapse collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#AdminSideCollapse-' + index" aria-expanded="false" :aria-controls="'AdminSideCollapse-' + index">
-                  <i :class="item.icon + ' mr-2'" aria-hidden="true"></i>
-                  {{ item.name }}
-                </a>
-                <div class="collapse" :id="'AdminSideCollapse-' + index">
-                  <div style="border-left: 4px solid #eee;">
-                    <router-link class="nav-item nav-item-hover nav-link" :to="child.link">
+              <a class="nav-item nav-item-hover nav-link nav-link-collapse collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#AdminSideCollapse-' + index" aria-expanded="false" :aria-controls="'AdminSideCollapse-' + index">
+                <i :class="item.icon + ' mr-2'" aria-hidden="true"></i>
+                {{ item.name }}
+              </a>
+              <div class="collapse" :id="'AdminSideCollapse-' + index">
+                <div style="border-left: 4px solid #eee;">
+                  <template v-for="child in item.child">
+                    <router-link class="nav-item nav-link nav-link-sm small" :to="child.link">
                       <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
                       {{ child.name }}
                     </router-link>
-                  </div>
+                  </template>
                 </div>
-              </template>
+              </div>
             </template>
         </template>
       </div>

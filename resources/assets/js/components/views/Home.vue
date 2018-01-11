@@ -115,7 +115,7 @@
 	    </div>
 		</section>
 
-		<footer class="footer shape shape-top">
+		<footer class="footer">
       <div class="container mt-5">
         <div class="row mb-4">
           <div class="col-sm-4">

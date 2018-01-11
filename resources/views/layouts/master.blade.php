@@ -12,7 +12,9 @@
 <body>
 
     <div id="app">
-        <router-view></router-view>
+        <transition name="fade" mode="out-in">
+            <router-view></router-view>
+        </transition>
     </div>
 
     <script async src="{{ mix('js/app.js') }}"></script>
