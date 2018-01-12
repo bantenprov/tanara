@@ -5,19 +5,4 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // App
-@import "banner";
-@import "admin";
-@import "auth";
-@import "card-media";
-@import "shape";
-@import "navmenu";
-@import "footer";
-@import "custom";
-
-// Vue transition
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s
-}
-.fade-enter, .fade-leave-active {
-  opacity: 0
-}
+@import "app";
