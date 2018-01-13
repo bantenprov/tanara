@@ -78,7 +78,7 @@
 
       <div class="navmenu-nav">
         <template v-for="(item, index) in menuitems">
-            <router-link class="nav-item nav-item-hover nav-link" :to="item.link">
+            <router-link v-if="!item.child" class="nav-item nav-item-hover nav-link" :to="item.link">
               <i :class="item.icon + ' mr-2'" aria-hidden="true"></i>
               {{ item.name }}
             </router-link>
