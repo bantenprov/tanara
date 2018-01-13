@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router';
 import vbclass from 'vue-body-class';
+import TableComponent from 'vue-table-component';
 
 import routes from './routes';
 import './bootstrap';
@@ -17,6 +18,8 @@ router.beforeEach((to, from, next) => {
 })
 
 Vue.use(vbclass, router);
+
+Vue.use(TableComponent);
 
 const app = new Vue({
   el: '#app',

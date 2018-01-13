@@ -137,6 +137,13 @@
             </div><!-- /.card-body -->
           </div><!-- /.card -->
           <!-- ===================================================================== -->
+          <div class="card mb-3">
+            <div class="card-header">Vue table component</div>
+            <div class="card-body">
+              <example-vue-table></example-vue-table>
+            </div><!-- /.card-body -->
+          </div><!-- /.card -->
+          <!-- ===================================================================== -->
         </div>
       </div><!-- /col -->
     </div><!-- /.row -->
