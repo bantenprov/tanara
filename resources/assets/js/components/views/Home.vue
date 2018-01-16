@@ -85,6 +85,9 @@
           </div><!-- /col -->
         </div><!-- /.row -->
 	    </div>
+      <svg viewBox="0 0 1280 70" preserveAspectRatio="none" id="homeSection3Curve" role="presentation" aria-hidden="true">
+        <polygon points="1280 0 1280 70 0 70"></polygon>
+      </svg>
 		</section>
 
 		<footer class="footer">
