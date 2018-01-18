@@ -71,33 +71,43 @@
             </div><!-- /.card-body -->
           </div><!-- /.card -->
           <!-- ===================================================================== -->
-          <div class="card mb-3">
-            <div class="card-header">Doughnut chart</div>
-            <div class="card-body">
-              <example-doughnut-chart></example-doughnut-chart>
-            </div><!-- /.card-body -->
-          </div><!-- /.card -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card mb-3">
+                <div class="card-header">Doughnut chart</div>
+                <div class="card-body">
+                  <example-doughnut-chart></example-doughnut-chart>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /col -->
+            <div class="col-sm-6">
+              <div class="card mb-3">
+                <div class="card-header">Pie chart</div>
+                <div class="card-body">
+                  <example-pie-chart></example-pie-chart>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /col -->
+          </div>
           <!-- ===================================================================== -->
-          <div class="card mb-3">
-            <div class="card-header">Pie chart</div>
-            <div class="card-body">
-              <example-pie-chart></example-pie-chart>
-            </div><!-- /.card-body -->
-          </div><!-- /.card -->
-          <!-- ===================================================================== -->
-          <div class="card mb-3">
-            <div class="card-header">Radar chart</div>
-            <div class="card-body">
-              <example-radar-chart></example-radar-chart>
-            </div><!-- /.card-body -->
-          </div><!-- /.card -->
-          <!-- ===================================================================== -->
-          <div class="card mb-3">
-            <div class="card-header">Polararea chart</div>
-            <div class="card-body">
-              <example-polararea-chart></example-polararea-chart>
-            </div><!-- /.card-body -->
-          </div><!-- /.card -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card mb-3">
+                <div class="card-header">Radar chart</div>
+                <div class="card-body">
+                  <example-radar-chart></example-radar-chart>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /col -->
+            <div class="col-sm-6">
+              <div class="card mb-3">
+                <div class="card-header">Polararea chart</div>
+                <div class="card-body">
+                  <example-polararea-chart></example-polararea-chart>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /col -->
+          </div>
           <!-- ===================================================================== -->
           <div class="card mb-3">
             <div class="card-header">Bubble chart</div>
