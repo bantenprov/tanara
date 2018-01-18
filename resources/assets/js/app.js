@@ -3,6 +3,7 @@ import 'bootstrap';
 import VueRouter from 'vue-router';
 import vbclass from 'vue-body-class';
 import TableComponent from 'vue-table-component';
+import VueCharts from 'vue-chartjs';
 
 import routes from './routes';
 import './bootstrap';

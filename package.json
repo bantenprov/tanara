@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "axios": "^0.15.3",
+    "chart.js": "^2.7.1",
     "cross-env": "^3.2.3",
     "jquery": "^3.2.1",
     "laravel-mix": "^0.8.3",
@@ -19,6 +20,7 @@
     "popper.js": "^1.12.9",
     "vue": "^2.1.10",
     "vue-body-class": "^2.0.0-beta.2",
+    "vue-chartjs": "^3.1.0",
     "vue-loader": "^13.7.0",
     "vue-table-component": "^1.8.1",
     "vuex": "^3.0.1",
