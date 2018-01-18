@@ -91,42 +91,32 @@ body {
   }
 }
 
-.navmenu-nav .nav-link-collapse.collapsed {
-  // Generate the caret automatically
-  &::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: $caret-width * .85;
-    vertical-align: middle;
-    content: "";
-    border-top: $caret-width solid;
-    border-right: $caret-width solid transparent;
-    border-left: $caret-width solid transparent;
-  }
-
-  &:empty::after {
-    margin-left: 0;
-  }
+.navmenu-nav .nav-link-collapse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.navmenu-nav .nav-link-collapse:not(.collapsed) {
-  // Generate the caret automatically
-  &::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: $caret-width * .85;
-    vertical-align: middle;
-    content: "";
-    border-top: 0;
-    border-right: $caret-width solid transparent;
-    border-bottom: $caret-width solid;
-    border-left: $caret-width solid transparent;
-  }
-
-  &:empty::after {
-    margin-left: 0;
-  }
+.navmenu-nav .nav-link-collapse.collapsed::after {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-left: .25rem;
+  font-family: FontAwesome;
+  font-size: 1rem;
+  font-weight: bold;
+  content: "\f054";
+}
+.navmenu-nav .nav-link-collapse:not(.collapsed)::after {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-left: .25rem;
+  font-family: FontAwesome;
+  font-size: 1rem;
+  font-weight: bold;
+  content: "\f078";
 }
 
 // Headers
