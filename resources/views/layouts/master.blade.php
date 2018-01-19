@@ -6,7 +6,7 @@
 
     <title>Tanara</title>
 
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
 </head>
 <body>
@@ -17,6 +17,6 @@
         </transition>
     </div>
 
-    <script async src="{{ mix('js/app.js') }}"></script>
+    <script async src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
