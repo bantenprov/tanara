@@ -36,3 +36,6 @@ Vue.component('example-polararea-chart', ExamplePolarAreaChart);
 
 import ExampleBubbleChart from './components/chart/ExampleBubbleChart';
 Vue.component('example-bubble-chart', ExampleBubbleChart);
+
+import ExampleEchart from './components/ExampleEchart';
+Vue.component('example-echart', ExampleEchart);

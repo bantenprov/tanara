@@ -117,6 +117,13 @@
           </div><!-- /.card -->
           <!-- ===================================================================== -->
           <div class="card mb-3">
+            <div class="card-header">EChart</div>
+            <div class="card-body">
+              <example-echart></example-echart>
+            </div><!-- /.card-body -->
+          </div><!-- /.card -->
+          <!-- ===================================================================== -->
+          <div class="card mb-3">
             <div class="card-header">Form</div>
             <div class="card-body">
               <form>
