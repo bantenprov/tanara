@@ -1,11 +1,11 @@
 webpackJsonp([3],{
 
-/***/ 893:
+/***/ 898:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8ad1aa8e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_AdminHome_vue__ = __webpack_require__(897);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8ad1aa8e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_AdminHome_vue__ = __webpack_require__(902);
 var disposed = false
 var normalizeComponent = __webpack_require__(20)
 /* script */
@@ -51,7 +51,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 897:
+/***/ 902:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -189,9 +189,29 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card mb-3" }, [
-              _c("div", { staticClass: "card-header" }, [_vm._v("EChart")]),
+              _c("div", { staticClass: "card-header" }, [
+                _vm._v("ECharts bar")
+              ]),
               _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [_c("example-echart")], 1)
+              _c(
+                "div",
+                { staticClass: "card-body" },
+                [_c("example-echarts-bar")],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card mb-3" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _vm._v("ECharts bar + Ajax")
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "card-body" },
+                [_c("example-echarts-bar-ajax")],
+                1
+              )
             ]),
             _vm._v(" "),
             _vm._m(1),

@@ -10,8 +10,10 @@ Vue.component('admin-navbar', AdminNavbar);
 import AdminSidebar from './components/AdminSidebar.vue';
 Vue.component('admin-sidebar', AdminSidebar);
 
+
 import ExampleVueTable from './components/ExampleVueTable.vue';
 Vue.component('example-vue-table', ExampleVueTable);
+
 
 import ExampleLineChart from './components/chart/ExampleLineChart';
 Vue.component('example-line-chart', ExampleLineChart);
@@ -37,5 +39,9 @@ Vue.component('example-polararea-chart', ExamplePolarAreaChart);
 import ExampleBubbleChart from './components/chart/ExampleBubbleChart';
 Vue.component('example-bubble-chart', ExampleBubbleChart);
 
-import ExampleEchart from './components/ExampleEchart';
-Vue.component('example-echart', ExampleEchart);
+
+import ExampleEchartsBar from './components/echarts/ExampleEchartsBar';
+Vue.component('example-echarts-bar', ExampleEchartsBar);
+
+import ExampleEchartsBarAjax from './components/echarts/ExampleEchartsBarAjax';
+Vue.component('example-echarts-bar-ajax', ExampleEchartsBarAjax);
