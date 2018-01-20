@@ -23,6 +23,7 @@
     "vue-body-class": "^2.0.0-beta.2",
     "vue-chartjs": "^3.1.0",
     "vue-echarts-v3": "^1.0.19",
+    "vue-echarts-lite": "^1.0.4",
     "vue-loader": "^13.7.0",
     "vue-table-component": "^1.8.1",
     "vue-tables-2": "^1.2.44",
