@@ -5,7 +5,7 @@ webpackJsonp([3],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8ad1aa8e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_AdminHome_vue__ = __webpack_require__(902);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2b7fcf06_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_AdminHome_vue__ = __webpack_require__(902);
 var disposed = false
 var normalizeComponent = __webpack_require__(20)
 /* script */
@@ -22,13 +22,13 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_8ad1aa8e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_AdminHome_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2b7fcf06_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_AdminHome_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\views\\AdminHome.vue"
+Component.options.__file = "resources/assets/js/components/views/AdminHome.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -37,9 +37,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-8ad1aa8e", Component.options)
+    hotAPI.createRecord("data-v-2b7fcf06", Component.options)
   } else {
-    hotAPI.reload("data-v-8ad1aa8e", Component.options)
+    hotAPI.reload("data-v-2b7fcf06", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -98,19 +98,6 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card mb-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _vm._v("Horizontalbar chart")
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "card-body" },
-                [_c("example-horizontalbar-chart")],
-                1
-              )
-            ]),
-            _vm._v(" "),
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-sm-6" }, [
                 _c("div", { staticClass: "card mb-3" }, [
@@ -141,6 +128,19 @@ var render = function() {
                   )
                 ])
               ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card mb-3" }, [
+              _c("div", { staticClass: "card-header" }, [
+                _vm._v("Horizontalbar chart")
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "card-body" },
+                [_c("example-horizontalbar-chart")],
+                1
+              )
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "row" }, [
@@ -188,30 +188,36 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card mb-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _vm._v("ECharts bar")
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("div", { staticClass: "card mb-3" }, [
+                  _c("div", { staticClass: "card-header" }, [
+                    _vm._v("ECharts bar")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "card-body" },
+                    [_c("example-echarts-bar")],
+                    1
+                  )
+                ])
               ]),
               _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "card-body" },
-                [_c("example-echarts-bar")],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card mb-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _vm._v("ECharts bar + Ajax")
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "card-body" },
-                [_c("example-echarts-bar-ajax")],
-                1
-              )
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("div", { staticClass: "card mb-3" }, [
+                  _c("div", { staticClass: "card-header" }, [
+                    _vm._v("ECharts bar + Ajax")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "card-body" },
+                    [_c("example-echarts-bar-ajax")],
+                    1
+                  )
+                ])
+              ])
             ]),
             _vm._v(" "),
             _vm._m(1),
@@ -508,7 +514,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-8ad1aa8e", esExports)
+    require("vue-hot-reload-api")      .rerender("data-v-2b7fcf06", esExports)
   }
 }
 

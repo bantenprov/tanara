@@ -64,13 +64,6 @@
             </div><!-- /.card-body -->
           </div><!-- /.card -->
           <!-- ===================================================================== -->
-          <div class="card mb-3">
-            <div class="card-header">Horizontalbar chart</div>
-            <div class="card-body">
-              <example-horizontalbar-chart></example-horizontalbar-chart>
-            </div><!-- /.card-body -->
-          </div><!-- /.card -->
-          <!-- ===================================================================== -->
           <div class="row">
             <div class="col-sm-6">
               <div class="card mb-3">
@@ -90,6 +83,13 @@
             </div><!-- /col -->
           </div>
           <!-- ===================================================================== -->
+          <!-- ===================================================================== -->
+          <div class="card mb-3">
+            <div class="card-header">Horizontalbar chart</div>
+            <div class="card-body">
+              <example-horizontalbar-chart></example-horizontalbar-chart>
+            </div><!-- /.card-body -->
+          </div><!-- /.card -->          
           <div class="row">
             <div class="col-sm-6">
               <div class="card mb-3">
@@ -116,18 +116,24 @@
             </div><!-- /.card-body -->
           </div><!-- /.card -->
           <!-- ===================================================================== -->
-          <div class="card mb-3">
-            <div class="card-header">ECharts bar</div>
-            <div class="card-body">
-              <example-echarts-bar></example-echarts-bar>
-            </div><!-- /.card-body -->
-          </div><!-- /.card -->
-          <div class="card mb-3">
-            <div class="card-header">ECharts bar + Ajax</div>
-            <div class="card-body">
-              <example-echarts-bar-ajax></example-echarts-bar-ajax>
-            </div><!-- /.card-body -->
-          </div><!-- /.card -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card mb-3">
+                <div class="card-header">ECharts bar</div>
+                <div class="card-body">
+                  <example-echarts-bar></example-echarts-bar>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /col-->
+            <div class="col-sm-6">
+              <div class="card mb-3">
+                <div class="card-header">ECharts bar + Ajax</div>
+                <div class="card-body">
+                  <example-echarts-bar-ajax></example-echarts-bar-ajax>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div><!-- /col-->
+          </div>
           <!-- ===================================================================== -->
           <div class="card mb-3">
             <div class="card-header">Form</div>

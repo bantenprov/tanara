@@ -12,7 +12,7 @@ export default {
     IEcharts
   },
   data: () => ({
-    loading: true,
+    loading: false,
     bar: {
       title: {
         text: 'ECharts bar + Ajax',
@@ -28,7 +28,7 @@ export default {
       series: [{
         type: 'bar',
         data: [],
-        barWidth: 50,
+        barWidth: 20,
         barGap: '-100%'
       }],
       color: {
@@ -47,9 +47,31 @@ export default {
     }
   }),
   mounted: function () {
-    axios.get("http://www.filltext.com/?rows=1&chartdata={numberArray|12,100}").then(response => {
-      this.bar.series[0].data = response.data[0].chartdata;
-      this.loading = false;
+    axios.get("/data.json").then(response => {
+      var e = response.data;
+      var get = e[0].chartdata.tahun[0];
+
+      let i = 0;
+            
+      this.bar.series[0].data = get[Object.keys(get)[0]];
+
+        setInterval(() => {
+            this.loading = true;
+            i++;
+            setTimeout(() => {
+              
+              this.bar.series[0].data = get[Object.keys(get)[i]];
+              this.loading = false;
+
+            }, 10);
+            
+            if(i ==  Object.keys(get).length){
+              i = 0;
+            }
+            
+        },3000);
+        
+
     })
     .catch(function(error) {
       // error

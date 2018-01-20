@@ -27,7 +27,7 @@ export default {
       series: [{
         type: 'bar',
         data: [3, 3, 58, 45, 92, 79, 90, 89, 29, 66, 79, 89],
-        barWidth: 50,
+        barWidth: 20,
         barGap: '-100%'
       }],
       color: {
