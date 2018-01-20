@@ -15,7 +15,7 @@ export default {
     loading: false,
     bar: {
       title: {
-        text: 'ECharts bar + Ajax',
+        text: '',
         x: 'center'
       },
       tooltip: {
@@ -52,15 +52,17 @@ export default {
       var get = e[0].chartdata.tahun[0];
 
       let i = 0;
-            
-      this.bar.series[0].data = get[Object.keys(get)[0]];
+
+      this.bar.title.text = get[Object.keys(get)[0]][0].title;
+      this.bar.series[0].data = get[Object.keys(get)[0]][0].data;
 
         setInterval(() => {
             this.loading = true;
             i++;
             setTimeout(() => {
               
-              this.bar.series[0].data = get[Object.keys(get)[i]];
+              this.bar.title.text = get[Object.keys(get)[i]][0].title;
+              this.bar.series[0].data = get[Object.keys(get)[i]][0].data;
               this.loading = false;
 
             }, 10);
@@ -71,7 +73,6 @@ export default {
             
         },3000);
         
-
     })
     .catch(function(error) {
       // error
