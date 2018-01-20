@@ -11,41 +11,43 @@ export default {
   components: {
     IEcharts
   },
-  data: () => ({
-    loading: false,
-    bar: {
-      title: {
-        text: '',
-        x: 'center'
-      },
-      tooltip: {
-        show: true
-      },
-      xAxis: {
-        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-      },
-      yAxis: {},
-      series: [{
-        type: 'bar',
-        data: [],
-        barWidth: 20,
-        barGap: '-100%'
-      }],
-      color: {
-        type: 'linear',
-        x: 0,
-        y: 0,
-        x2: 0,
-        y2: 1,
-        colorStops: [{
-            offset: 0, color: '#CDDC39' // color at 0% position
-        }, {
-            offset: 1, color: '#8BC34A' // color at 100% position
+  data () {
+    return {
+      loading: false,
+      bar: {
+        title: {
+          text: '',
+          x: 'center'
+        },
+        tooltip: {
+          show: true
+        },
+        xAxis: {
+          data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis: {},
+        series: [{
+          type: 'bar',
+          data: [],
+          barWidth: 20,
+          barGap: '-100%'
         }],
-        globalCoord: false // false by default
+        color: {
+          type: 'linear',
+          x: 0,
+          y: 0,
+          x2: 0,
+          y2: 1,
+          colorStops: [{
+              offset: 0, color: '#CDDC39' // color at 0% position
+          }, {
+              offset: 1, color: '#8BC34A' // color at 100% position
+          }],
+          globalCoord: false // false by default
+        }
       }
     }
-  }),
+  },
   mounted: function () {
     axios.get('/json/echarts-bar-data-interactive.json').then(response => {
       var e = response.data;
