@@ -4,7 +4,6 @@ import Vue from 'vue';
 import axios from 'axios';
 import lodash from 'lodash';
 import VueRouter from 'vue-router';
-import vbclass from 'vue-body-class';
 import TableComponent from 'vue-table-component';
 import VueCharts from 'vue-chartjs';
 
@@ -18,7 +17,7 @@ window._ = lodash;
 
 window.axios.defaults.headers.common = {
   // 'X-Requested-With': 'XMLHttpRequest'
-  
+
 };
 
 
@@ -40,7 +39,6 @@ router.afterEach((to, from) => {
 
 
 Vue.use(VueRouter);
-Vue.use(vbclass, router);
 Vue.use(TableComponent);
 
 

@@ -12,10 +12,10 @@ export default {
     IEcharts
   },
   data: () => ({
-    loading: false,
+    loading: true,
     bar: {
       title: {
-        text: '',
+        text: 'ECharts bar + Ajax',
         x: 'center'
       },
       tooltip: {
@@ -47,32 +47,9 @@ export default {
     }
   }),
   mounted: function () {
-    axios.get("/data.json").then(response => {
-      var e = response.data;
-      var get = e[0].chartdata.tahun[0];
-
-      let i = 0;
-
-      this.bar.title.text = get[Object.keys(get)[0]][0].title;
-      this.bar.series[0].data = get[Object.keys(get)[0]][0].data;
-
-        setInterval(() => {
-            this.loading = true;
-            i++;
-            setTimeout(() => {
-              
-              this.bar.title.text = get[Object.keys(get)[i]][0].title;
-              this.bar.series[0].data = get[Object.keys(get)[i]][0].data;
-              this.loading = false;
-
-            }, 10);
-            
-            if(i ==  Object.keys(get).length){
-              i = 0;
-            }
-            
-        },3000);
-        
+    axios.get('/json/echarts-bar-data-simple.json').then(response => {
+      this.bar.series[0].data = response.data[0].chartdata;
+      this.loading = false;
     })
     .catch(function(error) {
       // error

@@ -4,44 +4,47 @@ import Vue from 'vue';
 // Custom components
 //
 
-import AdminNavbar from './components/AdminNavbar.vue';
-Vue.component('admin-navbar', AdminNavbar);
+import DashboardNavbar from './components/DashboardNavbar.vue';
+Vue.component('dashboard-navbar', DashboardNavbar);
 
-import AdminSidebar from './components/AdminSidebar.vue';
-Vue.component('admin-sidebar', AdminSidebar);
+import DashboardSidebar from './components/DashboardSidebar.vue';
+Vue.component('dashboard-sidebar', DashboardSidebar);
 
 
 import ExampleVueTable from './components/ExampleVueTable.vue';
 Vue.component('example-vue-table', ExampleVueTable);
 
 
-import ExampleLineChart from './components/chart/ExampleLineChart';
-Vue.component('example-line-chart', ExampleLineChart);
+import ExampleChartjsLine from './components/chartjs/ExampleChartjsLine.vue';
+Vue.component('example-chartjs-line', ExampleChartjsLine);
 
-import ExampleBarChart from './components/chart/ExampleBarChart';
-Vue.component('example-bar-chart', ExampleBarChart);
+import ExampleChartjsBar from './components/chartjs/ExampleChartjsBar.vue';
+Vue.component('example-chartjs-bar', ExampleChartjsBar);
 
-import ExampleHorizontalBarChart from './components/chart/ExampleHorizontalBarChart';
-Vue.component('example-horizontalbar-chart', ExampleHorizontalBarChart);
+import ExampleChartjsHorizontalBar from './components/chartjs/ExampleChartjsHorizontalBar.vue';
+Vue.component('example-chartjs-horizontalbar', ExampleChartjsHorizontalBar);
 
-import ExampleDoughnutChart from './components/chart/ExampleDoughnutChart';
-Vue.component('example-doughnut-chart', ExampleDoughnutChart);
+import ExampleChartjsDoughnut from './components/chartjs/ExampleChartjsDoughnut.vue';
+Vue.component('example-chartjs-doughnut', ExampleChartjsDoughnut);
 
-import ExamplePieChart from './components/chart/ExamplePieChart';
-Vue.component('example-pie-chart', ExamplePieChart);
+import ExampleChartjsPie from './components/chartjs/ExampleChartjsPie.vue';
+Vue.component('example-chartjs-pie', ExampleChartjsPie);
 
-import ExampleRadarChart from './components/chart/ExampleRadarChart';
-Vue.component('example-radar-chart', ExampleRadarChart);
+import ExampleChartjsRadar from './components/chartjs/ExampleChartjsRadar.vue';
+Vue.component('example-chartjs-radar', ExampleChartjsRadar);
 
-import ExamplePolarAreaChart from './components/chart/ExamplePolarAreaChart';
-Vue.component('example-polararea-chart', ExamplePolarAreaChart);
+import ExampleChartjsPolarArea from './components/chartjs/ExampleChartjsPolarArea.vue';
+Vue.component('example-chartjs-polararea', ExampleChartjsPolarArea);
 
-import ExampleBubbleChart from './components/chart/ExampleBubbleChart';
-Vue.component('example-bubble-chart', ExampleBubbleChart);
+import ExampleChartjsBubble from './components/chartjs/ExampleChartjsBubble.vue';
+Vue.component('example-chartjs-bubble', ExampleChartjsBubble);
 
 
-import ExampleEchartsBar from './components/echarts/ExampleEchartsBar';
+import ExampleEchartsBar from './components/echarts/ExampleEchartsBar.vue';
 Vue.component('example-echarts-bar', ExampleEchartsBar);
 
-import ExampleEchartsBarAjax from './components/echarts/ExampleEchartsBarAjax';
+import ExampleEchartsBarAjax from './components/echarts/ExampleEchartsBarAjax.vue';
 Vue.component('example-echarts-bar-ajax', ExampleEchartsBarAjax);
+
+import ExampleEchartsBarAjaxInteractive from './components/echarts/ExampleEchartsBarAjaxInteractive.vue';
+Vue.component('example-echarts-bar-ajax-interactive', ExampleEchartsBarAjaxInteractive);

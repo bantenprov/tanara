@@ -632,14 +632,12 @@ body {
 // Auth page styles
 //
 
-// body.auth-page
-.auth-page {
-  background-color: #eee;
-}
-
 .form-auth-wrap {
+  min-height: 100vh;
+  height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #eee;
 }
 
 .form-auth {
@@ -666,16 +664,14 @@ body {
 }
 
 //
-// Admin page styles
+// Dashboard page styles
 //
 
-.admin-navbar {
+.dashboard-navbar {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.admin-main {
-  .admin-main-content {
-    padding: 1rem;
-  }
+.dashboard-main {
+  padding: 1rem !important;
 }

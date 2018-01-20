@@ -20,7 +20,6 @@
     "moment": "^2.20.1",
     "popper.js": "^1.12.9",
     "vue": "^2.1.10",
-    "vue-body-class": "^2.0.0-beta.2",
     "vue-chartjs": "^3.1.0",
     "vue-echarts-v3": "^1.0.19",
     "vue-echarts-lite": "^1.0.4",
