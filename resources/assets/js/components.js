@@ -48,3 +48,6 @@ Vue.component('example-echarts-bar-ajax', ExampleEchartsBarAjax);
 
 import ExampleEchartsBarAjaxInteractive from './components/echarts/ExampleEchartsBarAjaxInteractive.vue';
 Vue.component('example-echarts-bar-ajax-interactive', ExampleEchartsBarAjaxInteractive);
+
+import ExampleEchartsPie from './components/echarts/ExampleEchartsPie.vue';
+Vue.component('example-echarts-pie', ExampleEchartsPie);

@@ -22,5 +22,12 @@
       </div><!-- /.card-body -->
     </div><!-- /.card -->
 
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-header">ECharts pie</div>
+      <div class="card-body bg-dark">
+        <example-echarts-pie></example-echarts-pie>
+      </div><!-- /.card-body -->
+    </div><!-- /.card -->
+
   </div>
 </template>
