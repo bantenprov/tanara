@@ -9,10 +9,10 @@ body {
 // Vue transition
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s
+  transition: opacity 0.3s;
 }
 .fade-enter, .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
 
 //
@@ -661,17 +661,4 @@ body {
     margin-bottom: 15px;
     text-align: center;
   }
-}
-
-//
-// Dashboard page styles
-//
-
-.dashboard-navbar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.dashboard-main {
-  padding: 1rem !important;
 }

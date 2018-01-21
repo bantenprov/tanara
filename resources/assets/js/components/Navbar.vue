@@ -1,5 +1,5 @@
 <template>
-  <nav class="dashboard-navbar navbar navbar-expand-md navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3">
     <router-link class="navbar-brand d-flex flex-row align-items-center text-uppercase" to="/" exact>
       <img class="mr-2" src="/images/logo.png" width="36" height="36">
       <span>Tanara</span>
