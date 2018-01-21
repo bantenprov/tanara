@@ -10,10 +10,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "nav",
-    {
-      staticClass:
-        "dashboard-navbar navbar navbar-expand-md navbar-dark bg-dark"
-    },
+    { staticClass: "navbar navbar-expand-md navbar-dark bg-dark py-3" },
     [
       _c(
         "router-link",

@@ -208,6 +208,27 @@ webpackJsonp([0],{
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -225,6 +246,8 @@ webpackJsonp([0],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// childType: 'collapse|dropdown|dropup'
+
 var MenuItems = [{
   name: 'Home',
   link: '/',
@@ -266,8 +289,8 @@ var MenuItems = [{
   }]
 }, {
   name: 'Admin',
-  icon: 'fa fa-user',
-  childType: 'dropdown',
+  icon: 'fa fa-lock',
+  childType: 'collapse',
   childItem: [{
     name: 'Dashboard',
     link: '/admin',
@@ -280,23 +303,22 @@ var MenuItems = [{
     name: 'Configurations',
     link: '/admin/configurations',
     icon: 'fa fa-angle-double-right'
-  }]
-}, {
-  name: 'Reports',
-  icon: 'fa fa-user',
-  childType: 'dropup',
-  childItem: [{
+  }, {
     name: 'Reports',
-    link: '/admin/reports',
-    icon: 'fa fa-angle-double-right'
-  }, {
-    name: 'System reports',
-    link: '/admin/reports/system-reports',
-    icon: 'fa fa-angle-double-right'
-  }, {
-    name: 'System logs',
-    link: '/admin/reports/system-logs',
-    icon: 'fa fa-angle-double-right'
+    icon: 'fa fa-angle-double-right',
+    child: [{
+      name: 'Reports',
+      link: '/admin/reports',
+      icon: 'fa fa-angle-right'
+    }, {
+      name: 'System reports',
+      link: '/admin/reports/system-reports',
+      icon: 'fa fa-angle-right'
+    }, {
+      name: 'System logs',
+      link: '/admin/reports/system-logs',
+      icon: 'fa fa-angle-right'
+    }]
   }]
 }];
 
@@ -640,28 +662,135 @@ var render = function() {
                                     [
                                       _vm._l(item.childItem, function(child) {
                                         return [
-                                          _c(
-                                            "router-link",
-                                            {
-                                              staticClass:
-                                                "nav-item nav-link nav-link-sm small",
-                                              attrs: {
-                                                to: child.link,
-                                                exact: ""
-                                              }
-                                            },
-                                            [
-                                              _c("i", {
-                                                class: child.icon + " mr-2",
-                                                attrs: { "aria-hidden": "true" }
-                                              }),
-                                              _vm._v(
-                                                "\n                      " +
-                                                  _vm._s(child.name) +
-                                                  "\n                    "
+                                          !child.child
+                                            ? _c(
+                                                "router-link",
+                                                {
+                                                  staticClass:
+                                                    "nav-item nav-link nav-link-sm small",
+                                                  attrs: {
+                                                    to: child.link,
+                                                    exact: ""
+                                                  }
+                                                },
+                                                [
+                                                  _c("i", {
+                                                    class: child.icon + " mr-2",
+                                                    attrs: {
+                                                      "aria-hidden": "true"
+                                                    }
+                                                  }),
+                                                  _vm._v(
+                                                    "\n                      " +
+                                                      _vm._s(child.name) +
+                                                      "\n                    "
+                                                  )
+                                                ]
                                               )
-                                            ]
-                                          )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          child.child
+                                            ? [
+                                                _c(
+                                                  "a",
+                                                  {
+                                                    staticClass:
+                                                      "nav-item nav-link nav-link-sm small nav-link-collapse nav-link-collapse-small collapsed",
+                                                    attrs: {
+                                                      href:
+                                                        "javascript:void(0)",
+                                                      "data-toggle": "collapse",
+                                                      "data-target":
+                                                        "#NavmenuNavSidebarCollapse2-" +
+                                                        index,
+                                                      "aria-expanded": "false",
+                                                      "aria-controls":
+                                                        "NavmenuNavSidebarCollapse2-" +
+                                                        index
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("span", [
+                                                      _c("i", {
+                                                        class:
+                                                          child.icon + " mr-2",
+                                                        attrs: {
+                                                          "aria-hidden": "true"
+                                                        }
+                                                      }),
+                                                      _vm._v(
+                                                        "\n                          " +
+                                                          _vm._s(child.name) +
+                                                          "\n                        "
+                                                      )
+                                                    ])
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass: "collapse",
+                                                    attrs: {
+                                                      id:
+                                                        "NavmenuNavSidebarCollapse2-" +
+                                                        index
+                                                    }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
+                                                        staticStyle: {
+                                                          "border-left":
+                                                            "6px solid #007bff"
+                                                        }
+                                                      },
+                                                      [
+                                                        _vm._l(
+                                                          child.child,
+                                                          function(child2) {
+                                                            return [
+                                                              _c(
+                                                                "router-link",
+                                                                {
+                                                                  staticClass:
+                                                                    "nav-item nav-link nav-link-sm small",
+                                                                  attrs: {
+                                                                    to:
+                                                                      child2.link,
+                                                                    exact: ""
+                                                                  }
+                                                                },
+                                                                [
+                                                                  _c("i", {
+                                                                    class:
+                                                                      child2.icon +
+                                                                      " mr-2",
+                                                                    attrs: {
+                                                                      "aria-hidden":
+                                                                        "true"
+                                                                    }
+                                                                  }),
+                                                                  _vm._v(
+                                                                    "\n                              " +
+                                                                      _vm._s(
+                                                                        child2.name
+                                                                      ) +
+                                                                      "\n                            "
+                                                                  )
+                                                                ]
+                                                              )
+                                                            ]
+                                                          }
+                                                        )
+                                                      ],
+                                                      2
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            : _vm._e()
                                         ]
                                       })
                                     ],

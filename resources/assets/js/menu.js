@@ -1,3 +1,5 @@
+// childType: 'collapse|dropdown|dropup'
+
 const MenuItems = [
   {
     name: 'Home',
@@ -52,8 +54,8 @@ const MenuItems = [
   },
   {
     name: 'Admin',
-    icon: 'fa fa-user',
-    childType: 'dropdown',
+    icon: 'fa fa-lock',
+    childType: 'collapse',
     childItem: [
       {
         name: 'Dashboard',
@@ -69,28 +71,27 @@ const MenuItems = [
         name: 'Configurations',
         link: '/admin/configurations',
         icon: 'fa fa-angle-double-right'
-      }
-    ]
-  },
-  {
-    name: 'Reports',
-    icon: 'fa fa-user',
-    childType: 'dropup',
-    childItem: [
+      },
       {
         name: 'Reports',
-        link: '/admin/reports',
-        icon: 'fa fa-angle-double-right'
-      },
-      {
-        name: 'System reports',
-        link: '/admin/reports/system-reports',
-        icon: 'fa fa-angle-double-right'
-      },
-      {
-        name: 'System logs',
-        link: '/admin/reports/system-logs',
-        icon: 'fa fa-angle-double-right'
+        icon: 'fa fa-angle-double-right',
+        child: [
+          {
+            name: 'Reports',
+            link: '/admin/reports',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'System reports',
+            link: '/admin/reports/system-reports',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'System logs',
+            link: '/admin/reports/system-logs',
+            icon: 'fa fa-angle-right'
+          }
+        ]
       }
     ]
   }

@@ -29,6 +29,7 @@
         </ul>
       </div>
     </div>
+
     <div class="navmenu-nav">
       <router-link class="nav-item nav-item-hover nav-link" to="/user/profile"><i class="fa fa-user mr-2" aria-hidden="true"></i> Profile</router-link>
       <router-link class="nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between" to="/user/notifications">
@@ -79,10 +80,30 @@
                 <div class="collapse" :id="'NavmenuNavSidebarCollapse-' + index">
                   <div style="border-left: 4px solid #eee;">
                     <template v-for="child in item.childItem">
-                      <router-link class="nav-item nav-link nav-link-sm small" :to="child.link" exact>
+                      <router-link v-if="!child.child" class="nav-item nav-link nav-link-sm small" :to="child.link" exact>
                         <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
                         {{ child.name }}
                       </router-link>
+                      <!---->
+                      <template v-if="child.child">
+                        <a class="nav-item nav-link nav-link-sm small nav-link-collapse nav-link-collapse-small collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#NavmenuNavSidebarCollapse2-' + index" aria-expanded="false" :aria-controls="'NavmenuNavSidebarCollapse2-' + index">
+                          <span>
+                            <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
+                            {{ child.name }}
+                          </span>
+                        </a>
+                        <div class="collapse" :id="'NavmenuNavSidebarCollapse2-' + index">
+                          <div style="border-left: 6px solid #007bff;">
+                            <template v-for="child2 in child.child">
+                              <router-link class="nav-item nav-link nav-link-sm small" :to="child2.link" exact>
+                                <i :class="child2.icon + ' mr-2'" aria-hidden="true"></i>
+                                {{ child2.name }}
+                              </router-link>
+                            </template>
+                          </div>
+                        </div>
+                      </template>
+                      <!---->
                     </template>
                   </div>
                 </div>

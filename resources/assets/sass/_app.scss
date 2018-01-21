@@ -98,25 +98,39 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.navmenu-nav .nav-link-collapse.collapsed::after {
-  position: relative;
-  width: auto;
-  height: auto;
-  margin-left: .25rem;
-  font-family: FontAwesome;
-  font-size: 1rem;
-  font-weight: bold;
-  content: "\f054";
+.navmenu-nav .nav-link-collapse.collapsed {
+  &::after {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: .25rem;
+    font-family: FontAwesome;
+    font-size: 1rem;
+    font-weight: bold;
+    content: "\f054";
+  }
+
+  &.nav-link-collapse-small::after {
+    font-size: .85rem;
+    content: "\f138";
+  }
 }
-.navmenu-nav .nav-link-collapse:not(.collapsed)::after {
-  position: relative;
-  width: auto;
-  height: auto;
-  margin-left: .25rem;
-  font-family: FontAwesome;
-  font-size: 1rem;
-  font-weight: bold;
-  content: "\f078";
+.navmenu-nav .nav-link-collapse:not(.collapsed) {
+  &::after {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: .25rem;
+    font-family: FontAwesome;
+    font-size: 1rem;
+    font-weight: bold;
+    content: "\f078";
+  }
+
+  &.nav-link-collapse-small::after {
+    font-size: .85rem;
+    content: "\f13a";
+  }
 }
 
 // Headers

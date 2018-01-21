@@ -91,14 +91,14 @@ var render = function() {
       _c("div", { staticClass: "row no-gutters" }, [
         _c(
           "div",
-          { staticClass: "col-md-4 col-lg-3 dashboard-sidebar" },
+          { staticClass: "col-md-4 col-lg-3" },
           [_c("router-view", { attrs: { name: "sidebar" } })],
           1
         ),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "col-md-8 col-lg-9 dashboard-main" },
+          { staticClass: "col-md-8 col-lg-9 p-3 p-md-4" },
           [_c("router-view", { attrs: { name: "main" } })],
           1
         )
