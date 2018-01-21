@@ -24,3 +24,19 @@ or
 npm run production
 ```
 
+## system path
+- dashboard
+  - dashboard/USER/[user_id]
+- admin
+  - admin/content/ENTITY/list
+  - admin/content/ENTITY/list
+- ENTITY
+  - ENTITY/add
+  - ENTITY/[entity_id]
+  - ENTITY/[entity_id]/edit
+  - ENTITY/[entity_id]/delete
+- settings
+  - settings/system-setting
+  - settings/smtp-setting
+- report
+  - report/system-report
