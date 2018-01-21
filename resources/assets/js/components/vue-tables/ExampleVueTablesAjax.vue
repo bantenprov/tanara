@@ -40,7 +40,7 @@ export default {
     }
   },
   mounted() {
-    axios.get("/json/table-1000.json").then(response => {
+    axios.get("/json/table-10000.json").then(response => {
       this.rowdata = response.data;
     })
     .catch(function(error) {
