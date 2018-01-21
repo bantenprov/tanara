@@ -40,3 +40,4 @@ npm run production
   - settings/smtp-setting
 - report
   - report/system-report
+  - report/system-log
