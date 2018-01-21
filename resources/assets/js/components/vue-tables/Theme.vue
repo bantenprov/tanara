@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="pl-1">
-          <ul class="pagination">
+          <ul class="pagination mb-0">
             <li class="page-item">
               <a href="javascript:void(0)" class="page-link" @click.prevent="previousPage" tabindex="0">
                 <i class="fa fa-angle-left"></i>
