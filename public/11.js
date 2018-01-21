@@ -1,13 +1,13 @@
 webpackJsonp([11],{
 
-/***/ 1106:
+/***/ 1109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_02156f5a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_DemoVueTables_vue__ = __webpack_require__(1131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_02156f5a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_DemoVueTables_vue__ = __webpack_require__(1134);
 var disposed = false
-var normalizeComponent = __webpack_require__(21)
+var normalizeComponent = __webpack_require__(19)
 /* script */
 var __vue_script__ = null
 /* template */
@@ -51,7 +51,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 1131:
+/***/ 1134:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59,7 +59,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("example-vue-tables")], 1)
+  return _c(
+    "div",
+    [_c("example-vue-tables"), _vm._v(" "), _c("example-vue-tables-ajax")],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

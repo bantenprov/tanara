@@ -50,3 +50,6 @@ Vue.component('example-echarts-pie', ExampleEchartsPie);
 
 import ExampleVueTables from './components/vue-tables/ExampleVueTables.vue';
 Vue.component('example-vue-tables', ExampleVueTables);
+
+import ExampleVueTablesAjax from './components/vue-tables/ExampleVueTablesAjax.vue';
+Vue.component('example-vue-tables-ajax', ExampleVueTablesAjax);
