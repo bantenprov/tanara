@@ -231,7 +231,7 @@ let routes = [
           sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
         },
         meta: {
-          title: "ECharts"
+          title: "Vue Tables"
         }
       }
     ]
