@@ -222,6 +222,17 @@ let routes = [
         meta: {
           title: "ECharts"
         }
+      },
+      {
+        path: '/demo/vue-tables',
+        components: {
+          main: resolve => require(['./components/views/DemoVueTables.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "ECharts"
+        }
       }
     ]
   },

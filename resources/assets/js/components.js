@@ -4,13 +4,6 @@ import Vue from 'vue';
 // Custom components
 //
 
-
-//== Vua table component
-
-import ExampleVueTable from './components/ExampleVueTable.vue';
-Vue.component('example-vue-table', ExampleVueTable);
-
-
 //== Chart.js
 
 import ExampleChartjsLine from './components/chartjs/ExampleChartjsLine.vue';
@@ -51,3 +44,9 @@ Vue.component('example-echarts-bar-ajax-interactive', ExampleEchartsBarAjaxInter
 
 import ExampleEchartsPie from './components/echarts/ExampleEchartsPie.vue';
 Vue.component('example-echarts-pie', ExampleEchartsPie);
+
+
+//== Vue tables
+
+import ExampleVueTables from './components/vue-tables/ExampleVueTables.vue';
+Vue.component('example-vue-tables', ExampleVueTables);

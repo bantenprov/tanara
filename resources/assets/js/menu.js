@@ -39,6 +39,18 @@ const MenuItems = [
     ]
   },
   {
+    name: 'Tables demo',
+    icon: 'fa fa-table',
+    childType: 'collapse',
+    childItem: [
+      {
+        name: 'Vue tables',
+        link: '/demo/vue-tables',
+        icon: 'fa fa-angle-double-right'
+      }
+    ]
+  },
+  {
     name: 'Admin',
     icon: 'fa fa-user',
     childType: 'dropdown',
