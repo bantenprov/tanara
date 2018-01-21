@@ -1,11 +1,17 @@
+function layout(name) {
+  return function(resolve) {
+    require(['./layouts/' + name + '.vue'], resolve);
+  }
+}
+
 let routes = [
   {
   	path: '/',
-    redirect: '/home',
     component: resolve => require(['./components/views/Home.vue'], resolve),
+    mode: 'history',
     children: [
       {
-        path: '/home',
+        path: '/',
       	component: resolve => require(['./components/views/Home.vue'], resolve),
         meta: {
           title: "Tanara"
@@ -15,56 +21,163 @@ let routes = [
   },
   {
   	path: '/dashboard',
-    redirect: '/dashboard/home',
-  	component: resolve => require(['./DashboardLayout.vue'], resolve),
+  	component: layout('Default'),
     children: [
       {
-        path: '/dashboard/home',
-        component: resolve => require(['./components/views/DashboardHome.vue'], resolve),
+        path: '/dashboard',
+        components: {
+          main: resolve => require(['./components/views/DashboardHome.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
           title: "Dashboard"
         }
       },
       {
-        path: '/dashboard/profile',
-        component: resolve => require(['./components/views/DashboardProfile.vue'], resolve),
+        path: '/dashboard/entity',
+        components: {
+          main: resolve => require(['./components/views/DashboardEntity.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
-          title: "Profile"
+          title: "Dashboard Entity"
+        }
+      }
+    ]
+  },
+  {
+    path: '/user',
+    redirect: '/user/profile',
+    component: layout('Default'),
+    children: [
+      {
+        path: '/user/profile',
+        components: {
+          main: resolve => require(['./components/views/UserProfile.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "User Profile"
         }
       },
       {
-        path: '/dashboard/notifications',
-        component: resolve => require(['./components/views/DashboardNotifications.vue'], resolve),
+        path: '/user/notifications',
+        components: {
+          main: resolve => require(['./components/views/UserNotifications.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
-          title: "Notifications"
+          title: "User Notifications"
         }
       },
       {
-        path: '/dashboard/messages',
-        component: resolve => require(['./components/views/DashboardMessages.vue'], resolve),
+        path: '/user/messages',
+        components: {
+          main: resolve => require(['./components/views/UserMessages.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
-          title: "Messages"
+          title: "User Messages"
         }
       },
       {
-        path: '/dashboard/settings',
-        component: resolve => require(['./components/views/DashboardSettings.vue'], resolve),
+        path: '/user/change-password',
+        components: {
+          main: resolve => require(['./components/views/UserChangePassword.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
-          title: "Settings"
+          title: "User Change Password"
         }
       },
       {
-        path: '/dashboard/demo-chartjs',
-        component: resolve => require(['./components/views/ChartjsDemo.vue'], resolve),
+        path: '/user/settings',
+        components: {
+          main: resolve => require(['./components/views/UserSettings.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
-          title: "Chartjs"
+          title: "User Settings"
+        }
+      }
+    ]
+  },
+  {
+    path: '/admin',
+    redirect: '/admin/dashboard',
+    component: layout('Default'),
+    children: [
+      {
+        path: '/admin/dashboard',
+        components: {
+          main: resolve => require(['./components/views/AdminDashboard.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Dashboard"
         }
       },
       {
-        path: '/dashboard/demo-echarts',
-        component: resolve => require(['./components/views/EchartsDemo.vue'], resolve),
+        path: '/admin/contents',
+        components: {
+          main: resolve => require(['./components/views/AdminContents.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
-          title: "ECharts"
+          title: "Contents"
+        }
+      },
+      {
+        path: '/admin/configurations',
+        components: {
+          main: resolve => require(['./components/views/AdminConfigurations.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Configurations"
+        }
+      },
+      {
+        path: '/admin/reports',
+        components: {
+          main: resolve => require(['./components/views/AdminReports.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Reports"
+        }
+      },
+      {
+        path: '/admin/reports/system-reports',
+        components: {
+          main: resolve => require(['./components/views/AdminSystemReports.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "System Reports"
+        }
+      },
+      {
+        path: '/admin/reports/system-logs',
+        components: {
+          main: resolve => require(['./components/views/AdminSystemLogs.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "System Logs"
         }
       }
     ]
@@ -82,7 +195,36 @@ let routes = [
     meta: {
       title: "Sign up"
     }
-  }
+  },
+  {
+    path: '/demo',
+    redirect: '/demo/chartjs',
+    component: layout('Default'),
+    children: [
+      {
+        path: '/demo/chartjs',
+        components: {
+          main: resolve => require(['./components/views/DemoChartjs.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Chart.js"
+        }
+      },
+      {
+        path: '/demo/echarts',
+        components: {
+          main: resolve => require(['./components/views/DemoEcharts.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "ECharts"
+        }
+      }
+    ]
+  },
 ];
 
 export default routes

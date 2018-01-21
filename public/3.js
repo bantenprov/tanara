@@ -1,13 +1,37 @@
 webpackJsonp([3],{
 
-/***/ 905:
+/***/ 897:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./Default.vue": 916
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 897;
+
+/***/ }),
+
+/***/ 916:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7a1d6fa8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_EchartsDemo_vue__ = __webpack_require__(916);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2a884ec2_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Default_vue__ = __webpack_require__(917);
 var disposed = false
-var normalizeComponent = __webpack_require__(19)
+var normalizeComponent = __webpack_require__(21)
 /* script */
 var __vue_script__ = null
 /* template */
@@ -22,13 +46,13 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7a1d6fa8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_EchartsDemo_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_2a884ec2_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Default_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\views\\EchartsDemo.vue"
+Component.options.__file = "resources\\assets\\js\\layouts\\Default.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -37,9 +61,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7a1d6fa8", Component.options)
+    hotAPI.createRecord("data-v-2a884ec2", Component.options)
   } else {
-    hotAPI.reload("data-v-7a1d6fa8", Component.options)
+    hotAPI.reload("data-v-2a884ec2", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51,7 +75,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 916:
+/***/ 917:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59,37 +83,29 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card mb-3" }, [
-      _c("div", { staticClass: "card-header" }, [_vm._v("ECharts bar")]),
+  return _c(
+    "div",
+    [
+      _c("router-view", { attrs: { name: "navbar" } }),
       _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [_c("example-echarts-bar")], 1)
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "card mb-3" }, [
-      _c("div", { staticClass: "card-header" }, [_vm._v("ECharts bar + Ajax")]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "card-body" },
-        [_c("example-echarts-bar-ajax")],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "card mb-3" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _vm._v("ECharts bar + Ajax (Interactive)")
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "card-body" },
-        [_c("example-echarts-bar-ajax-interactive")],
-        1
-      )
-    ])
-  ])
+      _c("div", { staticClass: "row no-gutters" }, [
+        _c(
+          "div",
+          { staticClass: "col-md-4 col-lg-3 dashboard-sidebar" },
+          [_c("router-view", { attrs: { name: "sidebar" } })],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-md-8 col-lg-9 dashboard-main" },
+          [_c("router-view", { attrs: { name: "main" } })],
+          1
+        )
+      ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -98,7 +114,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7a1d6fa8", esExports)
+    require("vue-hot-reload-api")      .rerender("data-v-2a884ec2", esExports)
   }
 }
 

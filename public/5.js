@@ -5,9 +5,9 @@ webpackJsonp([5],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5d0b7a4c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_DashboardProfile_vue__ = __webpack_require__(911);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_eba34eee_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UserProfile_vue__ = __webpack_require__(924);
 var disposed = false
-var normalizeComponent = __webpack_require__(19)
+var normalizeComponent = __webpack_require__(21)
 /* script */
 var __vue_script__ = null
 /* template */
@@ -22,13 +22,13 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __vue_script__,
-  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5d0b7a4c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_DashboardProfile_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_eba34eee_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UserProfile_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\views\\DashboardProfile.vue"
+Component.options.__file = "resources\\assets\\js\\components\\views\\UserProfile.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -37,9 +37,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5d0b7a4c", Component.options)
+    hotAPI.createRecord("data-v-eba34eee", Component.options)
   } else {
-    hotAPI.reload("data-v-5d0b7a4c", Component.options)
+    hotAPI.reload("data-v-eba34eee", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51,7 +51,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 911:
+/***/ 924:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75,7 +75,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-5d0b7a4c", esExports)
+    require("vue-hot-reload-api")      .rerender("data-v-eba34eee", esExports)
   }
 }
 

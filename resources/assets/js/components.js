@@ -4,16 +4,14 @@ import Vue from 'vue';
 // Custom components
 //
 
-import DashboardNavbar from './components/DashboardNavbar.vue';
-Vue.component('dashboard-navbar', DashboardNavbar);
 
-import DashboardSidebar from './components/DashboardSidebar.vue';
-Vue.component('dashboard-sidebar', DashboardSidebar);
-
+//== Vua table component
 
 import ExampleVueTable from './components/ExampleVueTable.vue';
 Vue.component('example-vue-table', ExampleVueTable);
 
+
+//== Chart.js
 
 import ExampleChartjsLine from './components/chartjs/ExampleChartjsLine.vue';
 Vue.component('example-chartjs-line', ExampleChartjsLine);
@@ -39,6 +37,8 @@ Vue.component('example-chartjs-polararea', ExampleChartjsPolarArea);
 import ExampleChartjsBubble from './components/chartjs/ExampleChartjsBubble.vue';
 Vue.component('example-chartjs-bubble', ExampleChartjsBubble);
 
+
+//== ECharts
 
 import ExampleEchartsBar from './components/echarts/ExampleEchartsBar.vue';
 Vue.component('example-echarts-bar', ExampleEchartsBar);

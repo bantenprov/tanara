@@ -1,15 +1,18 @@
 webpackJsonp([0],{
 
-/***/ 455:
+/***/ 20:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03a755c4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(908);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_cacheDirectory_true_presets_es2015_modules_false_node_modules_vue_loader_lib_selector_type_script_index_0_Sidebar_vue__ = __webpack_require__(915);
+/* empty harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_00467796_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Sidebar_vue__ = __webpack_require__(922);
 var disposed = false
-var normalizeComponent = __webpack_require__(19)
+var normalizeComponent = __webpack_require__(21)
 /* script */
-var __vue_script__ = null
+
+
 /* template */
 
 /* template functional */
@@ -21,14 +24,14 @@ var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __vue_script__,
-  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_template_compiler_index_id_data_v_03a755c4_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_cacheDirectory_true_presets_es2015_modules_false_node_modules_vue_loader_lib_selector_type_script_index_0_Sidebar_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_00467796_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Sidebar_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\views\\Home.vue"
+Component.options.__file = "resources\\assets\\js\\components\\Sidebar.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -37,9 +40,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03a755c4", Component.options)
+    hotAPI.createRecord("data-v-00467796", Component.options)
   } else {
-    hotAPI.reload("data-v-03a755c4", Component.options)
+    hotAPI.reload("data-v-00467796", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -51,7 +54,302 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 908:
+/***/ 915:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_js__ = __webpack_require__(921);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  data: function data() {
+    return {
+      menuitems: __WEBPACK_IMPORTED_MODULE_0__menu_js__["a" /* default */]
+    };
+  }
+});
+
+/***/ }),
+
+/***/ 921:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var MenuItems = [{
+  name: 'Home',
+  link: '/',
+  icon: 'fa fa-home'
+}, {
+  name: 'Dashboard',
+  icon: 'fa fa-dashboard',
+  childType: 'collapse',
+  childItem: [{
+    name: 'Dashboard',
+    link: '/dashboard',
+    icon: 'fa fa-angle-double-right'
+  }, {
+    name: 'Entity',
+    link: '/dashboard/entity',
+    icon: 'fa fa-angle-double-right'
+  }]
+}, {
+  name: 'Charts demo',
+  icon: 'fa fa-bar-chart',
+  childType: 'collapse',
+  childItem: [{
+    name: 'Chart.js',
+    link: '/demo/chartjs',
+    icon: 'fa fa-angle-double-right'
+  }, {
+    name: 'ECharts',
+    link: '/demo/echarts',
+    icon: 'fa fa-angle-double-right'
+  }]
+}, {
+  name: 'Admin',
+  icon: 'fa fa-user',
+  childType: 'dropdown',
+  childItem: [{
+    name: 'Dashboard',
+    link: '/admin',
+    icon: 'fa fa-angle-double-right'
+  }, {
+    name: 'Contents',
+    link: '/admin/contents',
+    icon: 'fa fa-angle-double-right'
+  }, {
+    name: 'Configurations',
+    link: '/admin/configurations',
+    icon: 'fa fa-angle-double-right'
+  }]
+}, {
+  name: 'Reports',
+  icon: 'fa fa-user',
+  childType: 'dropup',
+  childItem: [{
+    name: 'Reports',
+    link: '/admin/reports',
+    icon: 'fa fa-angle-double-right'
+  }, {
+    name: 'System reports',
+    link: '/admin/reports/system-reports',
+    icon: 'fa fa-angle-double-right'
+  }, {
+    name: 'System logs',
+    link: '/admin/reports/system-logs',
+    icon: 'fa fa-angle-double-right'
+  }]
+}];
+
+/* harmony default export */ __webpack_exports__["a"] = (MenuItems);
+
+/***/ }),
+
+/***/ 922:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59,220 +357,569 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "home-header" }, [
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "nav",
-          {
-            staticClass:
-              "home-header-navbar navbar navbar-expand-lg navbar-dark bg-transparent"
-          },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass:
-                  "navbar-brand d-flex flex-row align-items-center text-uppercase",
-                attrs: { to: "/" }
-              },
-              [
-                _c("img", {
-                  staticClass: "mr-2",
-                  attrs: { src: "/images/logo.png", width: "36", height: "36" }
-                }),
-                _vm._v(" "),
-                _c("span", [_vm._v("Tanara")])
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "collapse navbar-collapse",
-                attrs: { id: "navbar" }
-              },
-              [
-                _c("ul", { staticClass: "navbar-nav ml-auto" }, [
-                  _c(
-                    "li",
-                    { staticClass: "nav-item" },
-                    [
-                      _c(
-                        "router-link",
-                        { staticClass: "nav-link", attrs: { to: "/sign-up" } },
-                        [
-                          _c("i", {
-                            staticClass: "fa fa-user-plus",
-                            attrs: { "aria-hidden": "true" }
-                          }),
-                          _vm._v(" Create account")
-                        ]
-                      )
-                    ],
-                    1
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "home-header-content" }, [
-          _c("h1", { staticClass: "home-header-title" }, [_vm._v("Tanara")]),
+  return _c(
+    "nav",
+    {
+      staticClass:
+        "navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 border-top-0 border-right-0 border-left-0"
+    },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "navmenu-brand bg-info text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center"
+        },
+        [
+          _c("router-link", { attrs: { to: "/user/profile" } }, [
+            _c("img", {
+              staticClass: "mr-3",
+              attrs: {
+                src: "/images/avatar.png",
+                width: "64",
+                height: "64",
+                alt: ""
+              }
+            })
+          ]),
           _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c(
-            "p",
-            { staticClass: "mb-0" },
-            [
+          _c("div", { staticClass: "w-100" }, [
+            _c("span", [_vm._v("User")]),
+            _vm._v(" "),
+            _c("hr", { staticClass: "my-1" }),
+            _vm._v(" "),
+            _c("ul", { staticClass: "list-inline mb-0" }, [
               _c(
-                "router-link",
-                {
-                  staticClass:
-                    "btn btn-lg btn-light d-block d-sm-inline-block rounded-0 px-5 mx-2 mb-3 mb-sm-0",
-                  attrs: { to: "/dashboard" }
-                },
+                "li",
+                { staticClass: "list-inline-item" },
                 [
-                  _c("i", {
-                    staticClass: "fa fa-th-large",
-                    attrs: { "aria-hidden": "true" }
-                  }),
-                  _vm._v(" Dashboard")
-                ]
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "text-white",
+                      attrs: { to: "/user/profile", title: "Profile" }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-home",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]
+                  )
+                ],
+                1
               ),
               _vm._v(" "),
               _c(
-                "router-link",
-                {
-                  staticClass:
-                    "btn btn-lg btn-outline-light d-block d-sm-inline-block rounded-0 px-5 mx-2 mb-3 mb-sm-0",
-                  attrs: { to: "/sign-in" }
-                },
+                "li",
+                { staticClass: "list-inline-item" },
                 [
-                  _c("i", {
-                    staticClass: "fa fa-sign-in",
-                    attrs: { "aria-hidden": "true" }
-                  }),
-                  _vm._v(" Sign in")
-                ]
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "text-white",
+                      attrs: {
+                        to: "/user/change-password",
+                        title: "Change Password"
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-key",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "list-inline-item" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "text-white",
+                      attrs: { to: "/user/settings", title: "Settings" }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-cog",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "list-inline-item" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "text-white",
+                      attrs: { to: "/", title: "Sign out", exact: "" }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-sign-out",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]
+                  )
+                ],
+                1
               )
-            ],
-            1
+            ])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "navmenu-nav" },
+        [
+          _c(
+            "router-link",
+            {
+              staticClass: "nav-item nav-item-hover nav-link",
+              attrs: { to: "/user/profile" }
+            },
+            [
+              _c("i", {
+                staticClass: "fa fa-user mr-2",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" Profile")
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass:
+                "nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between",
+              attrs: { to: "/user/notifications" }
+            },
+            [
+              _c("span", [
+                _c("i", {
+                  staticClass: "fa fa-bell mr-2",
+                  attrs: { "aria-hidden": "true" }
+                }),
+                _vm._v("\n        Notifications\n      ")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "badge badge-info" }, [_vm._v("10")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass:
+                "nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between",
+              attrs: { to: "/user/messages" }
+            },
+            [
+              _c("span", [
+                _c("i", {
+                  staticClass: "fa fa-envelope mr-2",
+                  attrs: { "aria-hidden": "true" }
+                }),
+                _vm._v("\n        Messages\n      ")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "badge badge-info" }, [_vm._v("15")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "nav-item nav-item-hover nav-link",
+              attrs: { to: "/user/change-password" }
+            },
+            [
+              _c("i", {
+                staticClass: "fa fa-key mr-2",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" Change password")
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "nav-item nav-item-hover nav-link",
+              attrs: { to: "/user/settings" }
+            },
+            [
+              _c("i", {
+                staticClass: "fa fa-cogs mr-2",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" Settings")
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "nav-item nav-item-hover nav-link",
+              attrs: { to: "/", exact: "" }
+            },
+            [
+              _c("i", {
+                staticClass: "fa fa-sign-out mr-2",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" Sign out")
+            ]
           )
-        ])
-      ]),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "navmenu-divider" }),
+      _vm._v(" "),
+      _vm._m(0),
       _vm._v(" "),
       _c(
-        "svg",
+        "div",
         {
-          attrs: {
-            viewBox: "0 0 1280 70",
-            preserveAspectRatio: "none",
-            id: "homeHeaderCurve",
-            role: "presentation",
-            "aria-hidden": "true"
-          }
+          staticClass: "collapse navmenu-collapse",
+          attrs: { id: "AdminSidebar" }
         },
-        [_c("polygon", { attrs: { points: "1280 0 1280 70 0 70" } })]
+        [
+          _c("div", { staticClass: "mt-3 mt-md-0" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "navmenu-divider d-md-none" }),
+          _vm._v(" "),
+          _c("h6", { staticClass: "navmenu-header" }, [_vm._v("Navs")]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "navmenu-nav" },
+            [
+              _vm._l(_vm.menuitems, function(item, index) {
+                return [
+                  !item.childType && !item.childItem
+                    ? _c(
+                        "router-link",
+                        {
+                          staticClass: "nav-item nav-item-hover nav-link",
+                          attrs: { to: item.link, exact: "" }
+                        },
+                        [
+                          _c("i", {
+                            class: item.icon + " mr-2",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(
+                            "\n            " +
+                              _vm._s(item.name) +
+                              "\n          "
+                          )
+                        ]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  item.childType && item.childItem
+                    ? [
+                        item.childType == "collapse"
+                          ? [
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "nav-item nav-item-hover nav-link nav-link-collapse collapsed",
+                                  attrs: {
+                                    href: "javascript:void(0)",
+                                    "data-toggle": "collapse",
+                                    "data-target":
+                                      "#NavmenuNavSidebarCollapse-" + index,
+                                    "aria-expanded": "false",
+                                    "aria-controls":
+                                      "NavmenuNavSidebarCollapse-" + index
+                                  }
+                                },
+                                [
+                                  _c("span", [
+                                    _c("i", {
+                                      class: item.icon + " mr-2",
+                                      attrs: { "aria-hidden": "true" }
+                                    }),
+                                    _vm._v(
+                                      "\n                  " +
+                                        _vm._s(item.name) +
+                                        "\n                "
+                                    )
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "collapse",
+                                  attrs: {
+                                    id: "NavmenuNavSidebarCollapse-" + index
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticStyle: {
+                                        "border-left": "4px solid #eee"
+                                      }
+                                    },
+                                    [
+                                      _vm._l(item.childItem, function(child) {
+                                        return [
+                                          _c(
+                                            "router-link",
+                                            {
+                                              staticClass:
+                                                "nav-item nav-link nav-link-sm small",
+                                              attrs: {
+                                                to: child.link,
+                                                exact: ""
+                                              }
+                                            },
+                                            [
+                                              _c("i", {
+                                                class: child.icon + " mr-2",
+                                                attrs: { "aria-hidden": "true" }
+                                              }),
+                                              _vm._v(
+                                                "\n                      " +
+                                                  _vm._s(child.name) +
+                                                  "\n                    "
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      })
+                                    ],
+                                    2
+                                  )
+                                ]
+                              )
+                            ]
+                          : _vm._e(),
+                        _vm._v(" "),
+                        item.childType == "dropdown"
+                          ? [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "nav-item nav-item-hover dropdown"
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link dropdown-toggle",
+                                      attrs: {
+                                        href: "javascript:void(0)",
+                                        id:
+                                          "NavmenuNavSidebarDropdown-" + index,
+                                        "data-toggle": "dropdown",
+                                        "aria-haspopup": "true",
+                                        "aria-expanded": "false"
+                                      }
+                                    },
+                                    [
+                                      _c("i", {
+                                        class: item.icon + " mr-2",
+                                        attrs: { "aria-hidden": "true" }
+                                      }),
+                                      _vm._v(
+                                        "\n                  " +
+                                          _vm._s(item.name) +
+                                          "\n                "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "dropdown-menu",
+                                      attrs: {
+                                        "aria-labelledby":
+                                          "NavmenuNavSidebarDropdown-" + index
+                                      }
+                                    },
+                                    [
+                                      _vm._l(item.childItem, function(child) {
+                                        return [
+                                          _c(
+                                            "router-link",
+                                            {
+                                              staticClass: "dropdown-item",
+                                              attrs: {
+                                                to: child.link,
+                                                exact: ""
+                                              }
+                                            },
+                                            [
+                                              _c("i", {
+                                                class: child.icon + " mr-2",
+                                                attrs: { "aria-hidden": "true" }
+                                              }),
+                                              _vm._v(
+                                                "\n                      " +
+                                                  _vm._s(child.name) +
+                                                  "\n                    "
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      })
+                                    ],
+                                    2
+                                  )
+                                ]
+                              )
+                            ]
+                          : _vm._e(),
+                        _vm._v(" "),
+                        item.childType == "dropup"
+                          ? [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "nav-item nav-item-hover dropup"
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link dropdown-toggle",
+                                      attrs: {
+                                        href: "javascript:void(0)",
+                                        id: "NavmenuNavSidebarDropup-" + index,
+                                        "data-toggle": "dropdown",
+                                        "aria-haspopup": "true",
+                                        "aria-expanded": "false"
+                                      }
+                                    },
+                                    [
+                                      _c("i", {
+                                        class: item.icon + " mr-2",
+                                        attrs: { "aria-hidden": "true" }
+                                      }),
+                                      _vm._v(
+                                        "\n                  " +
+                                          _vm._s(item.name) +
+                                          "\n                "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "dropdown-menu",
+                                      attrs: {
+                                        "aria-labelledby":
+                                          "NavmenuNavSidebarDropup-" + index
+                                      }
+                                    },
+                                    [
+                                      _vm._l(item.childItem, function(child) {
+                                        return [
+                                          _c(
+                                            "router-link",
+                                            {
+                                              staticClass: "dropdown-item",
+                                              attrs: {
+                                                to: child.link,
+                                                exact: ""
+                                              }
+                                            },
+                                            [
+                                              _c("i", {
+                                                class: child.icon + " mr-2",
+                                                attrs: { "aria-hidden": "true" }
+                                              }),
+                                              _vm._v(
+                                                "\n                      " +
+                                                  _vm._s(child.name) +
+                                                  "\n                    "
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      })
+                                    ],
+                                    2
+                                  )
+                                ]
+                              )
+                            ]
+                          : _vm._e()
+                      ]
+                    : _vm._e()
+                ]
+              })
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "navmenu-divider" }),
+          _vm._v(" "),
+          _c("h6", { staticClass: "navmenu-header" }, [_vm._v("Form")]),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "navmenu-divider" }),
+          _vm._v(" "),
+          _c("h6", { staticClass: "navmenu-header" }, [_vm._v("Button")]),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _c("div", { staticClass: "navmenu-divider" }),
+          _vm._v(" "),
+          _c("h6", { staticClass: "navmenu-header" }, [_vm._v("Text")]),
+          _vm._v(" "),
+          _vm._m(3)
+        ]
       )
-    ]),
-    _vm._v(" "),
-    _c("section", { staticClass: "home-section-1" }, [
-      _vm._m(2),
-      _vm._v(" "),
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 1280 70",
-            preserveAspectRatio: "none",
-            id: "homeSection1Curve",
-            role: "presentation",
-            "aria-hidden": "true"
-          }
-        },
-        [_c("polygon", { attrs: { points: "1280 0 1280 70 0 70" } })]
-      )
-    ]),
-    _vm._v(" "),
-    _c("section", { staticClass: "home-section-2" }, [
-      _vm._m(3),
-      _vm._v(" "),
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 1280 70",
-            preserveAspectRatio: "none",
-            id: "homeSection2Curve",
-            role: "presentation",
-            "aria-hidden": "true"
-          }
-        },
-        [_c("polygon", { attrs: { points: "1280 0 1280 70 0 70" } })]
-      )
-    ]),
-    _vm._v(" "),
-    _c("section", { staticClass: "home-section-3" }, [
-      _vm._m(4),
-      _vm._v(" "),
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 1280 70",
-            preserveAspectRatio: "none",
-            id: "homeSection3Curve",
-            role: "presentation",
-            "aria-hidden": "true"
-          }
-        },
-        [_c("polygon", { attrs: { points: "1280 0 1280 70 0 70" } })]
-      )
-    ]),
-    _vm._v(" "),
-    _vm._m(5),
-    _vm._v(" "),
-    _vm._m(6)
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass: "navbar-toggler",
-        attrs: {
-          type: "button",
-          "data-toggle": "collapse",
-          "data-target": "#navbar",
-          "aria-controls": "navbar",
-          "aria-expanded": "false",
-          "aria-label": "Toggle navigation"
-        }
-      },
-      [_c("span", { staticClass: "navbar-toggler-icon" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "home-header-description mb-5" }, [
-      _vm._v(
-        "Tanara adalah sebuah kecamatan di Kabupaten Serang, Provinsi Banten, Indonesia. Daerah ini sangat terkenal karena ulama besar, "
-      ),
-      _c("strong", [_vm._v("Syaikh Nawawi al-Bantani")]),
-      _vm._v(
-        ", guru bagi para ulama Indonesia dan guru besar di Mekkah, lahir di sini."
+    return _c("div", { staticClass: "navmenu-content navmenu-toggler" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-outline-light btn-block",
+          attrs: {
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#AdminSidebar",
+            "aria-controls": "AdminSidebar",
+            "aria-expanded": "false",
+            "aria-label": "Toggle navigation"
+          }
+        },
+        [_vm._v("Toggle navigation")]
       )
     ])
   },
@@ -280,13 +927,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h2", [_vm._v("Wilayah")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "lead" }, [
-        _vm._v(
-          "Terletak disekitar Sungai Cidurian yang bermuara ke Laut Jawa. Pada tahun 2010 wilayah ini terbagi menjadi beberapa desa."
-        )
+    return _c("div", { staticClass: "navmenu-content" }, [
+      _c("form", [
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            placeholder: "Search for...",
+            "aria-label": "Search for..."
+          }
+        })
       ])
     ])
   },
@@ -294,276 +944,38 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h2", [_vm._v("Ulama")]),
-      _vm._v(" "),
-      _c("p", { staticClass: "lead" }, [
-        _vm._v("Karena kemasyhurannya, "),
-        _c("strong", [_vm._v("Syekh Nawawi al-Bantani")]),
-        _vm._v(
-          " kemudian dijuluki Sayyid Ulama al-Hijaz (Pemimpin Ulama Hijaz), al-Imam al-Muhaqqiq wa al-Fahhamah al-Mudaqqiq (Imam yang Mumpuni ilmunya), A'yan Ulama al-Qarn al-Ram Asyar li al-Hijrah (Tokoh Ulama Abad 14 Hijriyah), hingga Imam Ulama al-Haramain, (Imam 'Ulama Dua Kota Suci)."
-        )
-      ]),
-      _vm._v(" "),
-      _c("img", {
-        staticClass: "img-fluid",
-        attrs: {
-          src: "/images/lukisan-syekh-nawawi-al-bantani-oleh-kang-alam.jpg",
-          alt: "Syekh Nawawi al-Bantani"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h2", [_vm._v("Talk Less Do More")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-4 mb-3" }, [
-          _c("div", { staticClass: "card text-white bg-primary h-100" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h5", { staticClass: "card-title" }, [
-                _vm._v("Primary card title")
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "card-text" }, [
-                _vm._v(
-                  "Some quick example text to build on the card title and make up the bulk of the card's content."
-                )
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-sm-4 mb-3" }, [
-          _c("div", { staticClass: "card text-white bg-success h-100" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h5", { staticClass: "card-title" }, [
-                _vm._v("Success card title")
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "card-text" }, [
-                _vm._v(
-                  "Some quick example text to build on the card title and make up the bulk of the card's content."
-                )
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-sm-4 mb-3" }, [
-          _c("div", { staticClass: "card text-white bg-warning h-100" }, [
-            _c("div", { staticClass: "card-body" }, [
-              _c("h5", { staticClass: "card-title" }, [
-                _vm._v("Info card title")
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "card-text" }, [
-                _vm._v(
-                  "Some quick example text to build on the card title and make up the bulk of the card's content."
-                )
-              ])
-            ])
-          ])
+    return _c(
+      "div",
+      { staticClass: "navmenu-content d-flex flex-wrap flex-column" },
+      [
+        _c("div", { staticClass: "btn-group" }, [
+          _c(
+            "a",
+            { staticClass: "btn btn-secondary w-100", attrs: { href: "#" } },
+            [_vm._v("Action One")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            { staticClass: "btn btn-secondary w-100", attrs: { href: "#" } },
+            [_vm._v("Action Two")]
+          )
         ])
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "footer" }, [
-      _c("div", { staticClass: "container mt-5" }, [
-        _c("div", { staticClass: "row mb-4" }, [
-          _c("div", { staticClass: "col-md-3 mb-3" }, [
-            _c("h4", { staticClass: "footer-title" }, [_vm._v("Title One")]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "footer-nav" }, [
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 mb-3" }, [
-            _c("h4", { staticClass: "footer-title" }, [_vm._v("Title Two")]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "footer-nav" }, [
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 mb-3" }, [
-            _c("h4", { staticClass: "footer-title" }, [_vm._v("Title Three")]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "footer-nav" }, [
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "footer-nav-item" }, [
-                _c(
-                  "a",
-                  { staticClass: "footer-nav-link", attrs: { href: "#" } },
-                  [_vm._v("Footer link")]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 mb-3" }, [
-            _c("h4", { staticClass: "footer-title" }, [_vm._v("Title Four")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-              )
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "footer" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("ul", { staticClass: "footer-links text-center" }, [
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Link 1")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Link 2")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Link 3")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Link 4")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Link 5")])])
+    return _c("div", { staticClass: "navmenu-content" }, [
+      _c("blockquote", { staticClass: "blockquote text-white mb-0" }, [
+        _c("p", { staticClass: "small mb-0" }, [
+          _vm._v("Ideas are cheap, execution is everything.")
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "footer-description text-center" }, [
-          _c("p", [
-            _c("i", {
-              staticClass: "fa fa-code",
-              attrs: { "aria-hidden": "true" }
-            }),
-            _vm._v(" with "),
-            _c("i", {
-              staticClass: "fa fa-heart",
-              attrs: { "aria-hidden": "true" }
-            }),
-            _vm._v(" by "),
-            _c("a", { attrs: { href: "https://github.com/bantenprov" } }, [
-              _vm._v("@bantenprov")
-            ])
-          ])
+        _c("footer", { staticClass: "blockquote-footer text-light" }, [
+          _vm._v("Chris Sacca")
         ])
       ])
     ])
@@ -575,7 +987,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-03a755c4", esExports)
+    require("vue-hot-reload-api")      .rerender("data-v-00467796", esExports)
   }
 }
 

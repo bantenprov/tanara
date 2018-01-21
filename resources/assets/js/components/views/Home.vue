@@ -3,7 +3,7 @@
     <div class="home-header">
       <div class="container">
   	    <nav class="home-header-navbar navbar navbar-expand-lg navbar-dark bg-transparent">
-          <router-link class="navbar-brand d-flex flex-row align-items-center text-uppercase" to="/">
+          <router-link class="navbar-brand d-flex flex-row align-items-center text-uppercase" to="/" exact>
             <img class="mr-2" src="/images/logo.png" width="36" height="36">
             <span>Tanara</span>
           </router-link>
