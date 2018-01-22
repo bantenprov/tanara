@@ -1,17 +1,11 @@
 <template>
-  <line-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </line-chart>
+
+  <chartjs-line :data="datacollection" :options="chartoptions"></chartjs-line>
+
 </template>
 
 <script>
-import LineChart from './js/LineChart.js';
-
 export default {
-  components: {
-    'line-chart': LineChart
-  },
   data () {
     return {
       datacollection: {

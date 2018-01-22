@@ -198,29 +198,62 @@ let routes = [
   },
   {
     path: '/demo',
-    redirect: '/demo/chartjs',
+    redirect: '/demo/vue-form',
     component: layout('Default'),
     children: [
       {
-        path: '/demo/chartjs',
+        path: '/demo/vue-form',
         components: {
-          main: resolve => require(['./components/views/DemoChartjs.vue'], resolve),
+          main: resolve => require(['./components/views/DemoVueForm.vue'], resolve),
           navbar: resolve => require(['./components/Navbar.vue'], resolve),
           sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
         },
         meta: {
-          title: "Chart.js"
+          title: "Vue form"
         }
       },
       {
-        path: '/demo/echarts',
+        path: '/demo/vue-select',
         components: {
-          main: resolve => require(['./components/views/DemoEcharts.vue'], resolve),
+          main: resolve => require(['./components/views/DemoVueSelect.vue'], resolve),
           navbar: resolve => require(['./components/Navbar.vue'], resolve),
           sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
         },
         meta: {
-          title: "ECharts"
+          title: "Vue select"
+        }
+      },
+      {
+        path: '/demo/vue-datepicker',
+        components: {
+          main: resolve => require(['./components/views/DemoVueDatepicker.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue date picker"
+        }
+      },
+      {
+        path: '/demo/vue-chartjs',
+        components: {
+          main: resolve => require(['./components/views/DemoVueChartjs.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue Chart.js"
+        }
+      },
+      {
+        path: '/demo/vue-echarts',
+        components: {
+          main: resolve => require(['./components/views/DemoVueEcharts.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue ECharts"
         }
       },
       {
@@ -232,6 +265,17 @@ let routes = [
         },
         meta: {
           title: "Vue Tables"
+        }
+      },
+      {
+        path: '/demo/mini-toastr',
+        components: {
+          main: resolve => require(['./components/views/DemoMiniToastr.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Mini toastr"
         }
       }
     ]

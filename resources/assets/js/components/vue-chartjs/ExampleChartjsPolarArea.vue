@@ -1,17 +1,11 @@
 <template>
-  <polararea-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </polararea-chart>
+
+  <chartjs-polar-area :data="datacollection" :options="chartoptions"></chartjs-polar-area>
+
 </template>
 
 <script>
-import PolarAreaChart from './js/PolarAreaChart.js';
-
 export default {
-  components: {
-    'polararea-chart': PolarAreaChart
-  },
   data () {
     return {
       datacollection: {

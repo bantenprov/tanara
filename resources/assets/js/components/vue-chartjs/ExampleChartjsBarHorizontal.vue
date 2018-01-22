@@ -1,17 +1,11 @@
 <template>
-  <horizontalbar-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </horizontalbar-chart>
+
+  <chartjs-bar-horizontal :data="datacollection" :options="chartoptions"></chartjs-bar-horizontal>
+
 </template>
 
 <script>
-import HorizontalBarChart from './js/HorizontalBarChart.js';
-
 export default {
-  components: {
-    'horizontalbar-chart': HorizontalBarChart
-  },
   data () {
     return {
       datacollection: {

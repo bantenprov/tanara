@@ -1,17 +1,11 @@
 <template>
-  <doughnut-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </doughnut-chart>
+
+  <chartjs-doughnut :data="datacollection" :options="chartoptions"></chartjs-doughnut>
+
 </template>
 
 <script>
-import DoughnutChart from './js/DoughnutChart.js';
-
 export default {
-  components: {
-    'doughnut-chart': DoughnutChart
-  },
   data () {
     return {
       datacollection: {

@@ -1,17 +1,11 @@
 <template>
-  <bubble-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </bubble-chart>
+
+  <chartjs-bubble :data="datacollection" :options="chartoptions"></chartjs-bubble>
+
 </template>
 
 <script>
-import BubbleChart from './js/BubbleChart.js';
-
 export default {
-  components: {
-    'bubble-chart': BubbleChart
-  },
   data () {
     return {
       datacollection: {

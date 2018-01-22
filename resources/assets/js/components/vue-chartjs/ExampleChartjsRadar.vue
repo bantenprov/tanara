@@ -1,17 +1,11 @@
 <template>
-  <radar-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </radar-chart>
+
+  <chartjs-radar :data="datacollection" :options="chartoptions"></chartjs-radar>
+
 </template>
 
 <script>
-import RadarChart from './js/RadarChart.js';
-
 export default {
-  components: {
-    'radar-chart': RadarChart
-  },
   data () {
     return {
       datacollection: {

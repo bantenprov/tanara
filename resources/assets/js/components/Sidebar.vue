@@ -79,23 +79,23 @@
                 </a>
                 <div class="collapse" :id="'NavmenuNavSidebarCollapse-' + index">
                   <div style="border-left: 4px solid #eee;">
-                    <template v-for="child in item.childItem">
+                    <template v-for="(child, i) in item.childItem">
                       <router-link v-if="!child.child" class="nav-item nav-link nav-link-sm small" :to="child.link" exact>
                         <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
                         {{ child.name }}
                       </router-link>
                       <!---->
                       <template v-if="child.child">
-                        <a class="nav-item nav-link nav-link-sm small nav-link-collapse nav-link-collapse-small collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#NavmenuNavSidebarCollapse2-' + index" aria-expanded="false" :aria-controls="'NavmenuNavSidebarCollapse2-' + index">
+                        <a class="nav-item nav-link nav-link-sm small nav-link-collapse nav-link-collapse-small collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#NavmenuNavSidebarCollapse2-' + i" aria-expanded="false" :aria-controls="'NavmenuNavSidebarCollapse2-' + i">
                           <span>
                             <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
                             {{ child.name }}
                           </span>
                         </a>
-                        <div class="collapse" :id="'NavmenuNavSidebarCollapse2-' + index">
-                          <div style="border-left: 6px solid #007bff;">
+                        <div class="collapse" :id="'NavmenuNavSidebarCollapse2-' + i">
+                          <div>
                             <template v-for="child2 in child.child">
-                              <router-link class="nav-item nav-link nav-link-sm small" :to="child2.link" exact>
+                              <router-link class="nav-item nav-link nav-link-sm small pl-5" :to="child2.link" exact>
                                 <i :class="child2.icon + ' mr-2'" aria-hidden="true"></i>
                                 {{ child2.name }}
                               </router-link>
@@ -213,9 +213,9 @@
 
       <h6 class="navmenu-header">Text</h6>
       <div class="navmenu-content">
-        <blockquote class="blockquote text-white mb-0">
+        <blockquote class="blockquote text-muted mb-0">
           <p class="small mb-0">Ideas are cheap, execution is everything.</p>
-          <footer class="blockquote-footer text-light">Chris Sacca</footer>
+          <footer class="blockquote-footer text-muted">Chris Sacca</footer>
         </blockquote>
       </div>
     </div><!-- /.navmenu-collapse -->

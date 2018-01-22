@@ -1,19 +1,14 @@
 <template>
   <div>
-    <datatable title="Vue tables with AJAX" :rows="rowdata" :columns="columndata"></datatable>
+
+    <vue-tables title="Vue tables with AJAX" :rows="rowdata" :columns="columndata"></vue-tables>
+
   </div>
 </template>
+
 <script>
-import Vue from 'vue';
-import {ServerTable, ClientTable, Event} from 'vue-tables-2';
-import datatable from './Theme.vue';
-Vue.use(ServerTable, {}, false);
-Vue.use(ClientTable, {}, false);
 export default {
-  components: {
-    datatable
-  },
-  data() {
+  data () {
     return {
       columndata: [
         {

@@ -1,17 +1,11 @@
 <template>
-  <bar-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </bar-chart>
+
+  <chartjs-bar :data="datacollection" :options="chartoptions"></chartjs-bar>
+
 </template>
 
 <script>
-import BarChart from './js/BarChart.js';
-
 export default {
-  components: {
-    'bar-chart': BarChart
-  },
   data () {
     return {
       datacollection: {

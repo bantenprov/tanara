@@ -5,12 +5,7 @@
 </template>
 
 <script>
-import IEcharts from 'vue-echarts-v3/src/full.js';
-
 export default {
-  components: {
-    IEcharts
-  },
   data () {
     return {
       bar: {

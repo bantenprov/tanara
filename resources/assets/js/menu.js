@@ -24,30 +24,55 @@ const MenuItems = [
     ]
   },
   {
-    name: 'Charts demo',
-    icon: 'fa fa-bar-chart',
+    name: 'Demos',
+    icon: 'fa fa-play-circle',
     childType: 'collapse',
     childItem: [
       {
-        name: 'Chart.js',
-        link: '/demo/chartjs',
-        icon: 'fa fa-angle-double-right'
+        name: 'Forms',
+        icon: 'fa fa-angle-double-right',
+        child: [
+          {
+            name: 'Vue form',
+            link: '/demo/vue-form',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'Vue select',
+            link: '/demo/vue-select',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'Vue date picker',
+            link: '/demo/vue-datepicker',
+            icon: 'fa fa-angle-right'
+          },
+        ]
       },
       {
-        name: 'ECharts',
-        link: '/demo/echarts',
-        icon: 'fa fa-angle-double-right'
-      }
-    ]
-  },
-  {
-    name: 'Tables demo',
-    icon: 'fa fa-table',
-    childType: 'collapse',
-    childItem: [
+        name: 'Charts',
+        icon: 'fa fa-angle-double-right',
+        child: [
+          {
+            name: 'Vue Chart.js',
+            link: '/demo/vue-chartjs',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'Vue ECharts',
+            link: '/demo/vue-echarts',
+            icon: 'fa fa-angle-right'
+          }
+        ]
+      },
       {
         name: 'Vue tables',
         link: '/demo/vue-tables',
+        icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Mini toastr',
+        link: '/demo/mini-toastr',
         icon: 'fa fa-angle-double-right'
       }
     ]

@@ -1,17 +1,11 @@
 <template>
-  <pie-chart
-    :data="datacollection"
-    :options="chartoptions">
-  </pie-chart>
+
+  <chartjs-pie :data="datacollection" :options="chartoptions"></chartjs-pie>
+
 </template>
 
 <script>
-import PieChart from './js/PieChart.js';
-
 export default {
-  components: {
-    'pie-chart': PieChart
-  },
   data () {
     return {
       datacollection: {

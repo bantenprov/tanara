@@ -5,18 +5,13 @@
 </template>
 
 <script>
-import IEcharts from 'vue-echarts-v3/src/full.js';
-
 export default {
-  components: {
-    IEcharts
-  },
   data () {
     return {
-      loading: true,
+      loading: false,
       bar: {
         title: {
-          text: 'ECharts bar + Ajax',
+          text: '',
           x: 'center'
         },
         tooltip: {
@@ -49,9 +44,28 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('/json/echarts-bar-data-simple.json').then(response => {
-      this.bar.series[0].data = response.data[0].chartdata;
-      this.loading = false;
+    axios.get('/json/echarts-bar-data-interactive.json').then(response => {
+      var e = response.data;
+      var get = e[0].chartdata.tahun[0];
+
+      let i = 0;
+
+      this.bar.title.text = get[Object.keys(get)[0]][0].title;
+      this.bar.series[0].data = get[Object.keys(get)[0]][0].data;
+
+      setInterval(() => {
+        this.loading = true;
+        i++;
+        setTimeout(() => {
+          this.bar.title.text = get[Object.keys(get)[i]][0].title;
+          this.bar.series[0].data = get[Object.keys(get)[i]][0].data;
+          this.loading = false;
+        }, 10);
+
+        if(i ==  Object.keys(get).length) {
+          i = 0;
+        }
+      }, 3000);
     })
     .catch(function(error) {
       // error

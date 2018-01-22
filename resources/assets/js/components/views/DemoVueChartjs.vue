@@ -1,6 +1,13 @@
 <template>
   <div>
 
+    <div class="alert alert-info mb-5" role="alert">
+      <ul class="list-unstyled mb-0">
+        <li>Package name: <code>vue-chartjs</code></li>
+        <li>Link: <a class="alert-link" href="https://github.com/apertureless/vue-chartjs" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+
     <div class="card text-white bg-dark mb-3">
       <div class="card-header">Line chart</div>
       <div class="card-body">
@@ -18,7 +25,7 @@
     <div class="card mb-3">
       <div class="card-header">Horizontal bar chart</div>
       <div class="card-body">
-        <example-chartjs-horizontalbar></example-chartjs-horizontalbar>
+        <example-chartjs-bar-horizontal></example-chartjs-bar-horizontal>
       </div><!-- /.card-body -->
     </div><!-- /.card -->
 
@@ -54,7 +61,7 @@
         <div class="card text-white bg-warning mb-3">
           <div class="card-header">PolarArea chart</div>
           <div class="card-body">
-            <example-chartjs-polararea></example-chartjs-polararea>
+            <example-chartjs-polar-area></example-chartjs-polar-area>
           </div><!-- /.card-body -->
         </div><!-- /.card -->
       </div><!-- /col -->

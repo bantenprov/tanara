@@ -1,6 +1,13 @@
 <template>
   <div>
 
+    <div class="alert alert-info mb-5" role="alert">
+      <ul class="list-unstyled mb-0">
+        <li>Package name: <code>vue-echarts-v3</code></li>
+        <li>Link: <a class="alert-link" href="https://github.com/xlsdg/vue-echarts-v3" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+
     <div class="card mb-3">
       <div class="card-header">ECharts bar</div>
       <div class="card-body">
