@@ -53,3 +53,6 @@ Vue.component('example-vue-tables', ExampleVueTables);
 
 import ExampleVueTablesAjax from './components/vue-tables/ExampleVueTablesAjax.vue';
 Vue.component('example-vue-tables-ajax', ExampleVueTablesAjax);
+
+import ExampleVueTablesAjaxImage from './components/vue-tables/ExampleVueTablesAjaxImage.vue';
+Vue.component('example-vue-tables-ajax-image', ExampleVueTablesAjaxImage);
