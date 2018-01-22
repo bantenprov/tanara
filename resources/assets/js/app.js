@@ -7,6 +7,7 @@ import VueRouter from 'vue-router';
 import TableComponent from 'vue-table-component';
 import VueCharts from 'vue-chartjs';
 import miniToastr from 'mini-toastr';
+import Datepicker from 'vuejs-datepicker';
 
 import routes from './routes';
 import './components';
