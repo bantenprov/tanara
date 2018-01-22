@@ -19,6 +19,7 @@
     "jquery": "^3.2.1",
     "laravel-mix": "^1.7.2",
     "lodash": "^4.17.4",
+    "mini-toastr": "^0.7.2",
     "moment": "^2.20.1",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.0.10",

@@ -6,6 +6,7 @@ import lodash from 'lodash';
 import VueRouter from 'vue-router';
 import TableComponent from 'vue-table-component';
 import VueCharts from 'vue-chartjs';
+import miniToastr from 'mini-toastr';
 
 import routes from './routes';
 import './components';
@@ -17,8 +18,10 @@ window._ = lodash;
 
 window.axios.defaults.headers.common = {
   // 'X-Requested-With': 'XMLHttpRequest'
-
 };
+
+
+miniToastr.init();
 
 
 const router = new VueRouter({
