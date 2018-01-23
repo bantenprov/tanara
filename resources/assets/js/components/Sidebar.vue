@@ -1,29 +1,14 @@
 <template>
-  <nav class="navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 border-top-0 border-right-0 border-left-0" style="min-height: 100vh; height: 100%;">
-    <div class="navmenu-brand bg-info text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center">
+  <nav class="site-navmenu navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 border-top-0 border-right-0 border-left-0">
+    <div class="navmenu-brand text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center" style="background-color: rgba(0,0,0,.1);">
       <router-link to="/user/profile"><img class="mr-3" src="/images/avatar.png" width="64" height="64" alt=""></router-link>
       <div class="w-100">
         <span>User</span>
-        <hr class="my-1">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">
-            <router-link class="text-white" to="/user/profile" title="Profile">
-              <i class="fa fa-home" aria-hidden="true"></i>
-            </router-link>
-          </li>
-          <li class="list-inline-item">
-            <router-link class="text-white" to="/user/change-password" title="Change Password">
-              <i class="fa fa-key" aria-hidden="true"></i>
-            </router-link>
-          </li>
-          <li class="list-inline-item">
-            <router-link class="text-white" to="/user/settings" title="Settings">
-              <i class="fa fa-cog" aria-hidden="true"></i>
-            </router-link>
-          </li>
+        <hr class="my-1" style="background-color: rgba(255,255,255,.1);">
+        <ul class="list-inline small mb-0">
           <li class="list-inline-item">
             <router-link class="text-white" to="/" title="Sign out" exact>
-              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Sign out
             </router-link>
           </li>
         </ul>
@@ -48,7 +33,6 @@
       </router-link>
       <router-link class="nav-item nav-item-hover nav-link" to="/user/change-password"><i class="fa fa-key mr-2" aria-hidden="true"></i> Change password</router-link>
       <router-link class="nav-item nav-item-hover nav-link" to="/user/settings"><i class="fa fa-cogs mr-2" aria-hidden="true"></i> Settings</router-link>
-      <router-link class="nav-item nav-item-hover nav-link" to="/" exact><i class="fa fa-sign-out mr-2" aria-hidden="true"></i> Sign out</router-link>
     </div><!-- /.navmenu-nav -->
 
     <div class="navmenu-divider"></div>

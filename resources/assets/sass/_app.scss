@@ -676,3 +676,14 @@ body {
     text-align: center;
   }
 }
+
+//
+// Default layout styles
+//
+
+@include media-breakpoint-up(md) {
+  .site-navmenu {
+    min-height: 100vh;
+    height: 100%;
+  }
+}
