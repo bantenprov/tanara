@@ -1,5 +1,5 @@
 <template>
-  <nav class="navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 border-top-0 border-right-0 border-left-0">
+  <nav class="navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 border-top-0 border-right-0 border-left-0" style="min-height: 100vh; height: 100%;">
     <div class="navmenu-brand bg-info text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center">
       <router-link to="/user/profile"><img class="mr-3" src="/images/avatar.png" width="64" height="64" alt=""></router-link>
       <div class="w-100">
