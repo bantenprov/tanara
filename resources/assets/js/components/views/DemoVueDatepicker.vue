@@ -8,7 +8,11 @@
       </ul>
     </div>
 
-    <datepicker></datepicker>
+    <datepicker
+      input-class="form-control"
+      name="datepicker-example"
+      placeholder="Select Date">
+    </datepicker>
 
   </div>
 </template>
