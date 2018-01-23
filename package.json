@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "axios": "^0.15.3",
+    "bootstrap": "^4.0.0",
     "chart.js": "^2.7.1",
     "cross-env": "^3.2.3",
     "css-loader": "^0.28.9",
@@ -41,7 +42,6 @@
     "webpack": "^3.10.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.3",
     "vue-router": "^2.3.0"
   }
 }
