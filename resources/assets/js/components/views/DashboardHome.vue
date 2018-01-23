@@ -3,7 +3,7 @@
 
     <div class="row">
       <div class="col-md-4 mb-3">
-        <div class="card card-media text-white bg-primary">
+        <a href="#" class="card card-media text-white bg-primary">
           <div class="card-body">
             <div class="media">
               <i class="fa fa-user fa-card-media-avatar mr-3" aria-hidden="true"></i>
@@ -13,10 +13,10 @@
               </div>
             </div>
           </div><!-- /.card-body -->
-        </div><!-- /.card -->
+        </a><!-- /.card -->
       </div><!-- /col -->
       <div class="col-md-4 mb-3">
-        <div class="card card-media text-white bg-success">
+        <a href="#" class="card card-media text-white bg-success">
           <div class="card-body">
             <div class="media">
               <i class="fa fa-comments fa-card-media-avatar mr-3" aria-hidden="true"></i>
@@ -26,10 +26,10 @@
               </div>
             </div>
           </div><!-- /.card-body -->
-        </div><!-- /.card -->
+        </a><!-- /.card -->
       </div><!-- /col -->
       <div class="col-md-4 mb-3">
-        <div class="card card-media text-white bg-warning">
+        <a href="#" class="card card-media text-white bg-warning">
           <div class="card-body">
             <div class="media">
               <i class="fa fa-calendar fa-card-media-avatar mr-3" aria-hidden="true"></i>
@@ -39,7 +39,7 @@
               </div>
             </div>
           </div><!-- /.card-body -->
-        </div><!-- /.card -->
+        </a><!-- /.card -->
       </div><!-- /col -->
     </div><!-- /.row -->
 
