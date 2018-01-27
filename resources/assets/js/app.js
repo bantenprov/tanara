@@ -10,6 +10,7 @@ import lodash from 'lodash';
 import debounce from 'lodash/debounce';
 import moment from 'moment';
 import Fuse from 'fuse.js';
+import VueProgressBar from 'vue-progressbar';
 import TableComponent from 'vue-table-component';
 import VueForm from 'vue-form';
 import vSelect from 'vue-select';
@@ -77,6 +78,20 @@ Vue.use(VueForm);
 Vue.use(TableComponent);
 Vue.use(ServerTable, {}, false);
 Vue.use(ClientTable, {}, false);
+
+Vue.use(VueProgressBar, {
+  color: '#77b6ff',
+  failedColor: '#bd2130',
+  thickness: '4px',
+  transition: {
+    speed: '0.2s',
+    opacity: '0.2s',
+    termination: 300
+  },
+  autoRevert: true,
+  location: 'top',
+  inverse: false
+})
 
 
 Vue.component('v-select', vSelect);
