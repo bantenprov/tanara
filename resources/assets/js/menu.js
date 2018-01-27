@@ -66,9 +66,20 @@ const MenuItems = [
         ]
       },
       {
-        name: 'Vue tables',
-        link: '/demo/vue-tables',
-        icon: 'fa fa-angle-double-right'
+        name: 'Tables',
+        icon: 'fa fa-angle-double-right',
+        child: [
+          {
+            name: 'Vue tables',
+            link: '/demo/vue-tables',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'Vue table',
+            link: '/demo/vue-table',
+            icon: 'fa fa-angle-right'
+          }
+        ]
       },
       {
         name: 'Mini toastr',

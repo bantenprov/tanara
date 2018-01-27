@@ -264,7 +264,18 @@ let routes = [
           sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
         },
         meta: {
-          title: "Vue Tables"
+          title: "Vue tables"
+        }
+      },
+      {
+        path: '/demo/vue-table',
+        components: {
+          main: resolve => require(['./components/views/DemoVueTable.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue table"
         }
       },
       {

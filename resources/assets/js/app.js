@@ -2,9 +2,11 @@ import 'bootstrap';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VueEvents from 'vue-events';
 import axios from 'axios';
 import lodash from 'lodash';
 import debounce from 'lodash/debounce';
+import moment from 'moment';
 import Fuse from 'fuse.js';
 import TableComponent from 'vue-table-component';
 import VueForm from 'vue-form';
@@ -25,6 +27,11 @@ import ChartjsRadarChart from './add-ons/vue-chartjs/RadarChart.js';
 
 import { ServerTable, ClientTable, Event } from 'vue-tables-2';
 import VueTablesTemplate from './add-ons/vue-tables/Template.vue';
+
+import VueTable from 'vuetable-2/src/components/Vuetable';
+import VueTablePagination from 'vuetable-2/src/components/VuetablePagination';
+import VueTablePaginationDropdown from 'vuetable-2/src/components/VueTablePaginationDropdown';
+import VueTablePaginationInfo from 'vuetable-2/src/components/VuetablePaginationInfo';
 
 import routes from './routes';
 import './components';
@@ -63,6 +70,7 @@ router.afterEach((to, from) => {
 
 
 Vue.use(VueRouter);
+Vue.use(VueEvents);
 Vue.use(VueForm);
 Vue.use(TableComponent);
 Vue.use(ServerTable, {}, false);
@@ -81,6 +89,10 @@ Vue.component('chartjs-polar-area', ChartjsPolarAreaChart);
 Vue.component('chartjs-radar', ChartjsRadarChart);
 Vue.component('IEcharts', IEcharts);
 Vue.component('vue-tables', VueTablesTemplate);
+Vue.component("vuetable", VueTable);
+Vue.component("vuetable-pagination", VueTablePagination);
+Vue.component("vuetable-pagination-dropdown", VueTablePaginationDropdown);
+Vue.component("vuetable-pagination-info", VueTablePaginationInfo);
 
 
 new Vue({

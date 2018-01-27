@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "axios": "^0.15.3",
+    "babel-preset-stage-2": "^6.24.1",
     "bootstrap": "^4.0.0",
     "chart.js": "^2.7.1",
     "cross-env": "^3.2.3",
@@ -31,6 +32,7 @@
     "vue-chartjs": "^3.1.0",
     "vue-echarts-lite": "^1.0.4",
     "vue-echarts-v3": "^1.0.19",
+    "vue-events": "^3.1.0",
     "vue-form": "^4.7.1",
     "vue-loader": "^13.7.0",
     "vue-router": "^2.8.1",
@@ -39,6 +41,7 @@
     "vue-tables-2": "^1.2.44",
     "vue-template-compiler": "^2.5.13",
     "vuejs-datepicker": "^0.9.24",
+    "vuetable-2": "^1.7.2",
     "vuex": "^3.0.1",
     "webpack": "^3.10.0"
   },
