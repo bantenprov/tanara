@@ -161,44 +161,5 @@
       </div><!-- /col -->
     </div><!-- /.row -->
 
-    <!-- ===================================================================== -->
-
-    <div id="carouselExampleControls" class="carousel slide mb-3" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="https://placehold.it/800x400/777/eee/?text=First+slide" alt="First slide">
-          <div class="carousel-caption">
-            <h5>Title</h5>
-            <p>Description.</p>
-            <p><a class="btn btn-primary">Action</a></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="https://placehold.it/800x400/777/eee/?text=Second+slide" alt="Second slide">
-          <div class="carousel-caption">
-            <h5>Title</h5>
-            <p>Description.</p>
-            <p><a class="btn btn-success">Action</a></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="https://placehold.it/800x400/777/eee/?text=Third+slide" alt="Third slide">
-          <div class="carousel-caption">
-            <h5>Title</h5>
-            <p>Description.</p>
-            <p><a class="btn btn-warning">Action</a></p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
   </div>
 </template>
