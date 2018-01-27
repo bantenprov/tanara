@@ -2,6 +2,9 @@
 
 Tanana is a starter theme for bantenprov laravel application, with supported vuejs
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/tanara/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/tanara/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/bantenprov/tanara/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/tanara/build-status/master)
+
 ## Install
 
 ### post release
