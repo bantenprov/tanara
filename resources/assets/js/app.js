@@ -1,3 +1,5 @@
+import App from './App.vue';
+
 import 'bootstrap';
 
 import Vue from 'vue';
@@ -96,5 +98,7 @@ Vue.component("vuetable-pagination-info", VueTablePaginationInfo);
 
 
 new Vue({
-  router
+  router,
+  template: '<App/>',
+  components: { App }
 }).$mount('#app')

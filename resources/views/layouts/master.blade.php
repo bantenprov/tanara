@@ -11,11 +11,7 @@
 </head>
 <body>
 
-    <div id="app">
-        <transition name="fade" mode="out-in">
-            <router-view></router-view>
-        </transition>
-    </div>
+    <div id="app"></div>
 
     <script async src="{{ asset('js/app.js') }}"></script>
 </body>
