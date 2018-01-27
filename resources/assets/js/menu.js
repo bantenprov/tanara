@@ -24,6 +24,49 @@ const MenuItems = [
     ]
   },
   {
+    name: 'Admin',
+    icon: 'fa fa-lock',
+    childType: 'collapse',
+    childItem: [
+      {
+        name: 'Dashboard',
+        link: '/admin',
+        icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Contents',
+        link: '/admin/contents',
+        icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Configurations',
+        link: '/admin/configurations',
+        icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Reports',
+        icon: 'fa fa-angle-double-right',
+        child: [
+          {
+            name: 'Reports',
+            link: '/admin/reports',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'System reports',
+            link: '/admin/reports/system-reports',
+            icon: 'fa fa-angle-right'
+          },
+          {
+            name: 'System logs',
+            link: '/admin/reports/system-logs',
+            icon: 'fa fa-angle-right'
+          }
+        ]
+      }
+    ]
+  },
+  {
     name: 'Demos',
     icon: 'fa fa-play-circle',
     childType: 'collapse',
@@ -85,49 +128,6 @@ const MenuItems = [
         name: 'Mini toastr',
         link: '/demo/mini-toastr',
         icon: 'fa fa-angle-double-right'
-      }
-    ]
-  },
-  {
-    name: 'Admin',
-    icon: 'fa fa-lock',
-    childType: 'collapse',
-    childItem: [
-      {
-        name: 'Dashboard',
-        link: '/admin',
-        icon: 'fa fa-angle-double-right'
-      },
-      {
-        name: 'Contents',
-        link: '/admin/contents',
-        icon: 'fa fa-angle-double-right'
-      },
-      {
-        name: 'Configurations',
-        link: '/admin/configurations',
-        icon: 'fa fa-angle-double-right'
-      },
-      {
-        name: 'Reports',
-        icon: 'fa fa-angle-double-right',
-        child: [
-          {
-            name: 'Reports',
-            link: '/admin/reports',
-            icon: 'fa fa-angle-right'
-          },
-          {
-            name: 'System reports',
-            link: '/admin/reports/system-reports',
-            icon: 'fa fa-angle-right'
-          },
-          {
-            name: 'System logs',
-            link: '/admin/reports/system-logs',
-            icon: 'fa fa-angle-right'
-          }
-        ]
       }
     ]
   }
