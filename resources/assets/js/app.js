@@ -43,6 +43,7 @@ import './components';
 window.Vue = Vue;
 window.axios = axios;
 window._ = lodash;
+window.Fuse = Fuse;
 window.miniToastr = miniToastr;
 window.vSelect = vSelect;
 window.Datepicker = Datepicker;

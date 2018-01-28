@@ -1,79 +1,79 @@
 <template>
-  <div class="card mb-3">
-    <div class="card-header">
-      <i class="fa fa-table" aria-hidden="true"></i> {{title}}
+  <div>
+
+    <div class="form-row mb-3">
+      <div class="col">
+        <input type="search" class="form-control mb-2" placeholder="Search" v-model="searchInput">
+      </div>
+      <div v-if="exportable" class="col-auto">
+        <a href="javascript:void(0)" class="btn btn-primary" v-if="this.exportable" @click="exportExcel" title="export excel">
+          <i class="fa fa-download"></i> Download
+        </a>
+      </div>
     </div>
-    <div class="card-body">
-      <div class="form-row mb-3">
-        <div class="col">
-          <input type="search" class="form-control mb-2" placeholder="Search data" v-model="searchInput">
-        </div>
-        <div class="col-auto">
-          <a href="javascript:void(0)" class="btn btn-primary" v-if="this.exportable" @click="exportExcel" title="export excel">
-            <i class="fa fa-download"></i> Download
-          </a>
-        </div>
-      </div>
-      <table ref="table" class="table table-striped table-responsive-sm">
-        <thead>
-          <tr>
-            <th
-              v-for="(column, index) in columns" @click="sort(index)"
-              :class="(sortable ? 'sortable' : '') + (sortColumn === index ? (sortType === 'desc' ? ' sorting-desc' : ' sorting-asc') : '')"
-              :style="{width: column.width ? column.width : 'auto'}">
-                <div class="d-flex flex-row justify-content-start align-items-center">
-                  {{column.label}} <i class="ml-2 fa" :class="(sortColumn === index ? (sortType === 'desc' ? ' fa-angle-down' : ' fa-angle-up') : '')"></i>
-                </div>
-            </th>
-            <slot name="thead-tr"></slot>
+    <table ref="table" :class="tableClass">
+      <thead>
+        <tr>
+          <th
+            v-for="(column, index) in columns" @click="sort(index)"
+            :class="(sortable ? 'sortable' : '') + (sortColumn === index ? (sortType === 'desc' ? ' sorting-desc' : ' sorting-asc') : '')"
+            :style="{width: column.width ? column.width : 'auto'}">
+              <div class="d-flex flex-row justify-content-start align-items-center">
+                {{column.label}} <i class="ml-2 fa" :class="(sortColumn === index ? (sortType === 'desc' ? ' fa-angle-down' : ' fa-angle-up') : '')"></i>
+              </div>
+          </th>
+          <slot name="thead-tr"></slot>
+        </tr>
+      </thead>
+        <tbody>
+          <tr v-for="(row, index) in paginated" @click="click(row, index)">
+            <template v-for="column in columns">
+              <td :class="column.numeric ? 'numeric' : ''" v-if="!column.html">
+                {{ collect(row,column.field) }}
+              </td>
+              <td :class="column.numeric ? 'numeric' : ''" v-html="collect(row, column.field)" v-if="column.html"></td>
+            </template>
+            <slot name="tbody-tr" :row="row"></slot>
           </tr>
-        </thead>
-          <tbody>
-            <tr v-for="(row, index) in paginated" @click="click(row, index)">
-              <template v-for="column in columns">
-                <td :class="column.numeric ? 'numeric' : ''" v-if="!column.html">
-                  {{ collect(row,column.field) }}
-                </td>
-                <td :class="column.numeric ? 'numeric' : ''" v-html="collect(row, column.field)" v-if="column.html"></td>
-              </template>
-              <slot name="tbody-tr" :row="row"></slot>
-            </tr>
-          </tbody>
-      </table>
-      <div class="card card-body d-flex flex-row justify-content-between align-items-center" v-if="paginate">
-        <div class="pr-1">
-          <div class="mb-1">Rows per page:</div>
-          <select class="custom-select" v-model="currentPerPage">
-            <option v-for="len in pagelen" :value="len">{{len}}</option>
-            <option value="-1">All</option>
-          </select>
-          <div class="mt-3">
-            <span>Showing</span> <span class="badge badge-info">{{(currentPage - 1) * currentPerPage ? (currentPage - 1) * currentPerPage : 1}} - {{currentPerPage==-1?processedRows.length:Math.min(processedRows.length, currentPerPage * currentPage)}}</span> of <span class="badge badge-info">{{processedRows.length}}</span> <span>records</span>
-          </div>
-        </div>
-        <div class="pl-1">
-          <ul class="pagination mb-0">
-            <li class="page-item">
-              <a href="javascript:void(0)" class="page-link" @click.prevent="previousPage" tabindex="0">
-                <i class="fa fa-angle-left"></i>
-              </a>
-            </li>
-            <li class="page-item">
-              <a href="javascript:void(0)" class="page-link" @click.prevent="nextPage" tabindex="0">
-                <i class="fa fa-angle-right"></i>
-              </a>
-            </li>
-          </ul>
+        </tbody>
+    </table>
+    <div :class="'d-flex flex-row justify-content-between align-items-center' + (paginateClass != '' ? ' ' : '') + paginateClass" v-if="paginate">
+      <div class="pr-1">
+        <div class="mb-1">Rows per page:</div>
+        <select class="custom-select" v-model="currentPerPage">
+          <option v-for="len in pagelen" :value="len">{{len}}</option>
+          <option value="-1">All</option>
+        </select>
+        <div class="mt-3">
+          <span>Showing</span> <span class="badge badge-info">{{(currentPage - 1) * currentPerPage ? (currentPage - 1) * currentPerPage : 1}} - {{currentPerPage==-1?processedRows.length:Math.min(processedRows.length, currentPerPage * currentPage)}}</span> of <span class="badge badge-info">{{processedRows.length}}</span> <span>records</span>
         </div>
       </div>
-    </div><!-- /.card-body -->
-  </div><!-- /.card -->
+      <div class="pl-1">
+        <ul class="pagination mb-0">
+          <li class="page-item">
+            <a href="javascript:void(0)" class="page-link" @click.prevent="previousPage" tabindex="0">
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a href="javascript:void(0)" class="page-link" @click.prevent="nextPage" tabindex="0">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    title: {
+    tableClass: {
+      default: "table"
+    },
+    paginateClass: {
       default: ""
     },
     columns: {

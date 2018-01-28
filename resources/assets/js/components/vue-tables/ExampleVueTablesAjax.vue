@@ -1,7 +1,24 @@
 <template>
   <div>
 
-    <vue-tables title="Vue tables with AJAX" :rows="rowdata" :columns="columndata"></vue-tables>
+    <div class="card mb-3">
+      <div class="card-header">
+        <i class="fa fa-table" aria-hidden="true"></i> Vue tables with AJAX
+      </div>
+      <div class="card-body">
+        <vue-tables
+          tableClass="table table-striped table-responsive-sm"
+          :rows="rowdata"
+          :columns="columndata"
+          :sortable="true"
+          :exportable="true"
+          :paginate="true"
+          :perPage="10"
+          :pagelen="[5, 10, 20, 50]"
+          paginateClass="p-3 border">
+        </vue-tables>
+      </div><!-- /.card-body -->
+    </div><!-- /.card -->
 
   </div>
 </template>
@@ -27,7 +44,7 @@ export default {
           field: 'age',
           numeric: true,
           html: false,
-        },
+        }
       ],
       rowdata: []
     }
