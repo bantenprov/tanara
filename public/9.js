@@ -1,0 +1,1 @@
+webpackJsonp([9],{1090:function(n,t){n.exports={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var n=this.$createElement,t=this._self._c||n;return t("div",[t("p",[this._v("Notifications page - coming soon")])])}]}},1119:function(n,t,e){var i=e(19)(null,e(1090),!1,null,null,null);n.exports=i.exports}});

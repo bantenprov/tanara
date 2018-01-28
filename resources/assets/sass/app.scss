@@ -5,11 +5,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // App
-@import "banner";
-@import "admin";
-@import "auth";
-@import "card-media";
-@import "shape";
-@import "navmenu";
-@import "footer";
+@import "app";
+
+// Custom
 @import "custom";

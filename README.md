@@ -18,13 +18,13 @@ $ composer create-project bantenprov/tanara:dev-dev
 ```
 
 ## install npm
-make sure you have latest nodejs or atleat nodejs 8
+make sure you have latest nodejs or at least nodejs 8 and you are in working directory 
 ```
 npm install
 ```
 
 ## run npm
-make sure you have latest nodejs or atleat nodejs 8
+make sure you have latest nodejs or at least nodejs 8 and you are in working directory
 ```
 npm run dev
 ```
