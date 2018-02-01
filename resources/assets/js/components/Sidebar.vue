@@ -70,13 +70,13 @@
                       </router-link>
                       <!---->
                       <template v-if="child.child">
-                        <a class="nav-item nav-link nav-link-sm small nav-link-collapse nav-link-collapse-small collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#NavmenuNavSidebarCollapse2-' + i" aria-expanded="false" :aria-controls="'NavmenuNavSidebarCollapse2-' + i">
+                        <a class="nav-item nav-link nav-link-sm small nav-link-collapse nav-link-collapse-small collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#NavmenuNavSidebarCollapse-' + index + '-' + i" aria-expanded="false" :aria-controls="'NavmenuNavSidebarCollapse-' + index + '-' + i">
                           <span>
                             <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
                             {{ child.name }}
                           </span>
                         </a>
-                        <div class="collapse" :id="'NavmenuNavSidebarCollapse2-' + i">
+                        <div class="collapse" :id="'NavmenuNavSidebarCollapse-' + index + '-' + i">
                           <div>
                             <template v-for="child2 in child.child">
                               <router-link class="nav-item nav-link nav-link-sm small pl-5" :to="child2.link" exact>
