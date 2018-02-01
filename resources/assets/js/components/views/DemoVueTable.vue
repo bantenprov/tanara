@@ -9,7 +9,7 @@
     </div>
 
     <div class="card mb-3">
-      <div class="card-header">Vuetable</div>
+      <div class="card-header">Example</div>
       <div class="card-body">
         <example-vue-table></example-vue-table>
       </div>

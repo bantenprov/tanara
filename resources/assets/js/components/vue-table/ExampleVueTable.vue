@@ -2,7 +2,7 @@
   <div>
 
     <div class="d-flex justify-content-between align-items-center mb-3">
-      <filter-bar></filter-bar>
+      <vuetable-filter-bar></vuetable-filter-bar>
       <div>
         <div v-if="loading" class="d-flex justify-content-start align-items-center">
           <i class="fa fa-refresh fa-spin fa-fw"></i>
@@ -53,12 +53,7 @@
 </template>
 
 <script>
-import FilterBar from './FilterBar'
-
 export default {
-  components: {
-    'filter-bar': FilterBar
-  },
   data () {
     return {
       loading: true,

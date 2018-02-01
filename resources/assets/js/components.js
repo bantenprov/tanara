@@ -58,7 +58,7 @@ import ExampleVueTablesAjaxImage from './components/vue-tables/ExampleVueTablesA
 Vue.component('example-vue-tables-ajax-image', ExampleVueTablesAjaxImage);
 
 
-//== Example Vue table
+//== Example Vuetable
 
 import ExampleVueTable from './components/vue-table/ExampleVueTable.vue';
 Vue.component('example-vue-table', ExampleVueTable);
