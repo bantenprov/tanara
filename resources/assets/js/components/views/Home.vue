@@ -34,28 +34,29 @@
       </svg>
 	  </div><!-- /.banner -->
 
-		<section class="home-section-1">
+		<section class="home-section home-section-1">
 	    <div class="container">
         <h2>Wilayah</h2>
         <p class="lead">Terletak disekitar Sungai Cidurian yang bermuara ke Laut Jawa. Pada tahun 2010 wilayah ini terbagi menjadi beberapa desa.</p>
+        <img class="home-section-img" src="https://placehold.it/1200x630/777/eee/?text=IMAGE" alt="Image">
 	    </div>
       <svg viewBox="0 0 1280 70" preserveAspectRatio="none" id="homeSection1Curve" role="presentation" aria-hidden="true">
         <polygon points="1280 0 1280 70 0 70"></polygon>
       </svg>
 		</section>
 
-		<section class="home-section-2">
+		<section class="home-section home-section-2">
 	    <div class="container">
         <h2>Ulama</h2>
         <p class="lead">Karena kemasyhurannya, <strong>Syekh Nawawi al-Bantani</strong> kemudian dijuluki Sayyid Ulama al-Hijaz (Pemimpin Ulama Hijaz), al-Imam al-Muhaqqiq wa al-Fahhamah al-Mudaqqiq (Imam yang Mumpuni ilmunya), A'yan Ulama al-Qarn al-Ram Asyar li al-Hijrah (Tokoh Ulama Abad 14 Hijriyah), hingga Imam Ulama al-Haramain, (Imam 'Ulama Dua Kota Suci).</p>
-	      <img class="img-fluid" src="/images/lukisan-syekh-nawawi-al-bantani-oleh-kang-alam.jpg" alt="Syekh Nawawi al-Bantani">
+	      <img class="home-section-img" src="https://placehold.it/1200x630/eee/777/?text=IMAGE" alt="Image">
       </div>
       <svg viewBox="0 0 1280 70" preserveAspectRatio="none" id="homeSection2Curve" role="presentation" aria-hidden="true">
         <polygon points="1280 0 1280 70 0 70"></polygon>
       </svg>
 		</section>
 
-		<section class="home-section-3">
+		<section class="home-section home-section-3">
 	    <div class="container">
         <h2>Talk Less Do More</h2>
         <div class="row">

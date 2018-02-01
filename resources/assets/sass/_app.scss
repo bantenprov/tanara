@@ -503,19 +503,19 @@ a.card-media {
   }
 }
 
-// Section 1
+// Base styles
 
-.home-section-1 {
-  position: relative;
-  padding-top: 88px;
-  padding-bottom: 158px;
-  color: #333;
+.home-section {
   text-align: center;
-  background-color: #fff;
+
+  p {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   h2 {
     font-weight: 300;
-    color: #0f61a8;
 
     @include media-breakpoint-up(md) {
       margin-bottom: 1.5rem;
@@ -525,13 +525,38 @@ a.card-media {
   }
 
   .lead {
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-
     @include media-breakpoint-up(md) {
       font-size: 1.5rem;
     }
+  }
+
+  .home-section-img {
+    position: relative;
+    width: 64%;
+    max-width: 800px;
+    margin-top: 2rem;
+    @include border-top-radius(.25rem);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: -145px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: -150px;
+    }
+  }
+}
+
+// Section 1
+
+.home-section-1 {
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 158px;
+  color: #333;
+  background-color: #fff;
+
+  h2 {
+    color: #0f61a8;
   }
 
   #homeSection1Curve {
@@ -557,41 +582,7 @@ a.card-media {
   padding-top: 88px;
   padding-bottom: 158px;
   color: #fff;
-  text-align: center;
   background-color: #222;
-
-  h2 {
-    font-weight: 300;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: 1.5rem;
-      font-size: 4.5rem;
-      line-height: 1.2;
-    }
-  }
-
-  .lead {
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @include media-breakpoint-up(md) {
-      font-size: 1.5rem;
-    }
-  }
-
-  .img-fluid {
-    position: relative;
-    margin-top: 2rem;
-    @include border-top-radius(.25rem);
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: -138px;
-    }
-    @include media-breakpoint-down(md) {
-      margin-bottom: -158px;
-    }
-  }
 
   #homeSection2Curve {
     width: 100%;
@@ -616,18 +607,10 @@ a.card-media {
   padding-top: 88px;
   padding-bottom: 158px;
   color: #333;
-  text-align: center;
   background-color: #fffafa;
 
   h2 {
-    font-weight: 300;
     color: #a79999;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: 1.5rem;
-      font-size: 4.5rem;
-      line-height: 1.2;
-    }
   }
 
   #homeSection3Curve {
