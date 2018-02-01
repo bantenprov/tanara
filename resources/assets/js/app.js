@@ -11,7 +11,6 @@ import debounce from 'lodash/debounce';
 import moment from 'moment';
 import Fuse from 'fuse.js';
 import VueProgressBar from 'vue-progressbar';
-import TableComponent from 'vue-table-component';
 import VueForm from 'vue-form';
 import vSelect from 'vue-select';
 import Datepicker from 'vuejs-datepicker';
@@ -77,7 +76,6 @@ router.afterEach((to, from) => {
 Vue.use(VueRouter);
 Vue.use(VueEvents);
 Vue.use(VueForm);
-Vue.use(TableComponent);
 Vue.use(ServerTable, {}, false);
 Vue.use(ClientTable, {}, false);
 

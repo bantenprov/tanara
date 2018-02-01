@@ -38,7 +38,6 @@
     "vue-progressbar": "^0.7.3",
     "vue-router": "^3.0.1",
     "vue-select": "^2.4.0",
-    "vue-table-component": "^1.8.1",
     "vue-tables-2": "^1.2.44",
     "vue-template-compiler": "^2.5.13",
     "vuejs-datepicker": "^0.9.24",
