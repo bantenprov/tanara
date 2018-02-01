@@ -19,32 +19,18 @@ let routes = [
     ]
   },
   {
-  	path: '/dashboard',
-  	component: layout('Default'),
-    children: [
-      {
-        path: '/dashboard',
-        components: {
-          main: resolve => require(['./components/views/DashboardHome.vue'], resolve),
-          navbar: resolve => require(['./components/Navbar.vue'], resolve),
-          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
-        },
-        meta: {
-          title: "Dashboard"
-        }
-      },
-      {
-        path: '/dashboard/entity',
-        components: {
-          main: resolve => require(['./components/views/DashboardEntity.vue'], resolve),
-          navbar: resolve => require(['./components/Navbar.vue'], resolve),
-          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
-        },
-        meta: {
-          title: "Dashboard Entity"
-        }
-      }
-    ]
+    path: '/sign-in',
+    component: resolve => require(['./components/views/SignIn.vue'], resolve),
+    meta: {
+      title: "Sign in"
+    }
+  },
+  {
+    path: '/sign-up',
+    component: resolve => require(['./components/views/SignUp.vue'], resolve),
+    meta: {
+      title: "Sign up"
+    }
   },
   {
     path: '/user',
@@ -109,19 +95,48 @@ let routes = [
     ]
   },
   {
-    path: '/admin',
-    redirect: '/admin/dashboard',
-    component: layout('Default'),
+  	path: '/dashboard',
+    redirect: '/dashboard/home',
+  	component: layout('Default'),
     children: [
       {
-        path: '/admin/dashboard',
+        path: '/dashboard/home',
         components: {
-          main: resolve => require(['./components/views/AdminDashboard.vue'], resolve),
+          main: resolve => require(['./components/views/DashboardHome.vue'], resolve),
           navbar: resolve => require(['./components/Navbar.vue'], resolve),
           sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
         },
         meta: {
-          title: "Dashboard"
+          title: "Dashboard Home"
+        }
+      },
+      {
+        path: '/dashboard/entity',
+        components: {
+          main: resolve => require(['./components/views/DashboardEntity.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Dashboard Entity"
+        }
+      }
+    ]
+  },
+  {
+    path: '/admin',
+    redirect: '/admin/dashboard/home',
+    component: layout('Default'),
+    children: [
+      {
+        path: '/admin/dashboard/home',
+        components: {
+          main: resolve => require(['./components/views/AdminDashboardHome.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Dashboard Home"
         }
       },
       {
@@ -180,20 +195,6 @@ let routes = [
         }
       }
     ]
-  },
-  {
-    path: '/sign-in',
-    component: resolve => require(['./components/views/SignIn.vue'], resolve),
-    meta: {
-      title: "Sign in"
-    }
-  },
-  {
-    path: '/sign-up',
-    component: resolve => require(['./components/views/SignUp.vue'], resolve),
-    meta: {
-      title: "Sign up"
-    }
   },
   {
     path: '/demo',

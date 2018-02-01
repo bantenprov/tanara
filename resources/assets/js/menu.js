@@ -12,8 +12,8 @@ const MenuItems = [
     childType: 'collapse',
     childItem: [
       {
-        name: 'Dashboard',
-        link: '/dashboard',
+        name: 'Home',
+        link: '/dashboard/home',
         icon: 'fa fa-angle-double-right'
       },
       {
@@ -30,8 +30,14 @@ const MenuItems = [
     childItem: [
       {
         name: 'Dashboard',
-        link: '/admin',
-        icon: 'fa fa-angle-double-right'
+        icon: 'fa fa-angle-double-right',
+        child: [
+          {
+            name: 'Home',
+            link: '/admin/dashboard/home',
+            icon: 'fa fa-angle-right'
+          }
+        ]
       },
       {
         name: 'Contents',
