@@ -8,7 +8,6 @@ let routes = [
   {
   	path: '/',
     component: resolve => require(['./components/views/Home.vue'], resolve),
-    mode: 'history',
     children: [
       {
         path: '/',
