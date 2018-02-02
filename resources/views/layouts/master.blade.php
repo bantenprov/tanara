@@ -6,6 +6,8 @@
 
     <title>Tanara</title>
 
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
 </head>
