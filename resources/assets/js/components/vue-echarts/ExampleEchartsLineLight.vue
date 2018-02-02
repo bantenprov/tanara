@@ -12,7 +12,7 @@ export default {
       bar: {
         title: {
           show: true,
-          text: 'Title',
+          text: 'ECharts',
           x: 'center',
           textStyle: {
             fontSize: 16,
@@ -75,10 +75,10 @@ export default {
             show: true
           },
           splitArea: {
-            show: false
+            show: true
           },
           splitLine: {
-            show: false,
+            show: true,
             lineStyle: {
               width: 1,
               type: 'solid',
@@ -107,7 +107,7 @@ export default {
             show: true
           },
           splitArea: {
-            show: false
+            show: true
           },
           splitLine: {
             show: true,
@@ -119,13 +119,38 @@ export default {
           }
         },
         series: [{
-          type: 'bar',
-          data: [],
-          barWidth: 20,
-          barGap: '30%',
+          type: 'line',
+          data: [3, 3, 58, 45, 92, 79, 90, 89, 29, 66, 79, 89],
           cursor: 'default',
+          showSymbol: true,
+          symbol: 'circle',
+          symbolSize: 8,
           itemStyle: {
             color: '#CDDC39'
+          },
+          lineStyle: {
+            width: 2,
+            type: 'solid',
+            color: 'blue'
+          },
+          markLine: {
+            silent: true,
+            data: [{
+              yAxis: 10
+            }, {
+              yAxis: 30
+            }, {
+              yAxis: 50
+            }, {
+              yAxis: 70
+            }, {
+              yAxis: 90
+            }],
+            lineStyle: {
+              width: 1,
+              type: 'dashed',
+              color: '#E57373'
+            }
           }
         }],
         label: {
@@ -138,15 +163,6 @@ export default {
         }
       }
     }
-  },
-  mounted: function () {
-    axios.get('/json/echarts-bar-data-simple.json').then(response => {
-      this.bar.series[0].data = response.data[0].chartdata;
-      this.loading = false;
-    })
-    .catch(function(error) {
-      // error
-    });
   }
 }
 </script>

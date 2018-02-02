@@ -33,17 +33,29 @@ Vue.component('example-chartjs-bubble', ExampleChartjsBubble);
 
 //== Example Vue ECharts
 
-import ExampleEchartsBar from './components/vue-echarts/ExampleEchartsBar.vue';
-Vue.component('example-echarts-bar', ExampleEchartsBar);
+import ExampleEchartsLineLight from './components/vue-echarts/ExampleEchartsLineLight.vue';
+Vue.component('example-echarts-line-light', ExampleEchartsLineLight);
+
+import ExampleEchartsLineDark from './components/vue-echarts/ExampleEchartsLineDark.vue';
+Vue.component('example-echarts-line-dark', ExampleEchartsLineDark);
+
+import ExampleEchartsBarLight from './components/vue-echarts/ExampleEchartsBarLight.vue';
+Vue.component('example-echarts-bar-light', ExampleEchartsBarLight);
+
+import ExampleEchartsBarDark from './components/vue-echarts/ExampleEchartsBarDark.vue';
+Vue.component('example-echarts-bar-dark', ExampleEchartsBarDark);
+
+import ExampleEchartsPieLight from './components/vue-echarts/ExampleEchartsPieLight.vue';
+Vue.component('example-echarts-pie-light', ExampleEchartsPieLight);
+
+import ExampleEchartsPieDark from './components/vue-echarts/ExampleEchartsPieDark.vue';
+Vue.component('example-echarts-pie-dark', ExampleEchartsPieDark);
 
 import ExampleEchartsBarAjax from './components/vue-echarts/ExampleEchartsBarAjax.vue';
 Vue.component('example-echarts-bar-ajax', ExampleEchartsBarAjax);
 
 import ExampleEchartsBarAjaxInteractive from './components/vue-echarts/ExampleEchartsBarAjaxInteractive.vue';
 Vue.component('example-echarts-bar-ajax-interactive', ExampleEchartsBarAjaxInteractive);
-
-import ExampleEchartsPie from './components/vue-echarts/ExampleEchartsPie.vue';
-Vue.component('example-echarts-pie', ExampleEchartsPie);
 
 
 //== Example Vue tables

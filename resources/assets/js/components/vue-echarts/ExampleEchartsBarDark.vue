@@ -12,13 +12,13 @@ export default {
       bar: {
         title: {
           show: true,
-          text: 'Title',
+          text: 'ECharts',
           x: 'center',
           textStyle: {
             fontSize: 16,
             fontWeight: 'normal',
             fontStyle: 'normal',
-            color: '#333'
+            color: '#fff'
           }
         },
         tooltip: {
@@ -50,7 +50,7 @@ export default {
           iconStyle: {
             borderWidth: 1,
             borderType: 'solid',
-            borderColor: '#333'
+            borderColor: '#fff'
           }
         },
         xAxis: {
@@ -61,28 +61,28 @@ export default {
             fontSize: 8,
             fontWeight: 'normal',
             fontStyle: 'normal',
-            color: '#333'
+            color: '#fff'
           },
           axisLine: {
             show: true,
             lineStyle: {
               width: 1,
               type: 'solid',
-              color: '#ddd'
+              color: '#fff'
             }
           },
           axisTick: {
             show: true
           },
           splitArea: {
-            show: false
+            show: true
           },
           splitLine: {
-            show: false,
+            show: true,
             lineStyle: {
               width: 1,
               type: 'solid',
-              color: '#ddd'
+              color: '#eee'
             }
           }
         },
@@ -93,34 +93,34 @@ export default {
             fontSize: 8,
             fontWeight: 'normal',
             fontStyle: 'normal',
-            color: '#333'
+            color: '#fff'
           },
           axisLine: {
             show: true,
             lineStyle: {
               width: 1,
               type: 'solid',
-              color: '#ddd'
+              color: '#fff'
             }
           },
           axisTick: {
             show: true
           },
           splitArea: {
-            show: false
+            show: true
           },
           splitLine: {
             show: true,
             lineStyle: {
               width: 1,
               type: 'solid',
-              color: '#ddd'
+              color: '#eee'
             }
           }
         },
         series: [{
           type: 'bar',
-          data: [],
+          data: [3, 3, 58, 45, 92, 79, 90, 89, 29, 66, 79, 89],
           barWidth: 20,
           barGap: '30%',
           cursor: 'default',
@@ -134,19 +134,10 @@ export default {
           fontSize: 8,
           fontWeight: 'normal',
           fontStyle: 'normal',
-          color: '#333'
+          color: '#fff'
         }
       }
     }
-  },
-  mounted: function () {
-    axios.get('/json/echarts-bar-data-simple.json').then(response => {
-      this.bar.series[0].data = response.data[0].chartdata;
-      this.loading = false;
-    })
-    .catch(function(error) {
-      // error
-    });
   }
 }
 </script>
