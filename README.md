@@ -26,7 +26,7 @@ Tanara is a starter theme made with [Laravel](https://laravel.com), [Vue.js](htt
 ## Installation
 
 1. Download, choose one of the following options:
-   - Clone the repo: `https://github.com/bantenprov/tanara.git`.
+   - Clone the repo: `git clone https://github.com/bantenprov/tanara.git`.
    - Composer: `composer create-project bantenprov/tanara:dev-master`.
 2. From the root `/tanara` directory, run `composer install` in the command line.
 3. Copy `.env.example` to `.env`.
