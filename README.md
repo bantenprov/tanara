@@ -4,6 +4,12 @@ Tanara is a starter theme made with [Laravel](https://laravel.com), [Vue.js](htt
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/tanara/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/tanara/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/bantenprov/tanara/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/tanara/build-status/master)
+[![Latest Stable Version](https://poser.pugx.org/bantenprov/tanara/v/stable)](https://packagist.org/packages/bantenprov/tanara)
+[![Total Downloads](https://poser.pugx.org/bantenprov/tanara/downloads)](https://packagist.org/packages/bantenprov/tanara)
+[![Latest Unstable Version](https://poser.pugx.org/bantenprov/tanara/v/unstable)](https://packagist.org/packages/bantenprov/tanara)
+[![License](https://poser.pugx.org/bantenprov/tanara/license)](https://packagist.org/packages/bantenprov/tanara)
+[![Monthly Downloads](https://poser.pugx.org/bantenprov/tanara/d/monthly)](https://packagist.org/packages/bantenprov/tanara)
+[![Daily Downloads](https://poser.pugx.org/bantenprov/tanara/d/daily)](https://packagist.org/packages/bantenprov/tanara)
 
 ## What's included
 
