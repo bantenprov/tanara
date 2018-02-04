@@ -3,7 +3,7 @@
     "description": "Tanara Theme for Laravel",
     "type": "project",
     "homepage": "https://github.com/bantenprov/tanara",
-    "version": "dev-dev",
+    "version": "v0.2.0",
     "authors": [{
         "name": "bantenprov",
         "email": "developer.bantenprov@gmail.com",
