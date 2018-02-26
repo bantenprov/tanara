@@ -27,10 +27,10 @@
       </div><!-- /.form-check -->
       <button class="btn btn-success btn-block text-capitalize" type="submit">Sign in</button>
       <p class="text-muted text-center my-2 text-capitalize">New user?</p>
-      <router-link class="btn btn-primary btn-block text-capitalize" to="/sign-up">Sign up now</router-link>
+      <router-link class="btn btn-primary btn-block text-capitalize" :to="{ name: 'sign-up' }">Sign up now</router-link>
       <hr>
       <p class="mb-0 text-center">
-        <router-link class="btn btn-light text-capitalize" to="/">
+        <router-link class="btn btn-light text-capitalize" :to="{ name: 'home' }">
           <i class="fa fa-home fa-lg mr-2"></i>
           Kembali ke Beranda
         </router-link>

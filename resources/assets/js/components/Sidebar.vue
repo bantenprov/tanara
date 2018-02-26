@@ -1,7 +1,7 @@
 <template>
   <nav class="site-navmenu navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 border-top-0 border-right-0 border-left-0">
     <div class="navmenu-brand text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center" style="background-color: rgba(0,0,0,.1);">
-      <router-link to="/user/profile"><img class="mr-3" src="/images/avatar.png" width="64" height="64" alt=""></router-link>
+      <router-link :to="{ name: 'user.profile' }"><img class="mr-3" src="/images/avatar.png" width="64" height="64" alt=""></router-link>
       <div class="w-100">
         <span>User</span>
         <hr class="my-1" style="background-color: rgba(255,255,255,.1);">
@@ -16,23 +16,23 @@
     </div>
 
     <div class="navmenu-nav">
-      <router-link class="nav-item nav-item-hover nav-link" to="/user/profile"><i class="fa fa-user mr-2" aria-hidden="true"></i> Profile</router-link>
-      <router-link class="nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between" to="/user/notifications">
+      <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.profile' }"><i class="fa fa-user mr-2" aria-hidden="true"></i> Profile</router-link>
+      <router-link class="nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between" :to="{ name: 'user.notifications' }">
         <span>
           <i class="fa fa-bell mr-2" aria-hidden="true"></i>
           Notifications
         </span>
         <span class="badge badge-info">10</span>
       </router-link>
-      <router-link class="nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between" to="/user/messages">
+      <router-link class="nav-item nav-item-hover nav-link d-flex align-items-center justify-content-between" :to="{ name: 'user.messages' }">
         <span>
           <i class="fa fa-envelope mr-2" aria-hidden="true"></i>
           Messages
         </span>
         <span class="badge badge-info">15</span>
       </router-link>
-      <router-link class="nav-item nav-item-hover nav-link" to="/user/change-password"><i class="fa fa-key mr-2" aria-hidden="true"></i> Change password</router-link>
-      <router-link class="nav-item nav-item-hover nav-link" to="/user/settings"><i class="fa fa-cogs mr-2" aria-hidden="true"></i> Settings</router-link>
+      <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.change-password' }"><i class="fa fa-key mr-2" aria-hidden="true"></i> Change password</router-link>
+      <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.settings' }"><i class="fa fa-cogs mr-2" aria-hidden="true"></i> Settings</router-link>
     </div><!-- /.navmenu-nav -->
 
     <div class="navmenu-divider"></div>
