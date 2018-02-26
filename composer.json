@@ -3,6 +3,7 @@
     "description": "Tanara Theme for Laravel",
     "type": "project",
     "homepage": "https://github.com/bantenprov/tanara",
+    "version": "dev-dev",
     "authors": [{
         "name": "bantenprov",
         "email": "developer.bantenprov@gmail.com",
@@ -22,7 +23,7 @@
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.7"
+        "phpunit/phpunit": "~5.0"
     },
     "autoload": {
         "classmap": [
@@ -55,7 +56,6 @@
     },
     "config": {
         "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
+        "sort-packages": true
     }
 }
