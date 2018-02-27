@@ -535,7 +535,6 @@ a.card-media {
     width: 64%;
     max-width: 800px;
     margin-top: 2rem;
-    @include border-top-radius(.25rem);
 
     @include media-breakpoint-up(md) {
       margin-bottom: -145px;
@@ -554,10 +553,6 @@ a.card-media {
   padding-bottom: 158px;
   color: #333;
   background-color: #fff;
-
-  h2 {
-    color: #0f61a8;
-  }
 
   #homeSection1Curve {
     width: 100%;
