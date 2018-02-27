@@ -37,7 +37,7 @@ Tanara is a starter theme made with [Laravel](https://laravel.com), [Vue.js](htt
 2. From the root `/tanara` directory, run `composer install` in the command line.
 3. Copy `.env.example` to `.env`.
 4. Configure the `.env` file. Run `php artisan key:generate`.
-
+5. 
 ### Running project locally
 
 1. Run `php artisan serve`.
