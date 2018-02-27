@@ -100,8 +100,7 @@
       <form-wizard @on-complete="onComplete"
                       shape="tab"
                       color="#e67e22">
-            <h2 slot="title">This will replace my whole title</h2>   
-            
+            <h2 slot="title">This will replace my whole title</h2>
             <tab-content title="Personal details"
                          icon="fa fa-user">
               My first tab content
@@ -138,8 +137,6 @@
         </form-wizard>
         
     </vue-form>
-
-     
   </div>
 </template>
 
