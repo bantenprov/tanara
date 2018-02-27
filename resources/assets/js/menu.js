@@ -87,6 +87,11 @@ const MenuItems = [
             icon: 'fa fa-angle-right'
           },
           {
+            name: 'Vue form wizard',
+            link: '/demo/vue-form-wizard',
+            icon: 'fa fa-angle-right'
+          },
+          {
             name: 'Vue select',
             link: '/demo/vue-select',
             icon: 'fa fa-angle-right'

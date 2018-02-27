@@ -14,7 +14,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "bootstrap": "^4.0.0",
     "chart.js": "^2.7.1",
-    "cross-env": "^3.2.3",
+    "cross-env": "^3.2.4",
     "css-loader": "^0.28.9",
     "echarts": "^4.0.2",
     "fuse.js": "^3.2.0",
@@ -43,7 +43,7 @@
     "vuejs-datepicker": "^0.9.24",
     "vuetable-2": "^1.7.2",
     "vuex": "^3.0.1",
-    "webpack": "^3.10.0"
-  },
-  "dependencies": {}
+    "webpack": "^3.10.0",
+    "vue-form-wizard": "^0.8.4"
+  } 
 }

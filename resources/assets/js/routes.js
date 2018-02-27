@@ -213,6 +213,28 @@ let routes = [
         }
       },
       {
+        path: '/demo/vue-form-wizard',
+        components: {
+          main: resolve => require(['./components/views/DemoVueFormWizard.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue form"
+        }
+      },
+      {
+        path: '/demo/vue-form-wizard',
+        components: {
+          main: resolve => require(['./components/views/DemoVueFormWizard.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue form"
+        }
+      },
+      {
         path: '/demo/vue-select',
         components: {
           main: resolve => require(['./components/views/DemoVueSelect.vue'], resolve),

@@ -1,0 +1,23 @@
+From 1cbad482f4c2d999182a03d0e9c13ad4b753cdb0 Mon Sep 17 00:00:00 2001
+From: ChemprenX <bl4ck.ch3mpr3nx@gmail.com>
+Date: Wed, 28 Feb 2018 04:08:34 +0700
+Subject: [PATCH] test pacth On branch master 	modified:   package.json
+
+---
+ package.json | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/package.json b/package.json
+index c35ea9a..7d7372f 100644
+--- a/package.json
++++ b/package.json
+@@ -44,6 +44,5 @@
+     "vuetable-2": "^1.7.2",
+     "vuex": "^3.0.1",
+     "webpack": "^3.10.0"
+-  },
+-  "dependencies": {}
++  } 
+ }
+-- 
+2.14.1
