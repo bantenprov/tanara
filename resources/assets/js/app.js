@@ -17,6 +17,7 @@ import Datepicker from 'vuejs-datepicker';
 import VueCharts from 'vue-chartjs';
 import IEcharts from 'vue-echarts-v3/src/full.js';
 import miniToastr from 'mini-toastr';
+import VueSweetalert2 from 'vue-sweetalert2';
 
 import ChartjsBarChart from './add-ons/vue-chartjs/BarChart.js';
 import ChartjsBarHorizontalChart from './add-ons/vue-chartjs/BarHorizontalChart.js';
@@ -78,6 +79,7 @@ Vue.use(VueEvents);
 Vue.use(VueForm);
 Vue.use(ServerTable, {}, false);
 Vue.use(ClientTable, {}, false);
+Vue.use(VueSweetalert2);
 
 Vue.use(VueProgressBar, {
   color: '#77b6ff',
