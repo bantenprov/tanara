@@ -314,6 +314,18 @@ let routes = [
         meta: {
           title: "Mini toastr"
         }
+      },
+      {
+        path: '/demo/vue-sweetalert',
+        name: 'demo.sweetalert',
+        components: {
+          main: resolve => require(['./components/views/DemoVueSweetalert.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue Sweetalert"
+        }
       }
     ]
   },

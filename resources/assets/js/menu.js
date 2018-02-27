@@ -134,6 +134,11 @@ const MenuItems = [
         name: 'Mini toastr',
         link: '/demo/mini-toastr',
         icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Vue Sweetalert',
+        link: '/demo/vue-sweetalert',
+        icon: 'fa fa-angle-double-right'
       }
     ]
   }
