@@ -139,6 +139,11 @@ const MenuItems = [
         name: 'Vue Sweetalert',
         link: '/demo/vue-sweetalert',
         icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Vue Fullscreen',
+        link: '/demo/vue-fullscreen',
+        icon: 'fa fa-angle-double-right'
       }
     ]
   }

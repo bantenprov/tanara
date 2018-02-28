@@ -326,6 +326,18 @@ let routes = [
         meta: {
           title: "Vue Sweetalert"
         }
+      },
+      {
+        path: '/demo/vue-fullscreen',
+        name: 'demo.fullscreen',
+        components: {
+          main: resolve => require(['./components/views/DemoVueFullscreen.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue Fullscreen"
+        }
       }
     ]
   },
