@@ -663,6 +663,26 @@ a.card-media {
 // Default layout styles
 //
 
+// Navbar
+
+.site-navbar .navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+// Navmenu
+
+.site-navmenu {
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.site-navmenu .site-navmenu-icon .fa {
+  width: 16px;
+}
+
 @include media-breakpoint-up(md) {
   .site-navmenu {
     min-height: 100vh;

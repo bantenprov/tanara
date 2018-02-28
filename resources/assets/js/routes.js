@@ -54,30 +54,6 @@ let routes = [
         }
       },
       {
-        path: '/user/notifications',
-        name: 'user.notifications',
-        components: {
-          main: resolve => require(['./components/views/UserNotifications.vue'], resolve),
-          navbar: resolve => require(['./components/Navbar.vue'], resolve),
-          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
-        },
-        meta: {
-          title: "User Notifications"
-        }
-      },
-      {
-        path: '/user/messages',
-        name: 'user.messages',
-        components: {
-          main: resolve => require(['./components/views/UserMessages.vue'], resolve),
-          navbar: resolve => require(['./components/Navbar.vue'], resolve),
-          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
-        },
-        meta: {
-          title: "User Messages"
-        }
-      },
-      {
         path: '/user/change-password',
         name: 'user.change-password',
         components: {
