@@ -18,6 +18,7 @@ import VueCharts from 'vue-chartjs';
 import IEcharts from 'vue-echarts-v3/src/full.js';
 import miniToastr from 'mini-toastr';
 import VueSweetalert2 from 'vue-sweetalert2';
+import fullscreen from 'vue-fullscreen';
 
 import ChartjsBarChart from './add-ons/vue-chartjs/BarChart.js';
 import ChartjsBarHorizontalChart from './add-ons/vue-chartjs/BarHorizontalChart.js';
@@ -80,6 +81,7 @@ Vue.use(VueForm);
 Vue.use(ServerTable, {}, false);
 Vue.use(ClientTable, {}, false);
 Vue.use(VueSweetalert2);
+Vue.use(fullscreen);
 
 Vue.use(VueProgressBar, {
   color: '#77b6ff',
