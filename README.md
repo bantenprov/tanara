@@ -28,6 +28,7 @@ Tanara is a starter theme made with [Laravel](https://laravel.com), [Vue.js](htt
 - [vuetable-2](https://github.com/ratiw/vuetable-2)
 - [mini-toastr](https://github.com/se-panfilov/mini-toastr)
 - [vue-sweetalert2](https://github.com/avil13/vue-sweetalert2)
+- [vue-fullscreen](https://github.com/mirari/vue-fullscreen)
 - and many more helpers
 
 ## Installation
