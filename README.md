@@ -58,7 +58,81 @@ Our `package.json` includes the following commands and tasks:
 
 ## Contributing
 
-Have a suggestion or bug fix? Open a pull request or [issue](https://github.com/bantenprov/tanara/issues/new).
+Looking to contribute something to Tanara? **Here's how you can help.**
+
+Following these guidelines helps to communicate that you respect the time of
+the developers managing and developing this open source project. In return,
+they should reciprocate that respect in addressing your issue or assessing
+patches and features.
+
+### Using the issue tracker
+
+The [issue tracker](https://github.com/bantenprov/tanara/issues) is
+the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
+and [submitting pull requests](#pull-requests).
+
+Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/bantenprov/tanara/issues/new).
+
+### Issues and labels
+
+Our bug tracker utilizes several labels to help organize and identify issues. Here's what they represent and how we use them:
+
+- `bug` - Issues that have been confirmed with a reduced test case and identify a bug in Tanara.
+- `css` - Issues stemming from our compiled CSS or source Sass files.
+- `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified. New features require a minor version bump (e.g., `v3.0.0` to `v3.1.0`).
+- `help wanted` - Issues we need or would love help from the community to resolve.
+- `vue` - Issues stemming from our compiled or source Vue files.
+- `laravel` - Issues stemming from our source Laravel files.
+- `meta` - Issues with the project itself or our GitHub repository.
+
+For a complete look at our labels, see the [project labels page](https://github.com/bantenprov/tanara/labels).
+
+### Bug reports
+
+A bug is a _demonstrable problem_ that is caused by the code in the repository.
+Good bug reports are extremely helpful, so thanks!
+
+### Feature requests
+
+Feature requests are welcome. But take a moment to find out whether your idea
+fits with the scope and aims of the project. It's up to *you* to make a strong
+case to convince the project's developers of the merits of this feature. Please
+provide as much detail and context as possible.
+
+### Pull requests
+
+Good pull requests—patches, improvements, new features—are a fantastic
+help. They should remain focused in scope and avoid containing unrelated
+commits.
+
+**Please ask first** before embarking on any significant pull request (e.g.
+implementing features, refactoring code, porting to a different language),
+otherwise you risk spending a lot of time working on something that the
+project's developers might not want to merge into the project.
+
+Please adhere to the [coding guidelines](#code-guidelines) used throughout the
+project (indentation, accurate comments, etc.)
+
+### Code guidelines
+
+All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
+
+#### HTML
+
+[Adhere to the Code Guide.](http://codeguide.co/#html)
+
+#### CSS
+
+[Adhere to the Code Guide.](http://codeguide.co/#css)
+
+#### JS
+
+- 2 spaces (no tabs)
+- "Attractive"
+
+#### EditorConfig
+
+Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
 ## Changelog
 
