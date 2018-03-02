@@ -535,13 +535,12 @@ a.card-media {
     width: 64%;
     max-width: 800px;
     margin-top: 2rem;
-    @include border-top-radius(.25rem);
 
     @include media-breakpoint-up(md) {
       margin-bottom: -145px;
     }
     @include media-breakpoint-down(md) {
-      margin-bottom: -150px;
+      margin-bottom: -180px;
     }
   }
 }
@@ -554,10 +553,6 @@ a.card-media {
   padding-bottom: 158px;
   color: #333;
   background-color: #fff;
-
-  h2 {
-    color: #0f61a8;
-  }
 
   #homeSection1Curve {
     width: 100%;
@@ -667,6 +662,22 @@ a.card-media {
 //
 // Default layout styles
 //
+
+// Navbar
+
+.site-navbar .navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+// Navmenu
+
+.site-navmenu {
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
 
 @include media-breakpoint-up(md) {
   .site-navmenu {

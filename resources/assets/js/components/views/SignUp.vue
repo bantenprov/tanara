@@ -28,10 +28,10 @@
       </div><!-- /.row -->
       <button class="btn btn-primary btn-block text-capitalize" type="submit">Sign up</button>
       <p class="text-muted text-center my-2 text-capitalize">Already a member?</p>
-      <router-link class="btn btn-success btn-block text-capitalize" to="/sign-in">Sign in</router-link>
+      <router-link class="btn btn-success btn-block text-capitalize" :to="{ name: 'sign-in' }">Sign in</router-link>
       <hr>
       <p class="mb-0 text-center">
-        <router-link class="btn btn-light text-capitalize" to="/">
+        <router-link class="btn btn-light text-capitalize" :to="{ name: 'home' }">
           <i class="fa fa-home fa-lg mr-2"></i>
           Kembali ke Beranda
         </router-link>

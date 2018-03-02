@@ -12,8 +12,8 @@ const MenuItems = [
     childType: 'collapse',
     childItem: [
       {
-        name: 'Home',
-        link: '/dashboard/home',
+        name: 'Dashboard',
+        link: '/dashboard',
         icon: 'fa fa-angle-double-right'
       },
       {
@@ -33,8 +33,8 @@ const MenuItems = [
         icon: 'fa fa-angle-double-right',
         child: [
           {
-            name: 'Home',
-            link: '/admin/dashboard/home',
+            name: 'Dashboard',
+            link: '/admin/dashboard',
             icon: 'fa fa-angle-right'
           }
         ]
@@ -133,6 +133,16 @@ const MenuItems = [
       {
         name: 'Mini toastr',
         link: '/demo/mini-toastr',
+        icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Vue Sweetalert',
+        link: '/demo/vue-sweetalert',
+        icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Vue Fullscreen',
+        link: '/demo/vue-fullscreen',
         icon: 'fa fa-angle-double-right'
       }
     ]
