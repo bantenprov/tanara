@@ -54,29 +54,34 @@ let routes = [
         }
       },
       {
-        path: '/user/change-password',
-        name: 'user.change-password',
+        path: '/user/settings',
+        name: 'user.settings',
+        redirect: '/user/settings/profile',
+      },
+      {
+        path: '/user/settings/profile',
+        name: 'user.settings-profile',
         components: {
-          main: resolve => require(['./components/views/UserChangePassword.vue'], resolve),
+          main: resolve => require(['./components/views/UserSettingsProfile.vue'], resolve),
           navbar: resolve => require(['./components/Navbar.vue'], resolve),
           sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
         },
         meta: {
-          title: "User Change Password"
+          title: "User Settings - Profile"
         }
       },
       {
-        path: '/user/settings',
-        name: 'user.settings',
+        path: '/user/settings/password',
+        name: 'user.settings-password',
         components: {
-          main: resolve => require(['./components/views/UserSettings.vue'], resolve),
+          main: resolve => require(['./components/views/UserSettingsPassword.vue'], resolve),
           navbar: resolve => require(['./components/Navbar.vue'], resolve),
           sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
         },
         meta: {
-          title: "User Settings"
+          title: "User Settings - Password"
         }
-      }
+      },
     ]
   },
   {

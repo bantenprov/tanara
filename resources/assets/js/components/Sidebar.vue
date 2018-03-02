@@ -19,7 +19,6 @@
 
       <div class="navmenu-nav">
         <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.profile' }"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Profile</router-link>
-        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.change-password' }"><i class="fa fa-key fa-fw" aria-hidden="true"></i> Change password</router-link>
         <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.settings' }"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i> Settings</router-link>
       </div><!-- /.navmenu-nav -->
 
