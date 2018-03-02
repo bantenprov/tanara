@@ -50,7 +50,7 @@
                   </span>
                 </a>
                 <div class="collapse" :id="'NavmenuNavSidebarCollapse-' + index">
-                  <div style="border-left: 4px solid #eee;">
+                  <div class="py-3" style="background-color: rgba(0,0,0,.25); border-left: 4px solid rgba(255,255,255,.45);">
                     <template v-for="(child, i) in item.childItem">
                       <router-link v-if="!child.child" class="nav-item nav-link nav-link-sm small" :to="child.link" exact>
                         <span class="site-navmenu-icon"><i :class="child.icon + ' mr-2'" aria-hidden="true"></i></span>
