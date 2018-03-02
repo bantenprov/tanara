@@ -16,10 +16,12 @@
           <img src="/images/avatar.png" width="20" height="20" alt="">
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <router-link class="dropdown-item" :to="{ name: 'user.profile' }"><i class="fa fa-user mr-2" aria-hidden="true"></i> Profile</router-link>
+          <router-link class="dropdown-item" :to="{ name: 'user.profile' }"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Profile</router-link>
           <div class="dropdown-divider"></div>
-          <router-link class="dropdown-item" :to="{ name: 'user.change-password' }"><i class="fa fa-key mr-2" aria-hidden="true"></i> Change password</router-link>
-          <router-link class="dropdown-item" :to="{ name: 'user.settings' }"><i class="fa fa-cogs mr-2" aria-hidden="true"></i> Settings</router-link>
+          <router-link class="dropdown-item" :to="{ name: 'user.change-password' }"><i class="fa fa-key fa-fw" aria-hidden="true"></i> Change password</router-link>
+          <router-link class="dropdown-item" :to="{ name: 'user.settings' }"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i> Settings</router-link>
+          <div class="dropdown-divider"></div>
+          <router-link class="dropdown-item" to="/" exact><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> Sign out</router-link>
         </div>
       </li>
     </ul>

@@ -18,9 +18,9 @@
       </div>
 
       <div class="navmenu-nav">
-        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.profile' }"><span class="site-navmenu-icon"><i class="fa fa-user mr-2" aria-hidden="true"></i></span> Profile</router-link>
-        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.change-password' }"><span class="site-navmenu-icon"><i class="fa fa-key mr-2" aria-hidden="true"></i></span> Change password</router-link>
-        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.settings' }"><span class="site-navmenu-icon"><i class="fa fa-cogs mr-2" aria-hidden="true"></i></span> Settings</router-link>
+        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.profile' }"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Profile</router-link>
+        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.change-password' }"><i class="fa fa-key fa-fw" aria-hidden="true"></i> Change password</router-link>
+        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.settings' }"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i> Settings</router-link>
       </div><!-- /.navmenu-nav -->
 
       <div class="navmenu-divider"></div>
@@ -38,14 +38,14 @@
       <div class="navmenu-nav">
         <template v-for="(item, index) in menuitems">
             <router-link v-if="!item.childType && !item.childItem" class="nav-item nav-item-hover nav-link" :to="item.link" exact>
-              <span class="site-navmenu-icon"><i :class="item.icon + ' mr-2'" aria-hidden="true"></i></span>
+              <i :class="item.icon + ' fa-fw'" aria-hidden="true"></i>
               {{ item.name }}
             </router-link>
             <template v-if="item.childType && item.childItem">
               <template v-if="item.childType == 'collapse'">
                 <a class="nav-item nav-item-hover nav-link nav-link-collapse collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#NavmenuNavSidebarCollapse-' + index" aria-expanded="false" :aria-controls="'NavmenuNavSidebarCollapse-' + index">
                   <span>
-                    <span class="site-navmenu-icon"><i :class="item.icon + ' mr-2'" aria-hidden="true"></i></span>
+                    <i :class="item.icon + ' fa-fw'" aria-hidden="true"></i>
                     {{ item.name }}
                   </span>
                 </a>
@@ -53,14 +53,14 @@
                   <div class="py-3" style="background-color: rgba(0,0,0,.25); border-left: 4px solid rgba(255,255,255,.45);">
                     <template v-for="(child, i) in item.childItem">
                       <router-link v-if="!child.child" class="nav-item nav-link nav-link-sm small" :to="child.link" exact>
-                        <span class="site-navmenu-icon"><i :class="child.icon + ' mr-2'" aria-hidden="true"></i></span>
+                        <i :class="child.icon + ' fa-fw'" aria-hidden="true"></i>
                         {{ child.name }}
                       </router-link>
                       <!---->
                       <template v-if="child.child">
                         <a class="nav-item nav-link nav-link-sm small nav-link-collapse nav-link-collapse-small collapsed" href="javascript:void(0)" data-toggle="collapse" :data-target="'#NavmenuNavSidebarCollapse-' + index + '-' + i" aria-expanded="false" :aria-controls="'NavmenuNavSidebarCollapse-' + index + '-' + i">
                           <span>
-                            <span class="site-navmenu-icon"><i :class="child.icon + ' mr-2'" aria-hidden="true"></i></span>
+                            <i :class="child.icon + ' fa-fw'" aria-hidden="true"></i>
                             {{ child.name }}
                           </span>
                         </a>
@@ -68,7 +68,7 @@
                           <div>
                             <template v-for="child2 in child.child">
                               <router-link class="nav-item nav-link nav-link-sm small pl-5" :to="child2.link" exact>
-                                <span class="site-navmenu-icon"><i :class="child2.icon + ' mr-2'" aria-hidden="true"></i></span>
+                                <i :class="child2.icon + ' fa-fw'" aria-hidden="true"></i>
                                 {{ child2.name }}
                               </router-link>
                             </template>
@@ -83,13 +83,13 @@
               <template v-if="item.childType == 'dropdown'">
                 <div class="nav-item nav-item-hover dropdown">
                   <a class="nav-link dropdown-toggle" href="javascript:void(0)" :id="'NavmenuNavSidebarDropdown-' + index" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="site-navmenu-icon"><i :class="item.icon + ' mr-2'" aria-hidden="true"></i></span>
+                    <i :class="item.icon + ' fa-fw'" aria-hidden="true"></i>
                     {{ item.name }}
                   </a>
                   <div class="dropdown-menu" :aria-labelledby="'NavmenuNavSidebarDropdown-' + index">
                     <template v-for="child in item.childItem">
                       <router-link class="dropdown-item" :to="child.link" exact>
-                        <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
+                        <i :class="child.icon + ' fa-fw'" aria-hidden="true"></i>
                         {{ child.name }}
                       </router-link>
                     </template>
@@ -99,13 +99,13 @@
               <template v-if="item.childType == 'dropup'">
                 <div class="nav-item nav-item-hover dropup">
                   <a class="nav-link dropdown-toggle" href="javascript:void(0)" :id="'NavmenuNavSidebarDropup-' + index" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="site-navmenu-icon"><i :class="item.icon + ' mr-2'" aria-hidden="true"></i></span>
+                    <i :class="item.icon + ' fa-fw'" aria-hidden="true"></i>
                     {{ item.name }}
                   </a>
                   <div class="dropdown-menu" :aria-labelledby="'NavmenuNavSidebarDropup-' + index">
                     <template v-for="child in item.childItem">
                       <router-link class="dropdown-item" :to="child.link" exact>
-                        <i :class="child.icon + ' mr-2'" aria-hidden="true"></i>
+                        <i :class="child.icon + ' fa-fw'" aria-hidden="true"></i>
                         {{ child.name }}
                       </router-link>
                     </template>
