@@ -61,7 +61,14 @@ miniToastr.init();
 
 const router = new VueRouter({
   routes,
-  linkActiveClass: "active"
+  linkActiveClass: "active",
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
 
 router.beforeEach((to, from, next) => {
