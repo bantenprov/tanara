@@ -319,6 +319,18 @@ let routes = [
         meta: {
           title: "Vue Fullscreen"
         }
+      },
+      {
+        path: '/demo/vue-qrcode',
+        name: 'demo.qrcode',
+        components: {
+          main: resolve => require(['./components/views/DemoVueQrcode.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue QRcode"
+        }
       }
     ]
   },

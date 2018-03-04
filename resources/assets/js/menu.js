@@ -144,6 +144,11 @@ const MenuItems = [
         name: 'Vue Fullscreen',
         link: '/demo/vue-fullscreen',
         icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Vue QRcode',
+        link: '/demo/vue-qrcode',
+        icon: 'fa fa-angle-double-right'
       }
     ]
   }

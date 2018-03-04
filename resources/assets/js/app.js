@@ -19,6 +19,7 @@ import IEcharts from 'vue-echarts-v3/src/full.js';
 import miniToastr from 'mini-toastr';
 import VueSweetalert2 from 'vue-sweetalert2';
 import fullscreen from 'vue-fullscreen';
+import Qrcode from '@xkeshi/vue-qrcode';
 
 import ChartjsBarChart from './add-ons/vue-chartjs/BarChart.js';
 import ChartjsBarHorizontalChart from './add-ons/vue-chartjs/BarHorizontalChart.js';
@@ -100,6 +101,7 @@ Vue.use(VueProgressBar, {
 
 Vue.component('v-select', vSelect);
 Vue.component('datepicker', Datepicker);
+Vue.component('qrcode', Qrcode);
 Vue.component('chartjs-bar', ChartjsBarChart);
 Vue.component('chartjs-bar-horizontal', ChartjsBarHorizontalChart);
 Vue.component('chartjs-bubble', ChartjsBubbleChart);
