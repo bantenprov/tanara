@@ -4,6 +4,9 @@
       <router-view></router-view>
     </transition>
     <vue-progress-bar></vue-progress-bar>
+    <back-to-top :bottom="15" :right="15">
+      <button class="btn btn-dark" type="button" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    </back-to-top>
   </div>
 </template>
 
