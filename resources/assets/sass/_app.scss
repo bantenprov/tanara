@@ -451,16 +451,17 @@ a.card-media {
 .home-header {
   position: relative;
   min-height: calc(100vh + 70px);
-  padding-bottom: 210px;
+  padding-bottom: 90px;
   background-color: #0f61a8;
 
   .home-header-navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-bottom: 60px;
   }
 
   .home-header-content {
+    height: calc(100vh - 180px);
+    min-height: 450px;
     text-align: center;
   }
 
