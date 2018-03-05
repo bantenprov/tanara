@@ -49,7 +49,7 @@
 export default {
   data () {
     return {
-      val: "https://github.com/bantenprov/tanara",
+      val: window.location.href,
       bgColor: "#FFFFFF",
       fgColor: "#000000",
       size: 200
