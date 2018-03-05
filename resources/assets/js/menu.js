@@ -149,6 +149,11 @@ const MenuItems = [
         name: 'Vue QRcode',
         link: '/demo/vue-qrcode',
         icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Vue Form Wizard',
+        link: '/demo/vue-form-wizard',
+        icon: 'fa fa-angle-double-right'
       }
     ]
   }

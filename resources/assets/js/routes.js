@@ -331,6 +331,18 @@ let routes = [
         meta: {
           title: "Vue QRcode"
         }
+      },
+      {
+        path: '/demo/vue-form-wizard',
+        name: 'demo.form-wizard',
+        components: {
+          main: resolve => require(['./components/views/DemoVueFormWizard.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
+        meta: {
+          title: "Vue Form Wizard"
+        }
       }
     ]
   },

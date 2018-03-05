@@ -12,6 +12,10 @@ import moment from 'moment';
 import Fuse from 'fuse.js';
 import VueProgressBar from 'vue-progressbar';
 import VueForm from 'vue-form';
+import VueFormWizard from 'vue-form-wizard';
+import 'vue-form-wizard/dist/vue-form-wizard.min.css';
+import VueFormGenerator from 'vue-form-generator';
+import 'vue-form-generator/dist/vfg.css';
 import vSelect from 'vue-select';
 import Datepicker from 'vuejs-datepicker';
 import VueCharts from 'vue-chartjs';
@@ -50,6 +54,7 @@ window._ = lodash;
 window.Fuse = Fuse;
 window.miniToastr = miniToastr;
 window.vSelect = vSelect;
+window.VueFormGenerator = VueFormGenerator;
 window.Datepicker = Datepicker;
 
 window.axios.defaults.headers.common = {
@@ -87,6 +92,8 @@ router.afterEach((to, from) => {
 Vue.use(VueRouter);
 Vue.use(VueEvents);
 Vue.use(VueForm);
+Vue.use(VueFormWizard);
+Vue.use(VueFormGenerator);
 Vue.use(ServerTable, {}, false);
 Vue.use(ClientTable, {}, false);
 Vue.use(VueSweetalert2);
