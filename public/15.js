@@ -1,1 +1,570 @@
-webpackJsonp([15],{1278:function(t,a,e){"use strict";Object.defineProperty(a,"__esModule",{value:!0}),a.default={data:function(){return{model:{firstName:"",lastName:"",email:"",alamat:"",kelKec:"",kota:""},formOptions:{validationErrorClass:"has-error",validationSuccessClass:"has-success",validateAfterChanged:!0},firstTabSchema:{fields:[{type:"input",inputType:"text",label:"Nama Depan",model:"firstName",required:!0,validator:VueFormGenerator.validators.string},{type:"input",inputType:"text",label:"Nama Belakang",model:"lastName",required:!0,validator:VueFormGenerator.validators.string},{type:"input",inputType:"text",label:"Email",model:"email",required:!0,validator:VueFormGenerator.validators.email}]},secondTabSchema:{fields:[{type:"input",inputType:"text",label:"Alamat",model:"alamat",required:!0,validator:VueFormGenerator.validators.string},{type:"input",inputType:"text",label:"Kelurahan/Kecamatan",model:"kelKec",required:!0,validator:VueFormGenerator.validators.string},{type:"select",label:"Kota",model:"kota",required:!0,validator:VueFormGenerator.validators.string,values:["Serang","Cilegon","Tangerang"]}]}}},methods:{onComplete:function(){miniToastr.success("Yay. Done!","Success")},onComplete2:function(){miniToastr.success("Data Anda sudah Disimpan!","Success"),this.$router.go(this.$router.currentRoute)},validateFirstTab:function(){return this.$refs.firstTabForm.validate()},validateSecondTab:function(){return this.$refs.secondTabForm.validate()},prettyJSON:function(t){if(t)return(t=(t=JSON.stringify(t,void 0,4)).replace(/&/g,"&").replace(/</g,"<").replace(/>/g,">")).replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,function(t){var a="number";return/^"/.test(t)?a=/:$/.test(t)?"key":"string":/true|false/.test(t)?a="boolean":/null/.test(t)&&(a="null"),'<span class="'+a+'">'+t+"</span>"})}}}},1279:function(t,a){t.exports={render:function(){var t=this,a=t.$createElement,e=t._self._c||a;return e("div",[t._m(0),t._v(" "),e("form-wizard",{attrs:{shape:"square",color:"#3498db"},on:{"on-complete":t.onComplete}},[e("div",{staticClass:"text-center mb-3",attrs:{slot:"title"},slot:"title"},[e("h2",{staticClass:"text-dark"},[t._v("Basic example")]),t._v(" "),e("h5",{staticClass:"text-muted"},[t._v("Subtitle")])]),t._v(" "),e("tab-content",{attrs:{title:"Personal details",icon:"fa fa-user"}},[e("div",{staticClass:"card mb-3"},[e("div",{staticClass:"card-header"},[t._v("My first tab content")]),t._v(" "),e("div",{staticClass:"card-body"},[t._v("\n          Content\n        ")])])]),t._v(" "),e("tab-content",{attrs:{title:"Additional Info",icon:"fa fa-gear"}},[e("div",{staticClass:"card mb-3"},[e("div",{staticClass:"card-header"},[t._v("My second tab content")]),t._v(" "),e("div",{staticClass:"card-body"},[t._v("\n          Content\n        ")])])]),t._v(" "),e("tab-content",{attrs:{title:"Last step",icon:"fa fa-check"}},[e("div",{staticClass:"card mb-3"},[e("div",{staticClass:"card-header"},[t._v("My third tab content")]),t._v(" "),e("div",{staticClass:"card-body"},[t._v("\n          Content\n        ")])])])],1),t._v(" "),e("hr",{staticClass:"my-5"}),t._v(" "),e("form-wizard",{attrs:{shape:"square",color:"#3097D1","error-color":"#a94442","back-button-text":"Kembali","next-button-text":"Selanjutnya","finish-button-text":"Simpan"},on:{"on-complete":t.onComplete2}},[e("div",{staticClass:"text-center mb-3",attrs:{slot:"title"},slot:"title"},[e("h2",{staticClass:"text-dark"},[t._v("Advanced example")]),t._v(" "),e("h5",{staticClass:"text-muted"},[t._v("Subtitle")])]),t._v(" "),e("tab-content",{attrs:{title:"Identitas",icon:"fa fa-user","before-change":t.validateFirstTab}},[e("div",{staticClass:"card mb-3"},[e("div",{staticClass:"card-header"},[t._v("Identitas Lengkap")]),t._v(" "),e("div",{staticClass:"card-body"},[e("vue-form-generator",{ref:"firstTabForm",attrs:{model:t.model,schema:t.firstTabSchema,options:t.formOptions}})],1)])]),t._v(" "),e("tab-content",{attrs:{title:"Alamat",icon:"fa fa-gear","before-change":t.validateSecondTab}},[e("div",{staticClass:"card mb-3"},[e("div",{staticClass:"card-header"},[t._v("Alamat Tinggal")]),t._v(" "),e("div",{staticClass:"card-body"},[e("vue-form-generator",{ref:"secondTabForm",attrs:{model:t.model,schema:t.secondTabSchema,options:t.formOptions}})],1)])]),t._v(" "),e("tab-content",{attrs:{title:"Review Data",icon:"fa fa-check"}},[e("div",{staticClass:"card mb-3"},[e("div",{staticClass:"card-header"},[t._v("Identitas Anda sebagai berikut:")]),t._v(" "),e("div",{staticClass:"card-body"},[t.model?e("pre",{domProps:{innerHTML:t._s(t.prettyJSON(t.model))}}):t._e()])])])],1)],1)},staticRenderFns:[function(){var t=this.$createElement,a=this._self._c||t;return a("div",{staticClass:"alert alert-info mb-5",attrs:{role:"alert"}},[a("ul",{staticClass:"list-unstyled mb-0"},[a("li",[this._v("Package name: "),a("code",[this._v("vue-form-wizard")])]),this._v(" "),a("li",[this._v("Link: "),a("a",{staticClass:"alert-link",attrs:{href:"https://github.com/cristijora/vue-form-wizard",target:"_blank"}},[this._v("GitHub")])])])])}]}},1311:function(t,a,e){var s=e(9)(e(1278),e(1279),!1,null,null,null);t.exports=s.exports}});
+webpackJsonp([15],{
+
+/***/ 1274:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(9)
+/* script */
+var __vue_script__ = __webpack_require__(1321)
+/* template */
+var __vue_template__ = __webpack_require__(1322)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\views\\DemoVueFullscreen.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1e3a0fa9", Component.options)
+  } else {
+    hotAPI.reload("data-v-1e3a0fa9", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 1321:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  methods: {
+    fullscreen1: function fullscreen1() {
+      this.$fullscreen.toggle(this.$el.querySelector('.fullscreen-example-1'), {
+        wrap: false,
+        callback: this.fullscreenChange
+      });
+    },
+    fullscreen1Change: function fullscreen1Change(fullscreen) {
+      this.fullscreen = fullscreen;
+    },
+    fullscreen2: function fullscreen2() {
+      this.$fullscreen.toggle(this.$el.querySelector('.fullscreen-example-2'), {
+        wrap: true,
+        callback: this.fullscreenChange
+      });
+    },
+    fullscreen2Change: function fullscreen2Change(fullscreen) {
+      this.fullscreen = fullscreen;
+    }
+  },
+  data: function data() {
+    return {
+      fullscreen: false
+    };
+  }
+});
+
+/***/ }),
+
+/***/ 1322:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "fullscreen-example-1 mb-3" }, [
+      _c("div", { staticClass: "card" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "card-header d-flex flex-row align-items-center justify-content-between"
+          },
+          [
+            _c("span", [_vm._v("Short")]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-sm btn-secondary ml-1",
+                attrs: { type: "button" },
+                on: { click: _vm.fullscreen1 }
+              },
+              [
+                _c("i", {
+                  staticClass: "fa fa-arrows-alt",
+                  attrs: { "aria-hidden": "true" }
+                }),
+                _vm._v(" Fullscreen\n        ")
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(1)
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "fullscreen-example-2 mb-3" }, [
+      _c("div", { staticClass: "card" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "card-header d-flex flex-row align-items-center justify-content-between"
+          },
+          [
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-sm btn-secondary ml-1",
+                attrs: { type: "button" },
+                on: { click: _vm.fullscreen2 }
+              },
+              [
+                _c("i", {
+                  staticClass: "fa fa-arrows-alt",
+                  attrs: { "aria-hidden": "true" }
+                }),
+                _vm._v(" Fullscreen\n        ")
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(3)
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "alert alert-info mb-5", attrs: { role: "alert" } },
+      [
+        _c("ul", { staticClass: "list-unstyled mb-0" }, [
+          _c("li", [
+            _vm._v("Package name: "),
+            _c("code", [_vm._v("vue-fullscreen")])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("Link: "),
+            _c(
+              "a",
+              {
+                staticClass: "alert-link",
+                attrs: {
+                  href: "https://github.com/mirari/vue-fullscreen",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("GitHub")]
+            )
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("blockquote", { staticClass: "blockquote mb-0" }, [
+        _c("p", [
+          _vm._v(
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+          )
+        ]),
+        _vm._v(" "),
+        _c("footer", { staticClass: "blockquote-footer" }, [
+          _vm._v("Someone famous in "),
+          _c("cite", { attrs: { title: "Source Title" } }, [
+            _vm._v("Source Title")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [
+      _vm._v("Long ("),
+      _c("code", [_vm._v("wrap: true")]),
+      _vm._v(")")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("blockquote", { staticClass: "blockquote mb-0" }, [
+        _c("h2", [_vm._v("HTML Ipsum Presents")]),
+        _vm._v(" "),
+        _c("p", [
+          _c("strong", [_vm._v("Pellentesque habitant morbi tristique")]),
+          _vm._v(
+            " senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. "
+          ),
+          _c("em", [_vm._v("Aenean ultricies mi vitae est.")]),
+          _vm._v(
+            " Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, "
+          ),
+          _c("code", [_vm._v("commodo vitae")]),
+          _vm._v(
+            ", ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. "
+          ),
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Donec non enim")]),
+          _vm._v(" in turpis pulvinar facilisis. Ut felis.")
+        ]),
+        _vm._v(" "),
+        _c("h3", [_vm._v("Header Level 3")]),
+        _vm._v(" "),
+        _c("ol", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("blockquote", [
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("h4", [_vm._v("Header Level 4")]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ]),
+        _vm._v(" "),
+        _c("ul", [
+          _c("li", [
+            _vm._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+          ]),
+          _vm._v(" "),
+          _c("li", [_vm._v("Aliquam tincidunt mauris eu risus.")])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1e3a0fa9", module.exports)
+  }
+}
+
+/***/ })
+
+});

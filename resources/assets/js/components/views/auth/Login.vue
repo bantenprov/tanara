@@ -64,8 +64,6 @@
 import Checkbox from './checkbox'
 
 export default {
-  middleware: 'guest',
-
   components: {
     'checkbox': Checkbox
   },
@@ -84,13 +82,13 @@ export default {
       const { data } = await this.form.post('/api/login')
 
       // Save the token.
-      this.$store.dispatch('auth/saveToken', {
+      this.$store.dispatch('saveToken', {
         token: data.token,
         remember: this.remember
       })
 
       // Fetch the user.
-      await this.$store.dispatch('auth/fetchUser')
+      await this.$store.dispatch('fetchUser')
 
       // Redirect home.
       this.$router.push({ name: 'dashboard' })

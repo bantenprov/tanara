@@ -245,7 +245,7 @@ import BackToTop from 'vue-backtotop';
 Vue.use(BackToTop);
 
 //
-// :)
+// #
 //
 
 import store from '~/store';

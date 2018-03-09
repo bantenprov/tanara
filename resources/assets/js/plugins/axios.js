@@ -19,36 +19,26 @@ axios.interceptors.response.use(response => response, error => {
   const { status } = error.response
 
   if (status >= 500) {
-    console.log('kode error 500');
-//--//    this.$swal({
-//--//      type: 'error',
-//--//      title: 'Oops...',
-//--//      text: 'Something went wrong! Please try again.',
-//--//      reverseButtons: true,
-//--//      confirmButtonText: 'Ok',
-//--//      cancelButtonText: 'Cancel'
-//--//    })
+    this.$swal({
+      type: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong! Please try again.',
+    });
   }
 
-  if (status === 401 && store.getters['auth/check']) {
-    console.log('kode error 401')
-    .then(async () => {
-      await store.dispatch('auth/logout')
-
+  if (status === 401 && store.getters.authCheck) {
+    this.$swal({
+      type: 'warning',
+      title: 'Session Expired!',
+      text: 'Please log in again to continue.',
+      reverseButtons: true,
+      confirmButtonText:  'Ok',
+      cancelButtonText:  'Cancel',
+      showCancelButton: true,
+    }).then(async () => {
+      await store.dispatch('logout')
       router.push({ name: 'login' })
     })
-//--//    this.$swal({
-//--//      type: 'warning',
-//--//      title: 'Session Expired!',
-//--//      text: 'Please log in again to continue.',
-//--//      reverseButtons: true,
-//--//      confirmButtonText: 'Ok',
-//--//      cancelButtonText: 'Cancel'
-//--//    }).then(async () => {
-//--//      await store.dispatch('auth/logout')
-
-//--//      router.push({ name: 'login' })
-//--//    })
   }
 
   return Promise.reject(error)

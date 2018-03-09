@@ -164,12 +164,13 @@ import { mapGetters } from 'vuex'
 
 export default {
   computed: mapGetters({
-    authenticated: 'auth/check'
+    user: 'authUser',
+    authenticated: 'authCheck'
   }),
   methods: {
     async logout () {
       // Log out the user.
-      await this.$store.dispatch('auth/logout')
+      await this.$store.dispatch('logout')
 
       // Redirect to login.
       this.$router.push({ name: 'login' })

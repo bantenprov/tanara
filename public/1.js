@@ -1,1 +1,455 @@
-webpackJsonp([1],{1244:function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=s(64),n=s.n(r),a=s(517);e.default={computed:Object(a.b)({user:"auth/user"}),methods:{logout:function(){var t,e=(t=n.a.mark(function t(){return n.a.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,this.$store.dispatch("auth/logout");case 2:this.$router.push({name:"login"});case 3:case"end":return t.stop()}},t,this)}),function(){var e=t.apply(this,arguments);return new Promise(function(t,s){return function r(n,a){try{var i=e[n](a),l=i.value}catch(t){return void s(t)}if(!i.done)return Promise.resolve(l).then(function(t){r("next",t)},function(t){r("throw",t)});t(l)}("next")})});return function(){return e.apply(this,arguments)}}(),toggleSidebar:function(t){var e=document.querySelector(".site-sidebar"),s=document.querySelector(".site-main");e.classList.toggle("d-none"),s.classList.toggle("col-md-8"),s.classList.toggle("col-lg-9"),s.classList.toggle("col-12")},toggleFullscreen:function(t){var e=document.documentElement;if(document.fullscreenEnabled||document.webkitFullscreenEnabled||document.mozFullScreenEnabled||document.msFullscreenEnabled)if(this.isFullscreen){if(document.exitFullscreen)return document.exitFullscreen(),void(this.isFullscreen=!1);if(document.webkitExitFullscreen)return document.webkitExitFullscreen(),void(this.isFullscreen=!1);if(document.mozCancelFullScreen)return document.mozCancelFullScreen(),void(this.isFullscreen=!1);if(document.msExitFullscreen)return document.msExitFullscreen(),void(this.isFullscreen=!1)}else{if(e.requestFullscreen)return e.requestFullscreen(),void(this.isFullscreen=!0);if(e.webkitRequestFullscreen)return e.webkitRequestFullscreen(),void(this.isFullscreen=!0);if(e.mozRequestFullScreen)return e.mozRequestFullScreen(),void(this.isFullscreen=!0);if(e.msRequestFullscreen)return e.msRequestFullscreen(),void(this.isFullscreen=!0)}}}}},1245:function(t,e){t.exports={render:function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("nav",{staticClass:"site-navbar navbar navbar-expand-md navbar-dark flex-md-nowrap p-0"},[s("router-link",{staticClass:"navbar-brand col-md-4 col-lg-3 mr-0 d-flex flex-row align-items-center text-uppercase",attrs:{to:{name:"home"},exact:""}},[s("img",{staticClass:"mr-2",attrs:{src:"/images/logo.png",width:"36",height:"36"}}),t._v(" "),s("span",[t._v("Tanara")])]),t._v(" "),s("div",{staticClass:"btn-group d-none d-md-inline-flex mx-3",attrs:{role:"group"}},[s("button",{staticClass:"btn btn-dark",attrs:{type:"button"},on:{click:t.toggleSidebar}},[s("i",{staticClass:"fa fa-exchange",attrs:{"aria-hidden":"true"}})]),t._v(" "),s("button",{staticClass:"btn btn-dark",attrs:{type:"button"},on:{click:t.toggleFullscreen}},[s("i",{staticClass:"fa fa-arrows-alt",attrs:{"aria-hidden":"true"}})])]),t._v(" "),s("ul",{staticClass:"navbar-nav d-none d-md-block px-3 ml-auto"},[t.user?s("li",{staticClass:"nav-item dropdown"},[s("a",{staticClass:"nav-link dropdown-toggle",attrs:{href:"#",role:"button","data-toggle":"dropdown","aria-haspopup":"true","aria-expanded":"false"}},[s("img",{attrs:{src:t.user.photo_url,width:"20",height:"20",alt:""}}),t._v(" "+t._s(t.user.name)+"\n      ")]),t._v(" "),s("div",{staticClass:"dropdown-menu dropdown-menu-right"},[s("router-link",{staticClass:"dropdown-item",attrs:{to:{name:"user.profile"}}},[s("i",{staticClass:"fa fa-user fa-fw",attrs:{"aria-hidden":"true"}}),t._v(" Profile")]),t._v(" "),s("div",{staticClass:"dropdown-divider"}),t._v(" "),s("router-link",{staticClass:"dropdown-item",attrs:{to:{name:"user.settings"}}},[s("i",{staticClass:"fa fa-cogs fa-fw",attrs:{"aria-hidden":"true"}}),t._v(" Settings")]),t._v(" "),s("div",{staticClass:"dropdown-divider"}),t._v(" "),s("a",{staticClass:"dropdown-item pl-3",attrs:{href:"#"},on:{click:function(e){e.preventDefault(),t.logout(e)}}},[s("i",{staticClass:"fa fa-sign-out fa-fw",attrs:{"aria-hidden":"true"}}),t._v(" Logout\n        ")])],1)]):[s("li",{staticClass:"nav-item dropdown"},[t._m(0),t._v(" "),s("div",{staticClass:"dropdown-menu dropdown-menu-right"},[s("router-link",{staticClass:"dropdown-item",attrs:{to:{name:"login"}}},[s("i",{staticClass:"fa fa-sign-in fa-fw",attrs:{"aria-hidden":"true"}}),t._v(" Log In")]),t._v(" "),s("div",{staticClass:"dropdown-divider"}),t._v(" "),s("router-link",{staticClass:"dropdown-item",attrs:{to:{name:"register"}}},[s("i",{staticClass:"fa fa-user-plus fa-fw",attrs:{"aria-hidden":"true"}}),t._v(" Register")])],1)])]],2)],1)},staticRenderFns:[function(){var t=this.$createElement,e=this._self._c||t;return e("a",{staticClass:"nav-link dropdown-toggle",attrs:{href:"#",role:"button","data-toggle":"dropdown","aria-haspopup":"true","aria-expanded":"false"}},[e("i",{staticClass:"fa fa-user-circle fa-fw",attrs:{"aria-hidden":"true"}}),this._v(" User\n        ")])}]}},1288:function(t,e,s){var r=s(9)(s(1244),s(1245),!1,null,null,null);t.exports=r.exports}});
+webpackJsonp([1],{
+
+/***/ 1290:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(522);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: Object(__WEBPACK_IMPORTED_MODULE_1_vuex__["b" /* mapGetters */])({
+    user: 'authUser',
+    authenticated: 'authCheck'
+  }),
+  methods: {
+    logout: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return this.$store.dispatch('logout');
+
+              case 2:
+
+                // Redirect to login.
+                this.$router.push({ name: 'login' });
+
+              case 3:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function logout() {
+        return _ref.apply(this, arguments);
+      }
+
+      return logout;
+    }(),
+
+    toggleSidebar: function toggleSidebar(event) {
+      var sidebar = document.querySelector('.site-sidebar');
+      var main = document.querySelector('.site-main');
+
+      sidebar.classList.toggle('d-none');
+
+      main.classList.toggle('col-md-8');
+      main.classList.toggle('col-lg-9');
+      main.classList.toggle('col-12');
+    },
+    toggleFullscreen: function toggleFullscreen(event) {
+      var elem = document.documentElement;
+      if (document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled) {
+        if (!this.isFullscreen) {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+            this.isFullscreen = true;
+            return;
+          } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+            this.isFullscreen = true;
+            return;
+          } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+            this.isFullscreen = true;
+            return;
+          } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+            this.isFullscreen = true;
+            return;
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+            this.isFullscreen = false;
+            return;
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+            this.isFullscreen = false;
+            return;
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+            this.isFullscreen = false;
+            return;
+          } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+            this.isFullscreen = false;
+            return;
+          }
+        };
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ 1291:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "nav",
+    {
+      staticClass:
+        "site-navbar navbar navbar-expand-md navbar-dark flex-md-nowrap p-0"
+    },
+    [
+      _c(
+        "router-link",
+        {
+          staticClass:
+            "navbar-brand col-md-4 col-lg-3 mr-0 d-flex flex-row align-items-center text-uppercase",
+          attrs: { to: { name: "home" }, exact: "" }
+        },
+        [
+          _c("img", {
+            staticClass: "mr-2",
+            attrs: { src: "/images/logo.png", width: "36", height: "36" }
+          }),
+          _vm._v(" "),
+          _c("span", [_vm._v("Tanara")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "btn-group d-none d-md-inline-flex mx-3",
+          attrs: { role: "group" }
+        },
+        [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-dark",
+              attrs: { type: "button" },
+              on: { click: _vm.toggleSidebar }
+            },
+            [
+              _c("i", {
+                staticClass: "fa fa-exchange",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-dark",
+              attrs: { type: "button" },
+              on: { click: _vm.toggleFullscreen }
+            },
+            [
+              _c("i", {
+                staticClass: "fa fa-arrows-alt",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "ul",
+        { staticClass: "navbar-nav d-none d-md-block px-3 ml-auto" },
+        [
+          _vm.user
+            ? _c("li", { staticClass: "nav-item dropdown" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "nav-link dropdown-toggle",
+                    attrs: {
+                      href: "#",
+                      role: "button",
+                      "data-toggle": "dropdown",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.user.photo_url,
+                        width: "20",
+                        height: "20",
+                        alt: ""
+                      }
+                    }),
+                    _vm._v(" " + _vm._s(_vm.user.name) + "\n      ")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: { to: { name: "user.profile" } }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fa fa-user fa-fw",
+                          attrs: { "aria-hidden": "true" }
+                        }),
+                        _vm._v(" Profile")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown-divider" }),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: { to: { name: "user.settings" } }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fa fa-cogs fa-fw",
+                          attrs: { "aria-hidden": "true" }
+                        }),
+                        _vm._v(" Settings")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown-divider" }),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item pl-3",
+                        attrs: { href: "#" },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            _vm.logout($event)
+                          }
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fa fa-sign-out fa-fw",
+                          attrs: { "aria-hidden": "true" }
+                        }),
+                        _vm._v(" Logout\n        ")
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ])
+            : [
+                _c("li", { staticClass: "nav-item dropdown" }, [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "dropdown-menu dropdown-menu-right" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "dropdown-item",
+                          attrs: { to: { name: "login" } }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa fa-sign-in fa-fw",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" Log In")
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown-divider" }),
+                      _vm._v(" "),
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "dropdown-item",
+                          attrs: { to: { name: "register" } }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "fa fa-user-plus fa-fw",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" Register")
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ]
+        ],
+        2
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "nav-link dropdown-toggle",
+        attrs: {
+          href: "#",
+          role: "button",
+          "data-toggle": "dropdown",
+          "aria-haspopup": "true",
+          "aria-expanded": "false"
+        }
+      },
+      [
+        _c("i", {
+          staticClass: "fa fa-user-circle fa-fw",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v(" User\n        ")
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-cd7fb372", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(9)
+/* script */
+var __vue_script__ = __webpack_require__(1290)
+/* template */
+var __vue_template__ = __webpack_require__(1291)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Navbar.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-cd7fb372", Component.options)
+  } else {
+    hotAPI.reload("data-v-cd7fb372", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ })
+
+});

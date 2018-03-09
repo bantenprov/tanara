@@ -10,9 +10,9 @@ export const state = {
 
 // getters
 export const getters = {
-  user: state => state.user,
-  token: state => state.token,
-  check: state => state.user !== null
+  authUser: state => state.user,
+  authToken: state => state.token,
+  authCheck: state => state.user !== null
 }
 
 // mutations
@@ -69,11 +69,5 @@ export const actions = {
     } catch (e) { }
 
     commit(types.LOGOUT)
-  },
-
-  async fetchOauthUrl (ctx, { provider }) {
-    const { data } = await axios.post(`/api/oauth/${provider}`)
-
-    return data.url
   }
 }
