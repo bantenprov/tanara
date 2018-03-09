@@ -1,4 +1,17 @@
-<!doctype html>
+@php
+$polyfills = [
+    'Promise',
+    'Object.assign',
+    'Object.values',
+    'Array.prototype.find',
+    'Array.prototype.findIndex',
+    'Array.prototype.includes',
+    'String.prototype.includes',
+    'String.prototype.startsWith',
+    'String.prototype.endsWith',
+];
+@endphp
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="utf-8">
@@ -15,6 +28,7 @@
 
     <div id="app"></div>
 
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features={{ implode(',', $polyfills) }}"></script>
     <script async src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

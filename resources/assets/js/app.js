@@ -1,104 +1,70 @@
 import App from './App.vue';
-
 import 'bootstrap';
 
+//
+// vue
+//
+
 import Vue from 'vue';
-import VueRouter from 'vue-router';
-import VueEvents from 'vue-events';
-import axios from 'axios';
-import lodash from 'lodash';
-import debounce from 'lodash/debounce';
-import moment from 'moment';
-import Fuse from 'fuse.js';
-import VueProgressBar from 'vue-progressbar';
-import VueForm from 'vue-form';
-import VueFormWizard from 'vue-form-wizard';
-import 'vue-form-wizard/dist/vue-form-wizard.min.css';
-import VueFormGenerator from 'vue-form-generator';
-import 'vue-form-generator/dist/vfg.css';
-import vSelect from 'vue-select';
-import Datepicker from 'vuejs-datepicker';
-import VueCharts from 'vue-chartjs';
-import IEcharts from 'vue-echarts-v3/src/full.js';
-import miniToastr from 'mini-toastr';
-import VueSweetalert2 from 'vue-sweetalert2';
-import fullscreen from 'vue-fullscreen';
-import Qrcode from '@xkeshi/vue-qrcode';
-import BackToTop from 'vue-backtotop';
-
-import ChartjsBarChart from './add-ons/vue-chartjs/BarChart.js';
-import ChartjsBarHorizontalChart from './add-ons/vue-chartjs/BarHorizontalChart.js';
-import ChartjsBubbleChart from './add-ons/vue-chartjs/BubbleChart.js';
-import ChartjsDoughnutChart from './add-ons/vue-chartjs/DoughnutChart.js';
-import ChartjsLineChart from './add-ons/vue-chartjs/LineChart.js';
-import ChartjsPieChart from './add-ons/vue-chartjs/PieChart.js';
-import ChartjsPolarAreaChart from './add-ons/vue-chartjs/PolarAreaChart.js';
-import ChartjsRadarChart from './add-ons/vue-chartjs/RadarChart.js';
-
-import { ServerTable, ClientTable, Event } from 'vue-tables-2';
-import VueTablesTemplate from './add-ons/vue-tables/Template.vue';
-
-import Vuetable from 'vuetable-2/src/components/Vuetable';
-import VuetablePagination from 'vuetable-2/src/components/VuetablePagination';
-import VuetablePaginationDropdown from 'vuetable-2/src/components/VuetablePaginationDropdown';
-import VuetablePaginationInfo from 'vuetable-2/src/components/VuetablePaginationInfo';
-import VuetableFilterBar from './add-ons/vue-table/FilterBar.vue';
-
-import routes from './routes';
-import './components';
-
 
 window.Vue = Vue;
+
+//
+// vue-router
+//
+
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter);
+
+//
+// vue-events
+//
+
+import VueEvents from 'vue-events';
+
+Vue.use(VueEvents);
+
+//
+// axios
+//
+
+import axios from 'axios';
+
 window.axios = axios;
-window._ = lodash;
-window.Fuse = Fuse;
-window.miniToastr = miniToastr;
-window.vSelect = vSelect;
-window.VueFormGenerator = VueFormGenerator;
-window.Datepicker = Datepicker;
 
 window.axios.defaults.headers.common = {
   // 'X-Requested-With': 'XMLHttpRequest'
 };
 
+//
+// lodash
+//
 
-miniToastr.init();
+import lodash from 'lodash';
+import debounce from 'lodash/debounce';
 
+window._ = lodash;
 
-const router = new VueRouter({
-  routes,
-  linkActiveClass: "active",
-  scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
-    }
-  }
-})
+//
+// moment
+//
 
-router.beforeEach((to, from, next) => {
-  if (to.meta.title) {
-    document.title = to.meta.title;
-  }
-  next();
-})
+import moment from 'moment';
 
-router.afterEach((to, from) => {
-  // ...
-})
+//
+// fuse.js
+//
 
+import Fuse from 'fuse.js';
 
-Vue.use(VueRouter);
-Vue.use(VueEvents);
-Vue.use(VueForm);
-Vue.use(VueFormWizard);
-Vue.use(VueFormGenerator);
-Vue.use(ServerTable, {}, false);
-Vue.use(ClientTable, {}, false);
-Vue.use(VueSweetalert2);
-Vue.use(fullscreen);
-Vue.use(BackToTop);
+window.Fuse = Fuse;
+
+//
+// vue-progressbar
+//
+
+import VueProgressBar from 'vue-progressbar';
 
 Vue.use(VueProgressBar, {
   color: '#77b6ff',
@@ -114,10 +80,83 @@ Vue.use(VueProgressBar, {
   inverse: false
 })
 
+//
+// vue-form
+//
+
+import VueForm from 'vue-form';
+
+Vue.use(VueForm);
+
+//
+// vue-form-wizard
+//
+
+import VueFormWizard from 'vue-form-wizard';
+import 'vue-form-wizard/dist/vue-form-wizard.min.css';
+
+Vue.use(VueFormWizard);
+
+//
+// vue-form-generator
+//
+
+import VueFormGenerator from 'vue-form-generator';
+import 'vue-form-generator/dist/vfg.css';
+
+window.VueFormGenerator = VueFormGenerator;
+
+Vue.use(VueFormGenerator);
+
+//
+// vform
+//
+
+import Form from 'vform';
+import { HasError, AlertError, AlertErrors, AlertSuccess } from 'vform';
+
+window.Form = Form;
+
+Vue.component(HasError.name, HasError);
+Vue.component(AlertError.name, AlertError);
+Vue.component(AlertErrors.name, AlertErrors);
+Vue.component(AlertSuccess.name, AlertSuccess);
+
+//
+// vue-select
+//
+
+import vSelect from 'vue-select';
+
+window.vSelect = vSelect;
 
 Vue.component('v-select', vSelect);
+
+//
+// vuejs-datepicker
+//
+
+import Datepicker from 'vuejs-datepicker';
+
+window.Datepicker = Datepicker;
+
 Vue.component('datepicker', Datepicker);
-Vue.component('qrcode', Qrcode);
+
+//
+// vue-chartjs
+//
+
+import VueCharts from 'vue-chartjs';
+
+import ChartjsBarChart from './add-ons/vue-chartjs/BarChart.js';
+import ChartjsBarHorizontalChart from './add-ons/vue-chartjs/BarHorizontalChart.js';
+import ChartjsBubbleChart from './add-ons/vue-chartjs/BubbleChart.js';
+import ChartjsDoughnutChart from './add-ons/vue-chartjs/DoughnutChart.js';
+import ChartjsLineChart from './add-ons/vue-chartjs/LineChart.js';
+import ChartjsPieChart from './add-ons/vue-chartjs/PieChart.js';
+import ChartjsPolarAreaChart from './add-ons/vue-chartjs/PolarAreaChart.js';
+import ChartjsRadarChart from './add-ons/vue-chartjs/RadarChart.js';
+
 Vue.component('chartjs-bar', ChartjsBarChart);
 Vue.component('chartjs-bar-horizontal', ChartjsBarHorizontalChart);
 Vue.component('chartjs-bubble', ChartjsBubbleChart);
@@ -126,16 +165,96 @@ Vue.component('chartjs-line', ChartjsLineChart);
 Vue.component('chartjs-pie', ChartjsPieChart);
 Vue.component('chartjs-polar-area', ChartjsPolarAreaChart);
 Vue.component('chartjs-radar', ChartjsRadarChart);
+
+//
+// vue-echarts-v3
+//
+
+import IEcharts from 'vue-echarts-v3/src/full.js';
+
 Vue.component('IEcharts', IEcharts);
+
+//
+// mini-toastr
+//
+
+import miniToastr from 'mini-toastr';
+
+window.miniToastr = miniToastr;
+
+miniToastr.init();
+
+//
+// vue-sweetalert2
+//
+
+import VueSweetalert2 from 'vue-sweetalert2';
+
+Vue.use(VueSweetalert2);
+
+//
+// vue-fullscreen
+//
+
+import fullscreen from 'vue-fullscreen';
+
+Vue.use(fullscreen);
+
+//
+// vue-tables-2
+//
+
+import { ServerTable, ClientTable, Event } from 'vue-tables-2';
+import VueTablesTemplate from './add-ons/vue-tables/Template.vue';
+
+Vue.use(ServerTable, {}, false);
+Vue.use(ClientTable, {}, false);
+
 Vue.component('vue-tables', VueTablesTemplate);
+
+//
+// @xkeshi/vue-qrcode
+//
+
+import Qrcode from '@xkeshi/vue-qrcode';
+
+Vue.component('qrcode', Qrcode);
+
+//
+// vuetable-2
+//
+
+import Vuetable from 'vuetable-2/src/components/Vuetable';
+import VuetablePagination from 'vuetable-2/src/components/VuetablePagination';
+import VuetablePaginationDropdown from 'vuetable-2/src/components/VuetablePaginationDropdown';
+import VuetablePaginationInfo from 'vuetable-2/src/components/VuetablePaginationInfo';
+import VuetableFilterBar from './add-ons/vue-table/FilterBar.vue';
+
 Vue.component("vuetable", Vuetable);
 Vue.component("vuetable-pagination", VuetablePagination);
 Vue.component("vuetable-pagination-dropdown", VuetablePaginationDropdown);
 Vue.component("vuetable-pagination-info", VuetablePaginationInfo);
 Vue.component("vuetable-filter-bar", VuetableFilterBar);
 
+//
+// vue-backtotop
+//
+
+import BackToTop from 'vue-backtotop';
+
+Vue.use(BackToTop);
+
+//
+// :)
+//
+
+import store from '~/store';
+import router from '~/router';
+import '~/plugins';
+import '~/components';
 
 new Vue({
+  store,
   router,
   template: '<App/>',
   components: { App }
