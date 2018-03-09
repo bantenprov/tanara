@@ -43,12 +43,6 @@
 
 <script>
 export default {
-  middleware: 'guest',
-
-  metaInfo () {
-    return { title: 'Reset Password' }
-  },
-
   data: () => ({
     status: '',
     form: new Form({

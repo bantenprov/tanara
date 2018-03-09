@@ -1,1 +1,318 @@
-webpackJsonp([14],{1274:function(i,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default={methods:{fullscreen1:function(){this.$fullscreen.toggle(this.$el.querySelector(".fullscreen-example-1"),{wrap:!1,callback:this.fullscreenChange})},fullscreen1Change:function(i){this.fullscreen=i},fullscreen2:function(){this.$fullscreen.toggle(this.$el.querySelector(".fullscreen-example-2"),{wrap:!0,callback:this.fullscreenChange})},fullscreen2Change:function(i){this.fullscreen=i}},data:function(){return{fullscreen:!1}}}},1275:function(i,e){i.exports={render:function(){var i=this,e=i.$createElement,t=i._self._c||e;return t("div",[i._m(0),i._v(" "),t("div",{staticClass:"fullscreen-example-1 mb-3"},[t("div",{staticClass:"card"},[t("div",{staticClass:"card-header d-flex flex-row align-items-center justify-content-between"},[t("span",[i._v("Short")]),i._v(" "),t("button",{staticClass:"btn btn-sm btn-secondary ml-1",attrs:{type:"button"},on:{click:i.fullscreen1}},[t("i",{staticClass:"fa fa-arrows-alt",attrs:{"aria-hidden":"true"}}),i._v(" Fullscreen\n        ")])]),i._v(" "),i._m(1)])]),i._v(" "),t("div",{staticClass:"fullscreen-example-2 mb-3"},[t("div",{staticClass:"card"},[t("div",{staticClass:"card-header d-flex flex-row align-items-center justify-content-between"},[i._m(2),i._v(" "),t("button",{staticClass:"btn btn-sm btn-secondary ml-1",attrs:{type:"button"},on:{click:i.fullscreen2}},[t("i",{staticClass:"fa fa-arrows-alt",attrs:{"aria-hidden":"true"}}),i._v(" Fullscreen\n        ")])]),i._v(" "),i._m(3)])])])},staticRenderFns:[function(){var i=this.$createElement,e=this._self._c||i;return e("div",{staticClass:"alert alert-info mb-5",attrs:{role:"alert"}},[e("ul",{staticClass:"list-unstyled mb-0"},[e("li",[this._v("Package name: "),e("code",[this._v("vue-fullscreen")])]),this._v(" "),e("li",[this._v("Link: "),e("a",{staticClass:"alert-link",attrs:{href:"https://github.com/mirari/vue-fullscreen",target:"_blank"}},[this._v("GitHub")])])])])},function(){var i=this.$createElement,e=this._self._c||i;return e("div",{staticClass:"card-body"},[e("blockquote",{staticClass:"blockquote mb-0"},[e("p",[this._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]),this._v(" "),e("footer",{staticClass:"blockquote-footer"},[this._v("Someone famous in "),e("cite",{attrs:{title:"Source Title"}},[this._v("Source Title")])])])])},function(){var i=this.$createElement,e=this._self._c||i;return e("span",[this._v("Long ("),e("code",[this._v("wrap: true")]),this._v(")")])},function(){var i=this,e=i.$createElement,t=i._self._c||e;return t("div",{staticClass:"card-body"},[t("blockquote",{staticClass:"blockquote mb-0"},[t("h2",[i._v("HTML Ipsum Presents")]),i._v(" "),t("p",[t("strong",[i._v("Pellentesque habitant morbi tristique")]),i._v(" senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. "),t("em",[i._v("Aenean ultricies mi vitae est.")]),i._v(" Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, "),t("code",[i._v("commodo vitae")]),i._v(", ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. "),t("a",{attrs:{href:"#"}},[i._v("Donec non enim")]),i._v(" in turpis pulvinar facilisis. Ut felis.")]),i._v(" "),t("h3",[i._v("Header Level 3")]),i._v(" "),t("ol",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("blockquote",[t("p",[i._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.")])]),i._v(" "),t("h4",[i._v("Header Level 4")]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])]),i._v(" "),t("ul",[t("li",[i._v("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")]),i._v(" "),t("li",[i._v("Aliquam tincidunt mauris eu risus.")])])])])}]}},1309:function(i,e,t){var s=t(9)(t(1274),t(1275),!1,null,null,null);i.exports=s.exports}});
+webpackJsonp([14],{
+
+/***/ 1275:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(9)
+/* script */
+var __vue_script__ = __webpack_require__(1323)
+/* template */
+var __vue_template__ = __webpack_require__(1324)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\views\\DemoVueQrcode.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0283de08", Component.options)
+  } else {
+    hotAPI.reload("data-v-0283de08", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 1323:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      val: window.location.href,
+      bgColor: "#FFFFFF",
+      fgColor: "#000000",
+      size: 200
+    };
+  }
+});
+
+/***/ }),
+
+/***/ 1324:
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "card border-info mb-3" }, [
+      _c("div", { staticClass: "card-header bg-transparent border-info" }, [
+        _vm._v("Settings")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "form-row" }, [
+          _c("div", { staticClass: "col-sm form-group" }, [
+            _c("label", { attrs: { for: "size" } }, [_vm._v("size(px)")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.size,
+                  expression: "size"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "number", id: "size" },
+              domProps: { value: _vm.size },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.size = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm form-group" }, [
+            _c("label", { attrs: { for: "background" } }, [
+              _vm._v("background")
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.bgColor,
+                  expression: "bgColor"
+                }
+              ],
+              staticClass: "form-control p-0",
+              staticStyle: { height: "38px" },
+              attrs: { type: "color", id: "background" },
+              domProps: { value: _vm.bgColor },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.bgColor = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm form-group" }, [
+            _c("label", { attrs: { for: "foreground" } }, [
+              _vm._v("foreground")
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.fgColor,
+                  expression: "fgColor"
+                }
+              ],
+              staticClass: "form-control p-0",
+              staticStyle: { height: "38px" },
+              attrs: { type: "color", id: "foreground" },
+              domProps: { value: _vm.fgColor },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.fgColor = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-12 form-group mb-0" }, [
+            _c("label", { attrs: { for: "value" } }, [_vm._v("value")]),
+            _vm._v(" "),
+            _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.val,
+                  expression: "val"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { rows: "3", cols: "80", id: "value" },
+              domProps: { value: _vm.val },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.val = $event.target.value
+                }
+              }
+            })
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "card text-dark bg-light mb-3" }, [
+      _c("div", { staticClass: "card-header" }, [_vm._v("QRcode")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "card-body" },
+        [
+          _c("qrcode", {
+            staticClass: "d-block mx-auto",
+            attrs: {
+              value: _vm.val,
+              options: {
+                background: _vm.bgColor,
+                foreground: _vm.fgColor,
+                size: _vm.size,
+                level: "H"
+              },
+              tag: "img"
+            }
+          })
+        ],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "alert alert-info mb-5", attrs: { role: "alert" } },
+      [
+        _c("ul", { staticClass: "list-unstyled mb-0" }, [
+          _c("li", [
+            _vm._v("Package name: "),
+            _c("code", [_vm._v("@xkeshi/vue-qrcode")])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("Link: "),
+            _c(
+              "a",
+              {
+                staticClass: "alert-link",
+                attrs: {
+                  href: "https://github.com/xkeshi/vue-qrcode",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("GitHub")]
+            )
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0283de08", module.exports)
+  }
+}
+
+/***/ })
+
+});
