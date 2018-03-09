@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+let path = require('path');
 let webpack = require('webpack');
 
 mix.webpackConfig({
@@ -9,7 +10,13 @@ mix.webpackConfig({
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.json', '.vue'],
+    alias: {
+      '~': path.join(__dirname, './resources/assets/js')
+    }
+  },
 })
 
 mix.js('resources/assets/js/app.js', 'public/js')
