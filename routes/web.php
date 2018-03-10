@@ -1,5 +1,5 @@
 <?php
 
-Route::get('{path}', function () {
+Route::get('/', function () {
     return view('welcome');
-})->where('path', '(.*)');
+});
