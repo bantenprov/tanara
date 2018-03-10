@@ -38,7 +38,8 @@ Tanara is a starter theme made with [Laravel](https://laravel.com), [Vue.js](htt
    - Composer: `composer create-project bantenprov/tanara:dev-dev`.
 2. From the root `/tanara` directory, run `composer install` in the command line.
 3. Copy `.env.example` to `.env`.
-4. Configure the `.env` file. Run `php artisan key:generate`.
+4. Configure the `.env` file. Run `php artisan key:generate` and `php artisan jwt:secret`.
+5. Run `php artisan migrate`.
 
 ### Running project locally
 
@@ -117,18 +118,11 @@ project (indentation, accurate comments, etc.)
 
 All HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Mark Otto](https://github.com/mdo).
 
-#### HTML
-
-[Adhere to the Code Guide.](http://codeguide.co/#html)
-
-#### CSS
-
-[Adhere to the Code Guide.](http://codeguide.co/#css)
-
-#### JS
-
-- 2 spaces (no tabs)
-- "Attractive"
+- **HTML:** [Adhere to the Code Guide.](http://codeguide.co/#html)
+- **CSS:** [Adhere to the Code Guide.](http://codeguide.co/#css)
+- **JS:**
+  - 2 spaces (no tabs)
+  - "Attractive"
 
 #### EditorConfig
 
