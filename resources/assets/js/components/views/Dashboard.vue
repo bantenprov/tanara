@@ -163,14 +163,3 @@
 
   </div>
 </template>
-
-<script>
-export default {
-  name: 'Dashboard',
-  middleware: 'auth',
-
-//  created () {
-//    this.$store.dispatch('auth/fetchUser', { self: this })
-//  }
-}
-</script>

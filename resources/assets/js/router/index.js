@@ -23,6 +23,7 @@ export default router
  */
 function make (routes) {
   const router = new Router({
+    mode: 'history',
     routes,
     linkActiveClass: 'active',
     scrollBehavior

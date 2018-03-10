@@ -78,6 +78,14 @@ export default {
 
   methods: {
     async login () {
+      try {
+        const { data } = await this.form.post('/api/login')
+        console.log(data)
+      } catch (e) {
+        console.log(e)
+        return
+      }
+
       // Submit the form.
       const { data } = await this.form.post('/api/login')
 
@@ -90,7 +98,7 @@ export default {
       // Fetch the user.
       await this.$store.dispatch('fetchUser')
 
-      // Redirect home.
+      // Redirect dashboard.
       this.$router.push({ name: 'dashboard' })
     }
   }
