@@ -1,8 +1,8 @@
 <template>
   <nav class="site-navmenu navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 pt-md-3 border-top-0 border-right-0 border-left-0">
 
-    <div class="d-md-none">
-      <div v-if="user" class="navmenu-brand text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center" style="background-color: rgba(0,0,0,.1);">
+    <div v-if="user" class="d-md-none">
+      <div class="navmenu-brand text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center" style="background-color: rgba(0,0,0,.1);">
         <router-link :to="{ name: 'user.profile' }"><img class="mr-3" :src="user.photo_url" width="64" height="64" alt=""></router-link>
         <div class="w-100">
           <span>{{ user.name }}</span>
@@ -25,7 +25,7 @@
       <div class="navmenu-divider"></div>
     </div>
 
-    <div class="navmenu-content navmenu-toggler">
+    <div class="navmenu-content navmenu-toggler" v-bind:class="[!user ? 'pt-3' : '']">
       <button class="btn btn-outline-light btn-block" type="button" data-toggle="collapse" data-target="#AdminSidebar" aria-controls="AdminSidebar" aria-expanded="false" aria-label="Toggle navigation">Toggle navigation</button>
     </div>
 
