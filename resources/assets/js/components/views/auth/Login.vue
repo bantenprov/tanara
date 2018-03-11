@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import Checkbox from './checkbox'
+import Checkbox from './checkbox';
 
 export default {
   components: {
@@ -88,10 +88,14 @@ export default {
       })
 
       // Fetch the user.
-      await this.$store.dispatch('fetchUser')
+      if(data != null) {
+        await this.$store.dispatch('fetchUser')
+      }
 
       // Redirect dashboard.
-      this.$router.push({ name: 'dashboard' })
+      if(data != null) {
+        this.$router.push({ name: 'dashboard' })
+      }
     }
   }
 }

@@ -2,24 +2,24 @@
   <nav class="site-navmenu navmenu navmenu-expand-md navmenu-dark bg-dark h-100 pt-0 pt-md-3 border-top-0 border-right-0 border-left-0">
 
     <div class="d-md-none">
-      <div class="navmenu-brand text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center" style="background-color: rgba(0,0,0,.1);">
-        <router-link :to="{ name: 'user.profile' }"><img class="mr-3" src="/images/avatar.png" width="64" height="64" alt=""></router-link>
+      <div v-if="user" class="navmenu-brand text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center" style="background-color: rgba(0,0,0,.1);">
+        <router-link :to="{ name: 'user.profile' }"><img class="mr-3" :src="user.photo_url" width="64" height="64" alt=""></router-link>
         <div class="w-100">
-          <span>User</span>
+          <span>{{ user.name }}</span>
           <hr class="my-1" style="background-color: rgba(255,255,255,.1);">
           <ul class="list-inline small mb-0">
             <li class="list-inline-item">
-              <router-link class="text-white" to="/" title="Sign out" exact>
-                <i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Sign out
-              </router-link>
+              <a @click.prevent="logout" class="text-white" href="#">
+                <i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> Logout
+              </a>
             </li>
           </ul>
         </div>
       </div>
 
       <div class="navmenu-nav">
-        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.profile' }"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Profile</router-link>
-        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'user.settings' }"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i> Settings</router-link>
+        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'profile' }"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Profile</router-link>
+        <router-link class="nav-item nav-item-hover nav-link" :to="{ name: 'settings' }"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i> Settings</router-link>
       </div><!-- /.navmenu-nav -->
 
       <div class="navmenu-divider"></div>
@@ -129,12 +129,26 @@
 </template>
 
 <script>
-import MenuItems from "../menu.js";
+import { mapGetters } from 'vuex';
+import MenuItems from '../menu.js';
 
 export default {
   data() {
     return {
       menuitems: MenuItems
+    }
+  },
+  computed: mapGetters({
+    user: 'authUser',
+    authenticated: 'authCheck'
+  }),
+  methods: {
+    async logout () {
+      // Log out the user.
+      await this.$store.dispatch('logout')
+
+      // Redirect to login.
+      this.$router.push({ name: 'login' })
     }
   }
 }

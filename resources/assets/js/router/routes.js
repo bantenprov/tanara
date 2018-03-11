@@ -10,66 +10,61 @@ export default ({ authGuard, guestGuard }) => [
     path: '/',
     name: 'home',
     component: resolve => require(['~/components/views/Home.vue'], resolve),
-    children: [
-      {
-        path: '/',
-        component: resolve => require(['~/components/views/Home.vue'], resolve),
-        meta: {
-          title: "Tanara"
-        }
-      }
-    ]
+    meta: {
+      title: "Tanara"
+    }
   },
 
   // Authenticated routes.
   ...authGuard([
     {
-      path: '/user',
-      name: 'user',
-      redirect: '/user/profile',
+      path: '/profile',
       component: layout('Default'),
       children: [
         {
-          path: '/user/profile',
-          name: 'user.profile',
+          path: '/profile',
+          name: 'profile',
           components: {
-            main: resolve => require(['~/components/views/user/Profile.vue'], resolve),
+            main: resolve => require(['~/components/views/Profile.vue'], resolve),
             navbar: resolve => require(['~/components/Navbar.vue'], resolve),
             sidebar: resolve => require(['~/components/Sidebar.vue'], resolve)
           },
           meta: {
-            title: "User Profile"
+            title: "Profile"
           }
-        },
+        }
+      ]
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      redirect: '/settings/user-profile',
+      component: layout('Default'),
+      children: [
         {
-          path: '/user/settings',
-          name: 'user.settings',
-          redirect: '/user/settings/profile',
-        },
-        {
-          path: '/user/settings/profile',
-          name: 'user.settings-profile',
+          path: '/settings/user-profile',
+          name: 'settings.user-profile',
           components: {
-            main: resolve => require(['~/components/views/user/SettingsProfile.vue'], resolve),
+            main: resolve => require(['~/components/views/settings/UserProfile.vue'], resolve),
             navbar: resolve => require(['~/components/Navbar.vue'], resolve),
             sidebar: resolve => require(['~/components/Sidebar.vue'], resolve)
           },
           meta: {
-            title: "User Settings - Profile"
+            title: "Profile Settings"
           }
         },
         {
-          path: '/user/settings/password',
-          name: 'user.settings-password',
+          path: '/settings/user-password',
+          name: 'settings.user-password',
           components: {
-            main: resolve => require(['~/components/views/user/SettingsPassword.vue'], resolve),
+            main: resolve => require(['~/components/views/settings/UserPassword.vue'], resolve),
             navbar: resolve => require(['~/components/Navbar.vue'], resolve),
             sidebar: resolve => require(['~/components/Sidebar.vue'], resolve)
           },
           meta: {
-            title: "User Settings - Password"
+            title: "Change Password"
           }
-        },
+        }
       ]
     },
     {

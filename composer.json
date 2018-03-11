@@ -19,6 +19,7 @@
         "php": ">=5.6.4",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.4.*",
+        "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
         "tymon/jwt-auth": "^1.0.0-rc.1"
     },

@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import NavSettings from './settings-nav'
+import { mapGetters } from 'vuex';
+import NavSettings from './navs';
 
 export default {
   components: {

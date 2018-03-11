@@ -1,10 +1,12 @@
 <?php
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -16,7 +18,9 @@
 | loading any of our classes later on. It feels nice to relax.
 |
 */
+
 require __DIR__.'/../bootstrap/autoload.php';
+
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
@@ -28,7 +32,9 @@ require __DIR__.'/../bootstrap/autoload.php';
 | the responses back to the browser and delight our users.
 |
 */
+
 $app = require_once __DIR__.'/../bootstrap/app.php';
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -40,9 +46,13 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 | and wonderful application we have prepared for them.
 |
 */
+
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
+
 $response->send();
+
 $kernel->terminate($request, $response);

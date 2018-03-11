@@ -11,7 +11,7 @@ $polyfills = [
     'String.prototype.endsWith',
 ];
 @endphp
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
     <meta charset="utf-8">
@@ -28,7 +28,11 @@ $polyfills = [
 
     <div id="app"></div>
 
+    {{-- Polyfill JS features via polyfill.io --}}
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features={{ implode(',', $polyfills) }}"></script>
+
+    {{-- Load the application scripts --}}
     <script async src="{{ asset('js/app.js') }}"></script>
+
 </body>
 </html>
