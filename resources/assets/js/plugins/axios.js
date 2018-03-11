@@ -1,6 +1,7 @@
-import axios from 'axios'
-import store from '~/store'
-import router from '~/router'
+import axios from 'axios';
+import store from '~/store';
+import router from '~/router';
+import swal from 'sweetalert2';
 
 // Request interceptor
 axios.interceptors.request.use(request => {
@@ -19,24 +20,27 @@ axios.interceptors.response.use(response => response, error => {
   const { status } = error.response
 
   if (status >= 500) {
-    this.$swal({
+    swal({
       type: 'error',
       title: 'Oops...',
       text: 'Something went wrong! Please try again.',
-    });
+      reverseButtons: true,
+      confirmButtonText: 'Ok',
+      cancelButtonText: 'Cancel'
+    })
   }
 
-  if (status === 401 && store.getters.authCheck) {
-    this.$swal({
+  if (status === 401 && store.getters['auth/check']) {
+    swal({
       type: 'warning',
       title: 'Session Expired!',
       text: 'Please log in again to continue.',
       reverseButtons: true,
-      confirmButtonText:  'Ok',
-      cancelButtonText:  'Cancel',
-      showCancelButton: true,
+      confirmButtonText: 'Ok',
+      cancelButtonText: 'Cancel'
     }).then(async () => {
-      await store.dispatch('logout')
+      await store.dispatch('auth/logout')
+
       router.push({ name: 'login' })
     })
   }

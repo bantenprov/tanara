@@ -1,14 +1,14 @@
 webpackJsonp([51],{
 
-/***/ 1107:
+/***/ 1273:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(19)
+var normalizeComponent = __webpack_require__(9)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(1317)
 /* template */
-var __vue_template__ = __webpack_require__(1132)
+var __vue_template__ = __webpack_require__(1318)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -25,7 +25,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\views\\AdminConfigurations.vue"
+Component.options.__file = "resources\\assets\\js\\components\\views\\DemoMiniToastr.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -34,9 +34,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-459312d2", Component.options)
+    hotAPI.createRecord("data-v-607f236c", Component.options)
   } else {
-    hotAPI.reload("data-v-459312d2", Component.options)
+    hotAPI.reload("data-v-607f236c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48,23 +48,89 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 1132:
+/***/ 1317:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  methods: {
+    x: function x(event) {
+      miniToastr.success('Success message', 'Title');
+      miniToastr.info('Info message', 'Title');
+      miniToastr.warn('Warn message', 'Title');
+      miniToastr.error('Error message', 'Title');
+    }
+  }
+});
+
+/***/ }),
+
+/***/ 1318:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "button",
+      { staticClass: "btn btn-secondary btn-lg", on: { click: _vm.x } },
+      [_vm._v("Click Me!")]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("p", [_vm._v("Admin configurations page - coming soon")])
-    ])
+    return _c(
+      "div",
+      { staticClass: "alert alert-info mb-5", attrs: { role: "alert" } },
+      [
+        _c("ul", { staticClass: "list-unstyled mb-0" }, [
+          _c("li", [
+            _vm._v("Package name: "),
+            _c("code", [_vm._v("mini-toastr")])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("Link: "),
+            _c(
+              "a",
+              {
+                staticClass: "alert-link",
+                attrs: {
+                  href: "https://github.com/se-panfilov/mini-toastr",
+                  target: "_blank"
+                }
+              },
+              [_vm._v("GitHub")]
+            )
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -72,7 +138,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-459312d2", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-607f236c", module.exports)
   }
 }
 

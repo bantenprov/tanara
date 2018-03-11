@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import NavSettings from './settings-nav'
+import NavSettings from './navs';
 
 export default {
   components: {

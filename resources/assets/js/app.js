@@ -1,6 +1,3 @@
-import App from './App.vue';
-import 'bootstrap';
-
 //
 // vue
 //
@@ -8,14 +5,6 @@ import 'bootstrap';
 import Vue from 'vue';
 
 window.Vue = Vue;
-
-//
-// vue-router
-//
-
-import VueRouter from 'vue-router';
-
-Vue.use(VueRouter);
 
 //
 // vue-events
@@ -32,10 +21,6 @@ Vue.use(VueEvents);
 import axios from 'axios';
 
 window.axios = axios;
-
-window.axios.defaults.headers.common = {
-  // 'X-Requested-With': 'XMLHttpRequest'
-};
 
 //
 // lodash
@@ -248,6 +233,7 @@ Vue.use(BackToTop);
 // #
 //
 
+import App from './App.vue';
 import store from '~/store';
 import router from '~/router';
 import '~/plugins';

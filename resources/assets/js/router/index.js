@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import store from '~/store'
-import routes from './routes'
-import Router from 'vue-router'
-import { sync } from 'vuex-router-sync'
+import Vue from 'vue';
+import store from '~/store';
+import routes from './routes';
+import Router from 'vue-router';
+import { sync } from 'vuex-router-sync';
 
 Vue.use(Router)
 

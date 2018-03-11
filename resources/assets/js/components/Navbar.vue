@@ -16,9 +16,9 @@
           <img :src="user.photo_url" width="20" height="20" alt=""> {{ user.name }}
         </a>
         <div class="dropdown-menu dropdown-menu-right">
-          <router-link class="dropdown-item" :to="{ name: 'user.profile' }"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Profile</router-link>
+          <router-link class="dropdown-item" :to="{ name: 'profile' }"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Profile</router-link>
           <div class="dropdown-divider"></div>
-          <router-link class="dropdown-item" :to="{ name: 'user.settings' }"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i> Settings</router-link>
+          <router-link class="dropdown-item" :to="{ name: 'settings' }"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i> Settings</router-link>
           <div class="dropdown-divider"></div>
           <a @click.prevent="logout" class="dropdown-item pl-3" href="#">
             <i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> Logout
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex';
 
 export default {
   computed: mapGetters({
