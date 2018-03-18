@@ -632,26 +632,27 @@ a.card-media {
 .form-auth-wrap {
   min-height: 100vh;
   height: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 15px;
   background-color: #eee;
 }
 
 .form-auth {
   padding: $form-auth-padding;
-  margin: 0 auto;
   background-color: $form-auth-bg-color;
   border: $form-auth-border-width solid $form-auth-border-color;
   box-shadow: $form-auth-box-shadow;
 
   &.form-auth-sm {
-    max-width: $form-auth-sm-max-width;
+    max-width: 100%;
+    width: $form-auth-sm-max-width;
   }
   &.form-auth-md {
-    max-width: $form-auth-md-max-width;
+    max-width: 100%;
+    width: $form-auth-md-max-width;
   }
   &.form-auth-lg {
-    max-width: $form-auth-lg-max-width;
+    max-width: 100%;
+    width: $form-auth-lg-max-width;
   }
 
   .form-auth-header {

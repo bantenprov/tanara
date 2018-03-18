@@ -1,5 +1,5 @@
 <template>
-  <div class="form-auth-wrap">
+  <div class="form-auth-wrap d-flex align-items-center justify-content-center">
     <form class="form-auth form-auth-md" @submit.prevent="register" @keydown="form.onKeydown($event)">
 
       <!-- Header -->
