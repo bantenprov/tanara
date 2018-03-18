@@ -1,8 +1,9 @@
 <template>
 	<div>
     <div class="home-header">
-      <div class="container">
-  	    <nav class="home-header-navbar navbar navbar-expand-lg navbar-dark bg-transparent">
+
+      <nav class="home-header-navbar navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
           <router-link class="navbar-brand d-flex flex-row align-items-center text-uppercase" to="/" exact>
             <img class="mr-2" src="/images/logo.png" width="36" height="36">
             <span>Tanara</span>
@@ -24,8 +25,10 @@
               </template>
             </ul>
           </div>
-  	    </nav><!-- /.navbar -->
+        </div><!-- /.container -->
+      </nav><!-- /.navbar -->
 
+      <div class="container">
         <div class="home-header-content d-flex flex-column justify-content-center py-5">
           <div>
             <h1 class="home-header-title">Tanara</h1>
@@ -175,6 +178,25 @@ export default {
       // Redirect to login.
       this.$router.push({ name: 'login' })
     }
+  },
+  mounted () {
+    var scrollpos = window.scrollY;
+    var header = document.querySelector('.home-header-navbar');
+
+    header.classList.add('animated');
+
+    window.addEventListener('scroll', function() {
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 78) {
+        header.classList.remove('bg-transparent');
+        header.classList.add('fixed-top', 'slideInDown', 'bg-dark');
+      } else {
+        header.classList.remove('fixed-top', 'slideInDown');
+        header.classList.add('bg-transparent');
+        header.classList.remove('bg-dark');
+      }
+    });
   }
 }
 </script>
