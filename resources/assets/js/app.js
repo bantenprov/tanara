@@ -222,6 +222,14 @@ Vue.component("vuetable-pagination-info", VuetablePaginationInfo);
 Vue.component("vuetable-filter-bar", VuetableFilterBar);
 
 //
+// vuejs-countdown
+//
+
+import Countdown from 'vuejs-countdown'
+
+Vue.component('countdown', Countdown);
+
+//
 // vue-backtotop
 //
 

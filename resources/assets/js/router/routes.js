@@ -326,6 +326,18 @@ export default ({ authGuard, guestGuard }) => [
           meta: {
             title: "Vue Form Wizard"
           }
+        },
+        {
+          path: '/demo/vue-countdown',
+          name: 'demo.countdown',
+          components: {
+            main: resolve => require(['~/components/views/DemoVueCountdown.vue'], resolve),
+            navbar: resolve => require(['~/components/Navbar.vue'], resolve),
+            sidebar: resolve => require(['~/components/Sidebar.vue'], resolve)
+          },
+          meta: {
+            title: "Vue Countdown"
+          }
         }
       ]
     }

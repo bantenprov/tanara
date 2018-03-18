@@ -154,6 +154,11 @@ const MenuItems = [
         name: 'Vue Form Wizard',
         link: '/demo/vue-form-wizard',
         icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Vue Countdown',
+        link: '/demo/vue-countdown',
+        icon: 'fa fa-angle-double-right'
       }
     ]
   }
