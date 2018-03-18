@@ -3,7 +3,7 @@
 
     <div v-if="user" class="d-md-none">
       <div class="navmenu-brand text-white py-4 d-flex flex-row flex-nowrap justify-content-start align-items-center" style="background-color: rgba(0,0,0,.1);">
-        <router-link :to="{ name: 'user.profile' }"><img class="mr-3" :src="user.photo_url" width="64" height="64" alt=""></router-link>
+        <router-link :to="{ name: 'profile' }"><img class="mr-3" :src="user.photo_url" width="64" height="64" alt=""></router-link>
         <div class="w-100">
           <span>{{ user.name }}</span>
           <hr class="my-1" style="background-color: rgba(255,255,255,.1);">
