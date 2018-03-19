@@ -21,7 +21,7 @@ $polyfills = [
 
     <link rel="icon" href="{{ asset('favicon.ico') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('fonts/font-awesome/css/font-awesome.min.css') }}">
 </head>
 <body>
@@ -32,7 +32,13 @@ $polyfills = [
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features={{ implode(',', $polyfills) }}"></script>
 
     {{-- Load the application scripts --}}
-    <script async src="{{ asset('js/app.js') }}"></script>
+    @if (app()->isLocal())
+        <script src="{{ mix('js/app.js') }}"></script>
+    @else
+        <script src="{{ mix('js/manifest.js') }}"></script>
+        <script src="{{ mix('js/vendor.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
+    @endif
 
     {{-- wow.js --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
