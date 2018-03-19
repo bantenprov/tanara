@@ -34,5 +34,9 @@ $polyfills = [
     {{-- Load the application scripts --}}
     <script async src="{{ asset('js/app.js') }}"></script>
 
+    {{-- wow.js --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script>new WOW().init();</script>
+
 </body>
 </html>
