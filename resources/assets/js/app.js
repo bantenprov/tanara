@@ -221,12 +221,12 @@ Vue.component("vuetable-pagination-dropdown", VuetablePaginationDropdown);
 Vue.component("vuetable-pagination-info", VuetablePaginationInfo);
 Vue.component("vuetable-filter-bar", VuetableFilterBar);
 
-
-/*scrollative*/
+//
+// vue-scrollactive
+//
 
 var VueScrollactive = require('vue-scrollactive');
 Vue.use(VueScrollactive);
-
 
 //
 // vuejs-countdown
