@@ -253,6 +253,7 @@ import store from '~/store';
 import router from '~/router';
 import '~/plugins';
 import '~/components';
+import './custom';
 
 new Vue({
   store,
