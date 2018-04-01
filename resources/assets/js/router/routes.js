@@ -1,3 +1,24 @@
+/* example : 
+import default_export_route from '~/path/component/routes_export/default_export_route';
+*/
+
+/* Admin Route Hook */
+const adminRouteHook = [
+  /* example :
+    ...default_export_route
+  */
+
+];
+
+/* Dashboard Route Hook */
+const dashboardRouteHook = [
+  /* example :
+    ...default_export_route
+  */
+
+]
+
+
 function layout(name) {
   return function(resolve) {
     require(['../layouts/' + name + '.vue'], resolve);
@@ -94,7 +115,9 @@ export default ({ authGuard, guestGuard }) => [
           meta: {
             title: "Dashboard Entity"
           }
-        }
+        },
+        /* Dashboard route hook */
+        ...dashboardRouteHook
       ]
     },
     {
@@ -174,7 +197,9 @@ export default ({ authGuard, guestGuard }) => [
           meta: {
             title: "System Logs"
           }
-        }
+        },
+        /* Admin route hook */
+        ...adminRouteHook
       ]
     },
     {
