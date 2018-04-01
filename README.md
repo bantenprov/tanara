@@ -57,6 +57,41 @@ Our `package.json` includes the following commands and tasks:
 - `npm run prod`: Production.
 - `npm run watch-poll`: This is a convenience method for watching files and automatically building them whenever you save.
 
+## New feature :
+
+### Route Hook
+
+### Example route hook
+
+```javascript
+const default_export_route = [	    
+	{
+	path: '/admin/setting',
+	components: {
+		main: resolve => require(['~/components/admin/admin_setting.vue'], resolve),
+		navbar: resolve => require(['~/components/Navbar.vue'], resolve),
+		sidebar: resolve => require(['~/components/Sidebar.vue'], resolve)
+	}
+];
+
+export default default_export_route;
+```
+
+### Example usage on `router/routes.js`
+
+```javascript
+/* example : 
+import default_export_route from '~/path/component/routes_export/default_export_route';
+*/
+
+import default_export_route from '~/path/component/routes_export/default_export_route';
+
+/* Admin Route Hook */
+const adminRouteHook = [
+    ...default_export_route
+];
+```
+
 ## Contributing
 
 Looking to contribute something to Tanara? **Here's how you can help.**

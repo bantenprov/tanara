@@ -1,11 +1,11 @@
 /* example : 
-import default_export from '~/path/component/routes_export/default_export';
+import default_export_route from '~/path/component/routes_export/default_export_route';
 */
 
 /* Admin Route Hook */
 const adminRouteHook = [
   /* example :
-    ...default_export
+    ...default_export_route
   */
 
 ];
@@ -13,7 +13,7 @@ const adminRouteHook = [
 /* Dashboard Route Hook */
 const dashboardRouteHook = [
   /* example :
-    ...default_export
+    ...default_export_route
   */
 
 ]
